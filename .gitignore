@@ -1,0 +1,45 @@
+# Build outputs (CMake/Ninja)
+**/build/
+**/build-*/
+**/cmake-out*/
+**/CMakeFiles/
+**/CMakeCache.txt
+**/cmake_install.cmake
+**/install_manifest.txt
+**/compile_commands.json
+
+# Binaries
+**/*.so
+**/*.a
+**/*.o
+**/*.obj
+**/*.exe
+
+# ExecuTorch model/export artifacts
+**/*.pte
+**/*.pt2
+**/*.etrecord
+
+# Large checkpoints / weights / tokenizer artifacts (typically huge)
+**/*.pth
+**/*.safetensors
+**/*.bin
+**/consolidated.*.pth
+
+# Downloaded model folders (common in this repo)
+**/Llama-*/
+
+# Python caches
+**/__pycache__/
+**/*.pyc
+**/*.pyo
+.pytest_cache/
+
+# OS / IDE
+.DS_Store
+.vscode/
+.idea/
+**/.cursor/
+terminals/
+
+

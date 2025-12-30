@@ -1,0 +1,25 @@
+# Build outputs
+/build/
+/build-android/
+
+# ExecuTorch export artifacts / model binaries
+*.pte
+*.pt2
+*.etrecord
+
+# Checkpoints / weights
+*.pth
+*.safetensors
+*.bin
+
+# Large model folders (downloaded from HF / Meta)
+/Llama-*/
+
+# OS / IDE
+.DS_Store
+.vscode/
+.idea/
+**/.cursor/
+terminals/
+
+
