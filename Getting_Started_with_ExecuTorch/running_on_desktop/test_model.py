@@ -21,7 +21,7 @@ for _ in range(warmup_iters):
 times_ms: List[float] = []
 for _ in range(iters):
     t0 = time.perf_counter()
-output: List[torch.Tensor] = method.execute([input_tensor])
+    output: List[torch.Tensor] = method.execute([input_tensor])
     t1 = time.perf_counter()
     times_ms.append((t1 - t0) * 1000.0)
 
@@ -32,7 +32,7 @@ print(f"ExecuTorch forward: avg/min/max = {avg_ms:.3f}/{min_ms:.3f}/{max_ms:.3f}
 
 eager_reference_model = models.mobilenetv2.mobilenet_v2(weights=MobileNet_V2_Weights.DEFAULT).eval()
 with torch.no_grad():
-eager_reference_output = eager_reference_model(input_tensor)
+    eager_reference_output = eager_reference_model(input_tensor)
 
 print("Comparing against original PyTorch module")
 print(torch.allclose(output[0], eager_reference_output, rtol=1e-3, atol=1e-5))

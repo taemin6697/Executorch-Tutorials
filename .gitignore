@@ -19,6 +19,7 @@
 **/*.pte
 **/*.pt2
 **/*.etrecord
+**/*.ptd
 
 # Large checkpoints / weights / tokenizer artifacts (typically huge)
 **/*.pth
@@ -34,6 +35,11 @@
 **/*.pyc
 **/*.pyo
 .pytest_cache/
+
+# Common locally-built executables that ended up in the tree
+**/my_app
+**/executor_runner
+**/bench_low_level
 
 # OS / IDE
 .DS_Store
