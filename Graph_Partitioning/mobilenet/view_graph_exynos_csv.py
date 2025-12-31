@@ -1,0 +1,64 @@
+import torch
+import torchvision.models as models
+from torchvision.models.mobilenetv2 import MobileNet_V2_Weights
+from executorch.backends.samsung.partition.enn_partitioner import EnnPartitioner
+from executorch.backends.samsung.serialization.compile_options import gen_samsung_backend_compile_spec
+from executorch.exir import to_edge
+import csv
+import os
+
+# 1. 모델 준비
+print("Loading MobileNetV2 model...")
+model = models.mobilenetv2.mobilenet_v2(weights=MobileNet_V2_Weights.DEFAULT).eval()
+sample_inputs = (torch.randn(1, 3, 224, 224), )
+
+# 2. PyTorch Export 및 Edge Dialect 변환
+print("Exporting to Edge Dialect...")
+exported_program = torch.export.export(model, sample_inputs)
+edge_program = to_edge(exported_program)
+
+# 3. Exynos Partitioner 분석
+print("Analyzing Backend Partitioning for Samsung Exynos (NPU)...")
+chipset = "E9955" # Exynos 2500
+compile_specs = [gen_samsung_backend_compile_spec(chipset)]
+partitioner = EnnPartitioner(compile_specs)
+
+# 파티션 시도
+try:
+    partition_result = partitioner.partition(edge_program.exported_program())
+    tagged_program = partition_result.tagged_exported_program
+
+    # 백엔드로 넘어갈 노드들을 세트로 저장
+    delegated_nodes = set()
+    for node in tagged_program.graph_module.graph.nodes:
+        if "delegation_tag" in node.meta:
+            delegated_nodes.add(node)
+
+    # 4. CSV 저장
+    csv_file = "exynos_backend_assignment.csv"
+    print(f"Generating FULL CSV for Exynos: {csv_file}")
+
+    with open(csv_file, mode='w', newline='', encoding='utf-8') as f:
+        writer = csv.writer(f)
+        writer.writerow(["Order", "Node Name", "ATen Operator", "Backend Assignment", "Is Delegated?"])
+        
+        order = 1
+        for node in tagged_program.graph_module.graph.nodes:
+            if node.op in ["placeholder", "output"]:
+                continue
+                
+            is_delegated = node in delegated_nodes
+            backend = f"Samsung ENN (NPU - {chipset})" if is_delegated else "ExecuTorch (Portable CPU)"
+            
+            op_target = str(node.target)
+            writer.writerow([order, node.name, op_target, backend, "YES" if is_delegated else "NO"])
+            order += 1
+
+    print(f"Success! Exynos report saved to: {os.path.abspath(csv_file)}")
+    print(f"Total nodes analyzed: {order - 1}")
+
+except Exception as e:
+    print(f"Failed to partition for Exynos: {e}")
+    import traceback
+    traceback.print_exc()
+

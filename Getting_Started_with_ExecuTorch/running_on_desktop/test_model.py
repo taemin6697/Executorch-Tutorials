@@ -9,7 +9,7 @@ import torchvision.models as models
 runtime = Runtime.get()
 
 input_tensor: torch.Tensor = torch.randn(1, 3, 224, 224)
-program = runtime.load_program("model.pte")
+program = runtime.load_program("./model.pte")
 method = program.load_method("forward")
 
 warmup_iters = 5

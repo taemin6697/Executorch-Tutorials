@@ -1,0 +1,865 @@
+Order,Node Name,ATen Operator,Backend Assignment,Is Delegated?
+1,aten_convolution_default,"<EdgeOpOverload: aten.convolution.default>: schema = aten::convolution(Tensor input, Tensor weight, Tensor? bias, SymInt[] stride, SymInt[] padding, SymInt[] dilation, bool transposed, SymInt[] output_padding, SymInt groups) -> Tensor",XNNPACK (Accelerator),YES
+2,aten_view_copy_default,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+3,aten_permute_copy_default,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+4,aten_expand_copy_default,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",ExecuTorch (Portable CPU),NO
+5,aten_cat_default,"<EdgeOpOverload: aten.cat.default>: schema = aten::cat(Tensor[] tensors, int dim=0) -> Tensor",XNNPACK (Accelerator),YES
+6,aten_add_tensor,"<EdgeOpOverload: aten.add.Tensor>: schema = aten::add.Tensor(Tensor self, Tensor other, *, Scalar alpha=1) -> Tensor",XNNPACK (Accelerator),YES
+7,dim_order_ops__clone_dim_order_default,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+8,aten_native_layer_norm_default,"<EdgeOpOverload: aten.native_layer_norm.default>: schema = aten::native_layer_norm(Tensor input, SymInt[] normalized_shape, Tensor? weight, Tensor? bias, float eps) -> (Tensor, Tensor, Tensor)",ExecuTorch (Portable CPU),NO
+9,getitem,<built-in function getitem>,ExecuTorch (Portable CPU),NO
+10,aten_permute_copy_default_1,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+11,aten_view_copy_default_1,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+12,aten_permute_copy_default_2,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+13,aten_addmm_default,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",ExecuTorch (Portable CPU),NO
+14,aten_view_copy_default_2,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+15,aten_view_copy_default_3,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+16,aten_unsqueeze_copy_default,"<EdgeOpOverload: aten.unsqueeze_copy.default>: schema = aten::unsqueeze_copy(Tensor self, int dim) -> Tensor",ExecuTorch (Portable CPU),NO
+17,aten_permute_copy_default_3,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+18,aten_squeeze_copy_dims,"<EdgeOpOverload: aten.squeeze_copy.dims>: schema = aten::squeeze_copy.dims(Tensor self, int[] dim) -> Tensor",ExecuTorch (Portable CPU),NO
+19,dim_order_ops__clone_dim_order_default_1,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+20,aten_select_copy_int,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",ExecuTorch (Portable CPU),NO
+21,aten_select_copy_int_1,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",ExecuTorch (Portable CPU),NO
+22,aten_select_copy_int_2,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",ExecuTorch (Portable CPU),NO
+23,aten_view_copy_default_4,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+24,aten_permute_copy_default_4,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+25,aten_view_copy_default_5,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+26,aten_permute_copy_default_5,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+27,aten_view_copy_default_6,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+28,aten_permute_copy_default_6,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+29,aten_view_copy_default_7,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+30,aten_view_copy_default_8,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+31,aten_view_copy_default_9,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+32,aten_mul_scalar,"<EdgeOpOverload: aten.mul.Scalar>: schema = aten::mul.Scalar(Tensor self, Scalar other) -> Tensor",ExecuTorch (Portable CPU),NO
+33,aten_permute_copy_default_7,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+34,aten_mul_scalar_1,"<EdgeOpOverload: aten.mul.Scalar>: schema = aten::mul.Scalar(Tensor self, Scalar other) -> Tensor",ExecuTorch (Portable CPU),NO
+35,aten_expand_copy_default_1,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",ExecuTorch (Portable CPU),NO
+36,aten_view_copy_default_10,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+37,aten_expand_copy_default_2,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",ExecuTorch (Portable CPU),NO
+38,aten_view_copy_default_11,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+39,aten_bmm_default,"<EdgeOpOverload: aten.bmm.default>: schema = aten::bmm(Tensor self, Tensor mat2) -> Tensor",XNNPACK (Accelerator),YES
+40,aten_view_copy_default_12,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+41,aten__softmax_default,"<EdgeOpOverload: aten._softmax.default>: schema = aten::_softmax(Tensor self, int dim, bool half_to_float) -> Tensor",XNNPACK (Accelerator),YES
+42,aten_eq_scalar,"<EdgeOpOverload: aten.eq.Scalar>: schema = aten::eq.Scalar(Tensor self, Scalar other) -> Tensor",ExecuTorch (Portable CPU),NO
+43,aten_logical_not_default,<EdgeOpOverload: aten.logical_not.default>: schema = aten::logical_not(Tensor self) -> Tensor,ExecuTorch (Portable CPU),NO
+44,aten_any_dim,"<EdgeOpOverload: aten.any.dim>: schema = aten::any.dim(Tensor self, int dim, bool keepdim=False) -> Tensor",ExecuTorch (Portable CPU),NO
+45,aten_logical_not_default_1,<EdgeOpOverload: aten.logical_not.default>: schema = aten::logical_not(Tensor self) -> Tensor,ExecuTorch (Portable CPU),NO
+46,aten_full_like_default,"<EdgeOpOverload: aten.full_like.default>: schema = aten::full_like(Tensor self, Scalar fill_value, *, ScalarType? dtype=None, Layout? layout=None, Device? device=None, bool? pin_memory=None, MemoryFormat? memory_format=None) -> Tensor",ExecuTorch (Portable CPU),NO
+47,aten_where_self,"<EdgeOpOverload: aten.where.self>: schema = aten::where.self(Tensor condition, Tensor self, Tensor other) -> Tensor",ExecuTorch (Portable CPU),NO
+48,aten_expand_copy_default_3,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",ExecuTorch (Portable CPU),NO
+49,aten_view_copy_default_13,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+50,aten_expand_copy_default_4,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",ExecuTorch (Portable CPU),NO
+51,aten_view_copy_default_14,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+52,aten_bmm_default_1,"<EdgeOpOverload: aten.bmm.default>: schema = aten::bmm(Tensor self, Tensor mat2) -> Tensor",XNNPACK (Accelerator),YES
+53,aten_view_copy_default_15,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+54,aten_permute_copy_default_8,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+55,dim_order_ops__clone_dim_order_default_2,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+56,aten_permute_copy_default_9,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+57,aten_permute_copy_default_10,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+58,aten_view_copy_default_16,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+59,aten_permute_copy_default_11,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+60,aten_addmm_default_1,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",ExecuTorch (Portable CPU),NO
+61,aten_view_copy_default_17,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+62,aten_permute_copy_default_12,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+63,dim_order_ops__clone_dim_order_default_3,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+64,aten_add_tensor_1,"<EdgeOpOverload: aten.add.Tensor>: schema = aten::add.Tensor(Tensor self, Tensor other, *, Scalar alpha=1) -> Tensor",XNNPACK (Accelerator),YES
+65,aten_native_layer_norm_default_1,"<EdgeOpOverload: aten.native_layer_norm.default>: schema = aten::native_layer_norm(Tensor input, SymInt[] normalized_shape, Tensor? weight, Tensor? bias, float eps) -> (Tensor, Tensor, Tensor)",ExecuTorch (Portable CPU),NO
+66,getitem_1,<built-in function getitem>,ExecuTorch (Portable CPU),NO
+67,aten_view_copy_default_18,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+68,aten_permute_copy_default_13,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+69,aten_addmm_default_2,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",ExecuTorch (Portable CPU),NO
+70,aten_view_copy_default_19,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+71,aten_gelu_default,"<EdgeOpOverload: aten.gelu.default>: schema = aten::gelu(Tensor self, *, str approximate=""none"") -> Tensor",XNNPACK (Accelerator),YES
+72,dim_order_ops__clone_dim_order_default_4,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+73,aten_view_copy_default_20,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+74,aten_permute_copy_default_14,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+75,aten_addmm_default_3,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",ExecuTorch (Portable CPU),NO
+76,aten_view_copy_default_21,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+77,dim_order_ops__clone_dim_order_default_5,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+78,aten_add_tensor_2,"<EdgeOpOverload: aten.add.Tensor>: schema = aten::add.Tensor(Tensor self, Tensor other, *, Scalar alpha=1) -> Tensor",XNNPACK (Accelerator),YES
+79,aten_native_layer_norm_default_2,"<EdgeOpOverload: aten.native_layer_norm.default>: schema = aten::native_layer_norm(Tensor input, SymInt[] normalized_shape, Tensor? weight, Tensor? bias, float eps) -> (Tensor, Tensor, Tensor)",ExecuTorch (Portable CPU),NO
+80,getitem_2,<built-in function getitem>,ExecuTorch (Portable CPU),NO
+81,aten_permute_copy_default_15,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+82,aten_view_copy_default_22,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+83,aten_permute_copy_default_16,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+84,aten_addmm_default_4,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",ExecuTorch (Portable CPU),NO
+85,aten_view_copy_default_23,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+86,aten_view_copy_default_24,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+87,aten_unsqueeze_copy_default_1,"<EdgeOpOverload: aten.unsqueeze_copy.default>: schema = aten::unsqueeze_copy(Tensor self, int dim) -> Tensor",ExecuTorch (Portable CPU),NO
+88,aten_permute_copy_default_17,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+89,aten_squeeze_copy_dims_1,"<EdgeOpOverload: aten.squeeze_copy.dims>: schema = aten::squeeze_copy.dims(Tensor self, int[] dim) -> Tensor",ExecuTorch (Portable CPU),NO
+90,dim_order_ops__clone_dim_order_default_6,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+91,aten_select_copy_int_3,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",ExecuTorch (Portable CPU),NO
+92,aten_select_copy_int_4,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",ExecuTorch (Portable CPU),NO
+93,aten_select_copy_int_5,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",ExecuTorch (Portable CPU),NO
+94,aten_view_copy_default_25,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+95,aten_permute_copy_default_18,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+96,aten_view_copy_default_26,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+97,aten_permute_copy_default_19,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+98,aten_view_copy_default_27,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+99,aten_permute_copy_default_20,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+100,aten_view_copy_default_28,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+101,aten_view_copy_default_29,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+102,aten_view_copy_default_30,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+103,aten_mul_scalar_2,"<EdgeOpOverload: aten.mul.Scalar>: schema = aten::mul.Scalar(Tensor self, Scalar other) -> Tensor",ExecuTorch (Portable CPU),NO
+104,aten_permute_copy_default_21,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+105,aten_mul_scalar_3,"<EdgeOpOverload: aten.mul.Scalar>: schema = aten::mul.Scalar(Tensor self, Scalar other) -> Tensor",ExecuTorch (Portable CPU),NO
+106,aten_expand_copy_default_5,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",ExecuTorch (Portable CPU),NO
+107,aten_view_copy_default_31,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+108,aten_expand_copy_default_6,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",ExecuTorch (Portable CPU),NO
+109,aten_view_copy_default_32,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+110,aten_bmm_default_2,"<EdgeOpOverload: aten.bmm.default>: schema = aten::bmm(Tensor self, Tensor mat2) -> Tensor",XNNPACK (Accelerator),YES
+111,aten_view_copy_default_33,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+112,aten__softmax_default_1,"<EdgeOpOverload: aten._softmax.default>: schema = aten::_softmax(Tensor self, int dim, bool half_to_float) -> Tensor",XNNPACK (Accelerator),YES
+113,aten_eq_scalar_1,"<EdgeOpOverload: aten.eq.Scalar>: schema = aten::eq.Scalar(Tensor self, Scalar other) -> Tensor",ExecuTorch (Portable CPU),NO
+114,aten_logical_not_default_2,<EdgeOpOverload: aten.logical_not.default>: schema = aten::logical_not(Tensor self) -> Tensor,ExecuTorch (Portable CPU),NO
+115,aten_any_dim_1,"<EdgeOpOverload: aten.any.dim>: schema = aten::any.dim(Tensor self, int dim, bool keepdim=False) -> Tensor",ExecuTorch (Portable CPU),NO
+116,aten_logical_not_default_3,<EdgeOpOverload: aten.logical_not.default>: schema = aten::logical_not(Tensor self) -> Tensor,ExecuTorch (Portable CPU),NO
+117,aten_full_like_default_1,"<EdgeOpOverload: aten.full_like.default>: schema = aten::full_like(Tensor self, Scalar fill_value, *, ScalarType? dtype=None, Layout? layout=None, Device? device=None, bool? pin_memory=None, MemoryFormat? memory_format=None) -> Tensor",ExecuTorch (Portable CPU),NO
+118,aten_where_self_1,"<EdgeOpOverload: aten.where.self>: schema = aten::where.self(Tensor condition, Tensor self, Tensor other) -> Tensor",ExecuTorch (Portable CPU),NO
+119,aten_expand_copy_default_7,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",ExecuTorch (Portable CPU),NO
+120,aten_view_copy_default_34,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+121,aten_expand_copy_default_8,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",ExecuTorch (Portable CPU),NO
+122,aten_view_copy_default_35,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+123,aten_bmm_default_3,"<EdgeOpOverload: aten.bmm.default>: schema = aten::bmm(Tensor self, Tensor mat2) -> Tensor",XNNPACK (Accelerator),YES
+124,aten_view_copy_default_36,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+125,aten_permute_copy_default_22,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+126,dim_order_ops__clone_dim_order_default_7,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+127,aten_permute_copy_default_23,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+128,aten_permute_copy_default_24,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+129,aten_view_copy_default_37,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+130,aten_permute_copy_default_25,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+131,aten_addmm_default_5,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",ExecuTorch (Portable CPU),NO
+132,aten_view_copy_default_38,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+133,aten_permute_copy_default_26,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+134,dim_order_ops__clone_dim_order_default_8,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+135,aten_add_tensor_3,"<EdgeOpOverload: aten.add.Tensor>: schema = aten::add.Tensor(Tensor self, Tensor other, *, Scalar alpha=1) -> Tensor",XNNPACK (Accelerator),YES
+136,aten_native_layer_norm_default_3,"<EdgeOpOverload: aten.native_layer_norm.default>: schema = aten::native_layer_norm(Tensor input, SymInt[] normalized_shape, Tensor? weight, Tensor? bias, float eps) -> (Tensor, Tensor, Tensor)",ExecuTorch (Portable CPU),NO
+137,getitem_3,<built-in function getitem>,ExecuTorch (Portable CPU),NO
+138,aten_view_copy_default_39,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+139,aten_permute_copy_default_27,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+140,aten_addmm_default_6,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",ExecuTorch (Portable CPU),NO
+141,aten_view_copy_default_40,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+142,aten_gelu_default_1,"<EdgeOpOverload: aten.gelu.default>: schema = aten::gelu(Tensor self, *, str approximate=""none"") -> Tensor",XNNPACK (Accelerator),YES
+143,dim_order_ops__clone_dim_order_default_9,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+144,aten_view_copy_default_41,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+145,aten_permute_copy_default_28,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+146,aten_addmm_default_7,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",ExecuTorch (Portable CPU),NO
+147,aten_view_copy_default_42,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+148,dim_order_ops__clone_dim_order_default_10,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+149,aten_add_tensor_4,"<EdgeOpOverload: aten.add.Tensor>: schema = aten::add.Tensor(Tensor self, Tensor other, *, Scalar alpha=1) -> Tensor",XNNPACK (Accelerator),YES
+150,aten_native_layer_norm_default_4,"<EdgeOpOverload: aten.native_layer_norm.default>: schema = aten::native_layer_norm(Tensor input, SymInt[] normalized_shape, Tensor? weight, Tensor? bias, float eps) -> (Tensor, Tensor, Tensor)",ExecuTorch (Portable CPU),NO
+151,getitem_4,<built-in function getitem>,ExecuTorch (Portable CPU),NO
+152,aten_permute_copy_default_29,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+153,aten_view_copy_default_43,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+154,aten_permute_copy_default_30,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+155,aten_addmm_default_8,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",ExecuTorch (Portable CPU),NO
+156,aten_view_copy_default_44,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+157,aten_view_copy_default_45,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+158,aten_unsqueeze_copy_default_2,"<EdgeOpOverload: aten.unsqueeze_copy.default>: schema = aten::unsqueeze_copy(Tensor self, int dim) -> Tensor",ExecuTorch (Portable CPU),NO
+159,aten_permute_copy_default_31,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+160,aten_squeeze_copy_dims_2,"<EdgeOpOverload: aten.squeeze_copy.dims>: schema = aten::squeeze_copy.dims(Tensor self, int[] dim) -> Tensor",ExecuTorch (Portable CPU),NO
+161,dim_order_ops__clone_dim_order_default_11,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+162,aten_select_copy_int_6,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",ExecuTorch (Portable CPU),NO
+163,aten_select_copy_int_7,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",ExecuTorch (Portable CPU),NO
+164,aten_select_copy_int_8,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",ExecuTorch (Portable CPU),NO
+165,aten_view_copy_default_46,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+166,aten_permute_copy_default_32,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+167,aten_view_copy_default_47,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+168,aten_permute_copy_default_33,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+169,aten_view_copy_default_48,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+170,aten_permute_copy_default_34,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+171,aten_view_copy_default_49,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+172,aten_view_copy_default_50,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+173,aten_view_copy_default_51,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+174,aten_mul_scalar_4,"<EdgeOpOverload: aten.mul.Scalar>: schema = aten::mul.Scalar(Tensor self, Scalar other) -> Tensor",ExecuTorch (Portable CPU),NO
+175,aten_permute_copy_default_35,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+176,aten_mul_scalar_5,"<EdgeOpOverload: aten.mul.Scalar>: schema = aten::mul.Scalar(Tensor self, Scalar other) -> Tensor",ExecuTorch (Portable CPU),NO
+177,aten_expand_copy_default_9,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",ExecuTorch (Portable CPU),NO
+178,aten_view_copy_default_52,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+179,aten_expand_copy_default_10,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",ExecuTorch (Portable CPU),NO
+180,aten_view_copy_default_53,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+181,aten_bmm_default_4,"<EdgeOpOverload: aten.bmm.default>: schema = aten::bmm(Tensor self, Tensor mat2) -> Tensor",XNNPACK (Accelerator),YES
+182,aten_view_copy_default_54,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+183,aten__softmax_default_2,"<EdgeOpOverload: aten._softmax.default>: schema = aten::_softmax(Tensor self, int dim, bool half_to_float) -> Tensor",XNNPACK (Accelerator),YES
+184,aten_eq_scalar_2,"<EdgeOpOverload: aten.eq.Scalar>: schema = aten::eq.Scalar(Tensor self, Scalar other) -> Tensor",ExecuTorch (Portable CPU),NO
+185,aten_logical_not_default_4,<EdgeOpOverload: aten.logical_not.default>: schema = aten::logical_not(Tensor self) -> Tensor,ExecuTorch (Portable CPU),NO
+186,aten_any_dim_2,"<EdgeOpOverload: aten.any.dim>: schema = aten::any.dim(Tensor self, int dim, bool keepdim=False) -> Tensor",ExecuTorch (Portable CPU),NO
+187,aten_logical_not_default_5,<EdgeOpOverload: aten.logical_not.default>: schema = aten::logical_not(Tensor self) -> Tensor,ExecuTorch (Portable CPU),NO
+188,aten_full_like_default_2,"<EdgeOpOverload: aten.full_like.default>: schema = aten::full_like(Tensor self, Scalar fill_value, *, ScalarType? dtype=None, Layout? layout=None, Device? device=None, bool? pin_memory=None, MemoryFormat? memory_format=None) -> Tensor",ExecuTorch (Portable CPU),NO
+189,aten_where_self_2,"<EdgeOpOverload: aten.where.self>: schema = aten::where.self(Tensor condition, Tensor self, Tensor other) -> Tensor",ExecuTorch (Portable CPU),NO
+190,aten_expand_copy_default_11,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",ExecuTorch (Portable CPU),NO
+191,aten_view_copy_default_55,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+192,aten_expand_copy_default_12,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",ExecuTorch (Portable CPU),NO
+193,aten_view_copy_default_56,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+194,aten_bmm_default_5,"<EdgeOpOverload: aten.bmm.default>: schema = aten::bmm(Tensor self, Tensor mat2) -> Tensor",XNNPACK (Accelerator),YES
+195,aten_view_copy_default_57,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+196,aten_permute_copy_default_36,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+197,dim_order_ops__clone_dim_order_default_12,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+198,aten_permute_copy_default_37,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+199,aten_permute_copy_default_38,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+200,aten_view_copy_default_58,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+201,aten_permute_copy_default_39,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+202,aten_addmm_default_9,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",ExecuTorch (Portable CPU),NO
+203,aten_view_copy_default_59,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+204,aten_permute_copy_default_40,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+205,dim_order_ops__clone_dim_order_default_13,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+206,aten_add_tensor_5,"<EdgeOpOverload: aten.add.Tensor>: schema = aten::add.Tensor(Tensor self, Tensor other, *, Scalar alpha=1) -> Tensor",XNNPACK (Accelerator),YES
+207,aten_native_layer_norm_default_5,"<EdgeOpOverload: aten.native_layer_norm.default>: schema = aten::native_layer_norm(Tensor input, SymInt[] normalized_shape, Tensor? weight, Tensor? bias, float eps) -> (Tensor, Tensor, Tensor)",ExecuTorch (Portable CPU),NO
+208,getitem_5,<built-in function getitem>,ExecuTorch (Portable CPU),NO
+209,aten_view_copy_default_60,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+210,aten_permute_copy_default_41,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+211,aten_addmm_default_10,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",ExecuTorch (Portable CPU),NO
+212,aten_view_copy_default_61,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+213,aten_gelu_default_2,"<EdgeOpOverload: aten.gelu.default>: schema = aten::gelu(Tensor self, *, str approximate=""none"") -> Tensor",XNNPACK (Accelerator),YES
+214,dim_order_ops__clone_dim_order_default_14,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+215,aten_view_copy_default_62,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+216,aten_permute_copy_default_42,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+217,aten_addmm_default_11,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",ExecuTorch (Portable CPU),NO
+218,aten_view_copy_default_63,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+219,dim_order_ops__clone_dim_order_default_15,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+220,aten_add_tensor_6,"<EdgeOpOverload: aten.add.Tensor>: schema = aten::add.Tensor(Tensor self, Tensor other, *, Scalar alpha=1) -> Tensor",XNNPACK (Accelerator),YES
+221,aten_native_layer_norm_default_6,"<EdgeOpOverload: aten.native_layer_norm.default>: schema = aten::native_layer_norm(Tensor input, SymInt[] normalized_shape, Tensor? weight, Tensor? bias, float eps) -> (Tensor, Tensor, Tensor)",ExecuTorch (Portable CPU),NO
+222,getitem_6,<built-in function getitem>,ExecuTorch (Portable CPU),NO
+223,aten_permute_copy_default_43,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+224,aten_view_copy_default_64,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+225,aten_permute_copy_default_44,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+226,aten_addmm_default_12,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",ExecuTorch (Portable CPU),NO
+227,aten_view_copy_default_65,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+228,aten_view_copy_default_66,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+229,aten_unsqueeze_copy_default_3,"<EdgeOpOverload: aten.unsqueeze_copy.default>: schema = aten::unsqueeze_copy(Tensor self, int dim) -> Tensor",ExecuTorch (Portable CPU),NO
+230,aten_permute_copy_default_45,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+231,aten_squeeze_copy_dims_3,"<EdgeOpOverload: aten.squeeze_copy.dims>: schema = aten::squeeze_copy.dims(Tensor self, int[] dim) -> Tensor",ExecuTorch (Portable CPU),NO
+232,dim_order_ops__clone_dim_order_default_16,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+233,aten_select_copy_int_9,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",ExecuTorch (Portable CPU),NO
+234,aten_select_copy_int_10,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",ExecuTorch (Portable CPU),NO
+235,aten_select_copy_int_11,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",ExecuTorch (Portable CPU),NO
+236,aten_view_copy_default_67,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+237,aten_permute_copy_default_46,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+238,aten_view_copy_default_68,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+239,aten_permute_copy_default_47,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+240,aten_view_copy_default_69,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+241,aten_permute_copy_default_48,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+242,aten_view_copy_default_70,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+243,aten_view_copy_default_71,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+244,aten_view_copy_default_72,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+245,aten_mul_scalar_6,"<EdgeOpOverload: aten.mul.Scalar>: schema = aten::mul.Scalar(Tensor self, Scalar other) -> Tensor",ExecuTorch (Portable CPU),NO
+246,aten_permute_copy_default_49,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+247,aten_mul_scalar_7,"<EdgeOpOverload: aten.mul.Scalar>: schema = aten::mul.Scalar(Tensor self, Scalar other) -> Tensor",ExecuTorch (Portable CPU),NO
+248,aten_expand_copy_default_13,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",ExecuTorch (Portable CPU),NO
+249,aten_view_copy_default_73,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+250,aten_expand_copy_default_14,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",ExecuTorch (Portable CPU),NO
+251,aten_view_copy_default_74,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+252,aten_bmm_default_6,"<EdgeOpOverload: aten.bmm.default>: schema = aten::bmm(Tensor self, Tensor mat2) -> Tensor",XNNPACK (Accelerator),YES
+253,aten_view_copy_default_75,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+254,aten__softmax_default_3,"<EdgeOpOverload: aten._softmax.default>: schema = aten::_softmax(Tensor self, int dim, bool half_to_float) -> Tensor",XNNPACK (Accelerator),YES
+255,aten_eq_scalar_3,"<EdgeOpOverload: aten.eq.Scalar>: schema = aten::eq.Scalar(Tensor self, Scalar other) -> Tensor",ExecuTorch (Portable CPU),NO
+256,aten_logical_not_default_6,<EdgeOpOverload: aten.logical_not.default>: schema = aten::logical_not(Tensor self) -> Tensor,ExecuTorch (Portable CPU),NO
+257,aten_any_dim_3,"<EdgeOpOverload: aten.any.dim>: schema = aten::any.dim(Tensor self, int dim, bool keepdim=False) -> Tensor",ExecuTorch (Portable CPU),NO
+258,aten_logical_not_default_7,<EdgeOpOverload: aten.logical_not.default>: schema = aten::logical_not(Tensor self) -> Tensor,ExecuTorch (Portable CPU),NO
+259,aten_full_like_default_3,"<EdgeOpOverload: aten.full_like.default>: schema = aten::full_like(Tensor self, Scalar fill_value, *, ScalarType? dtype=None, Layout? layout=None, Device? device=None, bool? pin_memory=None, MemoryFormat? memory_format=None) -> Tensor",ExecuTorch (Portable CPU),NO
+260,aten_where_self_3,"<EdgeOpOverload: aten.where.self>: schema = aten::where.self(Tensor condition, Tensor self, Tensor other) -> Tensor",ExecuTorch (Portable CPU),NO
+261,aten_expand_copy_default_15,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",ExecuTorch (Portable CPU),NO
+262,aten_view_copy_default_76,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+263,aten_expand_copy_default_16,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",ExecuTorch (Portable CPU),NO
+264,aten_view_copy_default_77,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+265,aten_bmm_default_7,"<EdgeOpOverload: aten.bmm.default>: schema = aten::bmm(Tensor self, Tensor mat2) -> Tensor",XNNPACK (Accelerator),YES
+266,aten_view_copy_default_78,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+267,aten_permute_copy_default_50,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+268,dim_order_ops__clone_dim_order_default_17,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+269,aten_permute_copy_default_51,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+270,aten_permute_copy_default_52,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+271,aten_view_copy_default_79,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+272,aten_permute_copy_default_53,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+273,aten_addmm_default_13,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",ExecuTorch (Portable CPU),NO
+274,aten_view_copy_default_80,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+275,aten_permute_copy_default_54,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+276,dim_order_ops__clone_dim_order_default_18,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+277,aten_add_tensor_7,"<EdgeOpOverload: aten.add.Tensor>: schema = aten::add.Tensor(Tensor self, Tensor other, *, Scalar alpha=1) -> Tensor",XNNPACK (Accelerator),YES
+278,aten_native_layer_norm_default_7,"<EdgeOpOverload: aten.native_layer_norm.default>: schema = aten::native_layer_norm(Tensor input, SymInt[] normalized_shape, Tensor? weight, Tensor? bias, float eps) -> (Tensor, Tensor, Tensor)",ExecuTorch (Portable CPU),NO
+279,getitem_7,<built-in function getitem>,ExecuTorch (Portable CPU),NO
+280,aten_view_copy_default_81,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+281,aten_permute_copy_default_55,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+282,aten_addmm_default_14,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",ExecuTorch (Portable CPU),NO
+283,aten_view_copy_default_82,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+284,aten_gelu_default_3,"<EdgeOpOverload: aten.gelu.default>: schema = aten::gelu(Tensor self, *, str approximate=""none"") -> Tensor",XNNPACK (Accelerator),YES
+285,dim_order_ops__clone_dim_order_default_19,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+286,aten_view_copy_default_83,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+287,aten_permute_copy_default_56,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+288,aten_addmm_default_15,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",ExecuTorch (Portable CPU),NO
+289,aten_view_copy_default_84,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+290,dim_order_ops__clone_dim_order_default_20,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+291,aten_add_tensor_8,"<EdgeOpOverload: aten.add.Tensor>: schema = aten::add.Tensor(Tensor self, Tensor other, *, Scalar alpha=1) -> Tensor",XNNPACK (Accelerator),YES
+292,aten_native_layer_norm_default_8,"<EdgeOpOverload: aten.native_layer_norm.default>: schema = aten::native_layer_norm(Tensor input, SymInt[] normalized_shape, Tensor? weight, Tensor? bias, float eps) -> (Tensor, Tensor, Tensor)",ExecuTorch (Portable CPU),NO
+293,getitem_8,<built-in function getitem>,ExecuTorch (Portable CPU),NO
+294,aten_permute_copy_default_57,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+295,aten_view_copy_default_85,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+296,aten_permute_copy_default_58,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+297,aten_addmm_default_16,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",ExecuTorch (Portable CPU),NO
+298,aten_view_copy_default_86,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+299,aten_view_copy_default_87,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+300,aten_unsqueeze_copy_default_4,"<EdgeOpOverload: aten.unsqueeze_copy.default>: schema = aten::unsqueeze_copy(Tensor self, int dim) -> Tensor",ExecuTorch (Portable CPU),NO
+301,aten_permute_copy_default_59,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+302,aten_squeeze_copy_dims_4,"<EdgeOpOverload: aten.squeeze_copy.dims>: schema = aten::squeeze_copy.dims(Tensor self, int[] dim) -> Tensor",ExecuTorch (Portable CPU),NO
+303,dim_order_ops__clone_dim_order_default_21,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+304,aten_select_copy_int_12,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",ExecuTorch (Portable CPU),NO
+305,aten_select_copy_int_13,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",ExecuTorch (Portable CPU),NO
+306,aten_select_copy_int_14,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",ExecuTorch (Portable CPU),NO
+307,aten_view_copy_default_88,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+308,aten_permute_copy_default_60,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+309,aten_view_copy_default_89,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+310,aten_permute_copy_default_61,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+311,aten_view_copy_default_90,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+312,aten_permute_copy_default_62,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+313,aten_view_copy_default_91,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+314,aten_view_copy_default_92,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+315,aten_view_copy_default_93,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+316,aten_mul_scalar_8,"<EdgeOpOverload: aten.mul.Scalar>: schema = aten::mul.Scalar(Tensor self, Scalar other) -> Tensor",ExecuTorch (Portable CPU),NO
+317,aten_permute_copy_default_63,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+318,aten_mul_scalar_9,"<EdgeOpOverload: aten.mul.Scalar>: schema = aten::mul.Scalar(Tensor self, Scalar other) -> Tensor",ExecuTorch (Portable CPU),NO
+319,aten_expand_copy_default_17,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",ExecuTorch (Portable CPU),NO
+320,aten_view_copy_default_94,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+321,aten_expand_copy_default_18,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",ExecuTorch (Portable CPU),NO
+322,aten_view_copy_default_95,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+323,aten_bmm_default_8,"<EdgeOpOverload: aten.bmm.default>: schema = aten::bmm(Tensor self, Tensor mat2) -> Tensor",XNNPACK (Accelerator),YES
+324,aten_view_copy_default_96,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+325,aten__softmax_default_4,"<EdgeOpOverload: aten._softmax.default>: schema = aten::_softmax(Tensor self, int dim, bool half_to_float) -> Tensor",XNNPACK (Accelerator),YES
+326,aten_eq_scalar_4,"<EdgeOpOverload: aten.eq.Scalar>: schema = aten::eq.Scalar(Tensor self, Scalar other) -> Tensor",ExecuTorch (Portable CPU),NO
+327,aten_logical_not_default_8,<EdgeOpOverload: aten.logical_not.default>: schema = aten::logical_not(Tensor self) -> Tensor,ExecuTorch (Portable CPU),NO
+328,aten_any_dim_4,"<EdgeOpOverload: aten.any.dim>: schema = aten::any.dim(Tensor self, int dim, bool keepdim=False) -> Tensor",ExecuTorch (Portable CPU),NO
+329,aten_logical_not_default_9,<EdgeOpOverload: aten.logical_not.default>: schema = aten::logical_not(Tensor self) -> Tensor,ExecuTorch (Portable CPU),NO
+330,aten_full_like_default_4,"<EdgeOpOverload: aten.full_like.default>: schema = aten::full_like(Tensor self, Scalar fill_value, *, ScalarType? dtype=None, Layout? layout=None, Device? device=None, bool? pin_memory=None, MemoryFormat? memory_format=None) -> Tensor",ExecuTorch (Portable CPU),NO
+331,aten_where_self_4,"<EdgeOpOverload: aten.where.self>: schema = aten::where.self(Tensor condition, Tensor self, Tensor other) -> Tensor",ExecuTorch (Portable CPU),NO
+332,aten_expand_copy_default_19,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",ExecuTorch (Portable CPU),NO
+333,aten_view_copy_default_97,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+334,aten_expand_copy_default_20,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",ExecuTorch (Portable CPU),NO
+335,aten_view_copy_default_98,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+336,aten_bmm_default_9,"<EdgeOpOverload: aten.bmm.default>: schema = aten::bmm(Tensor self, Tensor mat2) -> Tensor",XNNPACK (Accelerator),YES
+337,aten_view_copy_default_99,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+338,aten_permute_copy_default_64,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+339,dim_order_ops__clone_dim_order_default_22,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+340,aten_permute_copy_default_65,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+341,aten_permute_copy_default_66,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+342,aten_view_copy_default_100,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+343,aten_permute_copy_default_67,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+344,aten_addmm_default_17,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",ExecuTorch (Portable CPU),NO
+345,aten_view_copy_default_101,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+346,aten_permute_copy_default_68,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+347,dim_order_ops__clone_dim_order_default_23,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+348,aten_add_tensor_9,"<EdgeOpOverload: aten.add.Tensor>: schema = aten::add.Tensor(Tensor self, Tensor other, *, Scalar alpha=1) -> Tensor",XNNPACK (Accelerator),YES
+349,aten_native_layer_norm_default_9,"<EdgeOpOverload: aten.native_layer_norm.default>: schema = aten::native_layer_norm(Tensor input, SymInt[] normalized_shape, Tensor? weight, Tensor? bias, float eps) -> (Tensor, Tensor, Tensor)",ExecuTorch (Portable CPU),NO
+350,getitem_9,<built-in function getitem>,ExecuTorch (Portable CPU),NO
+351,aten_view_copy_default_102,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+352,aten_permute_copy_default_69,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+353,aten_addmm_default_18,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",ExecuTorch (Portable CPU),NO
+354,aten_view_copy_default_103,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+355,aten_gelu_default_4,"<EdgeOpOverload: aten.gelu.default>: schema = aten::gelu(Tensor self, *, str approximate=""none"") -> Tensor",XNNPACK (Accelerator),YES
+356,dim_order_ops__clone_dim_order_default_24,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+357,aten_view_copy_default_104,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+358,aten_permute_copy_default_70,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+359,aten_addmm_default_19,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",ExecuTorch (Portable CPU),NO
+360,aten_view_copy_default_105,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+361,dim_order_ops__clone_dim_order_default_25,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+362,aten_add_tensor_10,"<EdgeOpOverload: aten.add.Tensor>: schema = aten::add.Tensor(Tensor self, Tensor other, *, Scalar alpha=1) -> Tensor",XNNPACK (Accelerator),YES
+363,aten_native_layer_norm_default_10,"<EdgeOpOverload: aten.native_layer_norm.default>: schema = aten::native_layer_norm(Tensor input, SymInt[] normalized_shape, Tensor? weight, Tensor? bias, float eps) -> (Tensor, Tensor, Tensor)",ExecuTorch (Portable CPU),NO
+364,getitem_10,<built-in function getitem>,ExecuTorch (Portable CPU),NO
+365,aten_permute_copy_default_71,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+366,aten_view_copy_default_106,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+367,aten_permute_copy_default_72,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+368,aten_addmm_default_20,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",ExecuTorch (Portable CPU),NO
+369,aten_view_copy_default_107,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+370,aten_view_copy_default_108,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+371,aten_unsqueeze_copy_default_5,"<EdgeOpOverload: aten.unsqueeze_copy.default>: schema = aten::unsqueeze_copy(Tensor self, int dim) -> Tensor",ExecuTorch (Portable CPU),NO
+372,aten_permute_copy_default_73,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+373,aten_squeeze_copy_dims_5,"<EdgeOpOverload: aten.squeeze_copy.dims>: schema = aten::squeeze_copy.dims(Tensor self, int[] dim) -> Tensor",ExecuTorch (Portable CPU),NO
+374,dim_order_ops__clone_dim_order_default_26,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+375,aten_select_copy_int_15,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",ExecuTorch (Portable CPU),NO
+376,aten_select_copy_int_16,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",ExecuTorch (Portable CPU),NO
+377,aten_select_copy_int_17,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",ExecuTorch (Portable CPU),NO
+378,aten_view_copy_default_109,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+379,aten_permute_copy_default_74,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+380,aten_view_copy_default_110,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+381,aten_permute_copy_default_75,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+382,aten_view_copy_default_111,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+383,aten_permute_copy_default_76,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+384,aten_view_copy_default_112,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+385,aten_view_copy_default_113,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+386,aten_view_copy_default_114,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+387,aten_mul_scalar_10,"<EdgeOpOverload: aten.mul.Scalar>: schema = aten::mul.Scalar(Tensor self, Scalar other) -> Tensor",ExecuTorch (Portable CPU),NO
+388,aten_permute_copy_default_77,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+389,aten_mul_scalar_11,"<EdgeOpOverload: aten.mul.Scalar>: schema = aten::mul.Scalar(Tensor self, Scalar other) -> Tensor",ExecuTorch (Portable CPU),NO
+390,aten_expand_copy_default_21,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",ExecuTorch (Portable CPU),NO
+391,aten_view_copy_default_115,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+392,aten_expand_copy_default_22,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",ExecuTorch (Portable CPU),NO
+393,aten_view_copy_default_116,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+394,aten_bmm_default_10,"<EdgeOpOverload: aten.bmm.default>: schema = aten::bmm(Tensor self, Tensor mat2) -> Tensor",XNNPACK (Accelerator),YES
+395,aten_view_copy_default_117,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+396,aten__softmax_default_5,"<EdgeOpOverload: aten._softmax.default>: schema = aten::_softmax(Tensor self, int dim, bool half_to_float) -> Tensor",XNNPACK (Accelerator),YES
+397,aten_eq_scalar_5,"<EdgeOpOverload: aten.eq.Scalar>: schema = aten::eq.Scalar(Tensor self, Scalar other) -> Tensor",ExecuTorch (Portable CPU),NO
+398,aten_logical_not_default_10,<EdgeOpOverload: aten.logical_not.default>: schema = aten::logical_not(Tensor self) -> Tensor,ExecuTorch (Portable CPU),NO
+399,aten_any_dim_5,"<EdgeOpOverload: aten.any.dim>: schema = aten::any.dim(Tensor self, int dim, bool keepdim=False) -> Tensor",ExecuTorch (Portable CPU),NO
+400,aten_logical_not_default_11,<EdgeOpOverload: aten.logical_not.default>: schema = aten::logical_not(Tensor self) -> Tensor,ExecuTorch (Portable CPU),NO
+401,aten_full_like_default_5,"<EdgeOpOverload: aten.full_like.default>: schema = aten::full_like(Tensor self, Scalar fill_value, *, ScalarType? dtype=None, Layout? layout=None, Device? device=None, bool? pin_memory=None, MemoryFormat? memory_format=None) -> Tensor",ExecuTorch (Portable CPU),NO
+402,aten_where_self_5,"<EdgeOpOverload: aten.where.self>: schema = aten::where.self(Tensor condition, Tensor self, Tensor other) -> Tensor",ExecuTorch (Portable CPU),NO
+403,aten_expand_copy_default_23,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",ExecuTorch (Portable CPU),NO
+404,aten_view_copy_default_118,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+405,aten_expand_copy_default_24,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",ExecuTorch (Portable CPU),NO
+406,aten_view_copy_default_119,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+407,aten_bmm_default_11,"<EdgeOpOverload: aten.bmm.default>: schema = aten::bmm(Tensor self, Tensor mat2) -> Tensor",XNNPACK (Accelerator),YES
+408,aten_view_copy_default_120,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+409,aten_permute_copy_default_78,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+410,dim_order_ops__clone_dim_order_default_27,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+411,aten_permute_copy_default_79,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+412,aten_permute_copy_default_80,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+413,aten_view_copy_default_121,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+414,aten_permute_copy_default_81,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+415,aten_addmm_default_21,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",ExecuTorch (Portable CPU),NO
+416,aten_view_copy_default_122,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+417,aten_permute_copy_default_82,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+418,dim_order_ops__clone_dim_order_default_28,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+419,aten_add_tensor_11,"<EdgeOpOverload: aten.add.Tensor>: schema = aten::add.Tensor(Tensor self, Tensor other, *, Scalar alpha=1) -> Tensor",XNNPACK (Accelerator),YES
+420,aten_native_layer_norm_default_11,"<EdgeOpOverload: aten.native_layer_norm.default>: schema = aten::native_layer_norm(Tensor input, SymInt[] normalized_shape, Tensor? weight, Tensor? bias, float eps) -> (Tensor, Tensor, Tensor)",ExecuTorch (Portable CPU),NO
+421,getitem_11,<built-in function getitem>,ExecuTorch (Portable CPU),NO
+422,aten_view_copy_default_123,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+423,aten_permute_copy_default_83,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+424,aten_addmm_default_22,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",ExecuTorch (Portable CPU),NO
+425,aten_view_copy_default_124,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+426,aten_gelu_default_5,"<EdgeOpOverload: aten.gelu.default>: schema = aten::gelu(Tensor self, *, str approximate=""none"") -> Tensor",XNNPACK (Accelerator),YES
+427,dim_order_ops__clone_dim_order_default_29,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+428,aten_view_copy_default_125,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+429,aten_permute_copy_default_84,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+430,aten_addmm_default_23,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",ExecuTorch (Portable CPU),NO
+431,aten_view_copy_default_126,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+432,dim_order_ops__clone_dim_order_default_30,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+433,aten_add_tensor_12,"<EdgeOpOverload: aten.add.Tensor>: schema = aten::add.Tensor(Tensor self, Tensor other, *, Scalar alpha=1) -> Tensor",XNNPACK (Accelerator),YES
+434,aten_native_layer_norm_default_12,"<EdgeOpOverload: aten.native_layer_norm.default>: schema = aten::native_layer_norm(Tensor input, SymInt[] normalized_shape, Tensor? weight, Tensor? bias, float eps) -> (Tensor, Tensor, Tensor)",ExecuTorch (Portable CPU),NO
+435,getitem_12,<built-in function getitem>,ExecuTorch (Portable CPU),NO
+436,aten_permute_copy_default_85,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+437,aten_view_copy_default_127,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+438,aten_permute_copy_default_86,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+439,aten_addmm_default_24,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",ExecuTorch (Portable CPU),NO
+440,aten_view_copy_default_128,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+441,aten_view_copy_default_129,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+442,aten_unsqueeze_copy_default_6,"<EdgeOpOverload: aten.unsqueeze_copy.default>: schema = aten::unsqueeze_copy(Tensor self, int dim) -> Tensor",ExecuTorch (Portable CPU),NO
+443,aten_permute_copy_default_87,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+444,aten_squeeze_copy_dims_6,"<EdgeOpOverload: aten.squeeze_copy.dims>: schema = aten::squeeze_copy.dims(Tensor self, int[] dim) -> Tensor",ExecuTorch (Portable CPU),NO
+445,dim_order_ops__clone_dim_order_default_31,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+446,aten_select_copy_int_18,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",ExecuTorch (Portable CPU),NO
+447,aten_select_copy_int_19,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",ExecuTorch (Portable CPU),NO
+448,aten_select_copy_int_20,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",ExecuTorch (Portable CPU),NO
+449,aten_view_copy_default_130,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+450,aten_permute_copy_default_88,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+451,aten_view_copy_default_131,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+452,aten_permute_copy_default_89,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+453,aten_view_copy_default_132,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+454,aten_permute_copy_default_90,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+455,aten_view_copy_default_133,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+456,aten_view_copy_default_134,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+457,aten_view_copy_default_135,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+458,aten_mul_scalar_12,"<EdgeOpOverload: aten.mul.Scalar>: schema = aten::mul.Scalar(Tensor self, Scalar other) -> Tensor",ExecuTorch (Portable CPU),NO
+459,aten_permute_copy_default_91,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+460,aten_mul_scalar_13,"<EdgeOpOverload: aten.mul.Scalar>: schema = aten::mul.Scalar(Tensor self, Scalar other) -> Tensor",ExecuTorch (Portable CPU),NO
+461,aten_expand_copy_default_25,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",ExecuTorch (Portable CPU),NO
+462,aten_view_copy_default_136,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+463,aten_expand_copy_default_26,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",ExecuTorch (Portable CPU),NO
+464,aten_view_copy_default_137,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+465,aten_bmm_default_12,"<EdgeOpOverload: aten.bmm.default>: schema = aten::bmm(Tensor self, Tensor mat2) -> Tensor",XNNPACK (Accelerator),YES
+466,aten_view_copy_default_138,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+467,aten__softmax_default_6,"<EdgeOpOverload: aten._softmax.default>: schema = aten::_softmax(Tensor self, int dim, bool half_to_float) -> Tensor",XNNPACK (Accelerator),YES
+468,aten_eq_scalar_6,"<EdgeOpOverload: aten.eq.Scalar>: schema = aten::eq.Scalar(Tensor self, Scalar other) -> Tensor",ExecuTorch (Portable CPU),NO
+469,aten_logical_not_default_12,<EdgeOpOverload: aten.logical_not.default>: schema = aten::logical_not(Tensor self) -> Tensor,ExecuTorch (Portable CPU),NO
+470,aten_any_dim_6,"<EdgeOpOverload: aten.any.dim>: schema = aten::any.dim(Tensor self, int dim, bool keepdim=False) -> Tensor",ExecuTorch (Portable CPU),NO
+471,aten_logical_not_default_13,<EdgeOpOverload: aten.logical_not.default>: schema = aten::logical_not(Tensor self) -> Tensor,ExecuTorch (Portable CPU),NO
+472,aten_full_like_default_6,"<EdgeOpOverload: aten.full_like.default>: schema = aten::full_like(Tensor self, Scalar fill_value, *, ScalarType? dtype=None, Layout? layout=None, Device? device=None, bool? pin_memory=None, MemoryFormat? memory_format=None) -> Tensor",ExecuTorch (Portable CPU),NO
+473,aten_where_self_6,"<EdgeOpOverload: aten.where.self>: schema = aten::where.self(Tensor condition, Tensor self, Tensor other) -> Tensor",ExecuTorch (Portable CPU),NO
+474,aten_expand_copy_default_27,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",ExecuTorch (Portable CPU),NO
+475,aten_view_copy_default_139,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+476,aten_expand_copy_default_28,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",ExecuTorch (Portable CPU),NO
+477,aten_view_copy_default_140,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+478,aten_bmm_default_13,"<EdgeOpOverload: aten.bmm.default>: schema = aten::bmm(Tensor self, Tensor mat2) -> Tensor",XNNPACK (Accelerator),YES
+479,aten_view_copy_default_141,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+480,aten_permute_copy_default_92,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+481,dim_order_ops__clone_dim_order_default_32,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+482,aten_permute_copy_default_93,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+483,aten_permute_copy_default_94,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+484,aten_view_copy_default_142,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+485,aten_permute_copy_default_95,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+486,aten_addmm_default_25,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",ExecuTorch (Portable CPU),NO
+487,aten_view_copy_default_143,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+488,aten_permute_copy_default_96,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+489,dim_order_ops__clone_dim_order_default_33,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+490,aten_add_tensor_13,"<EdgeOpOverload: aten.add.Tensor>: schema = aten::add.Tensor(Tensor self, Tensor other, *, Scalar alpha=1) -> Tensor",XNNPACK (Accelerator),YES
+491,aten_native_layer_norm_default_13,"<EdgeOpOverload: aten.native_layer_norm.default>: schema = aten::native_layer_norm(Tensor input, SymInt[] normalized_shape, Tensor? weight, Tensor? bias, float eps) -> (Tensor, Tensor, Tensor)",ExecuTorch (Portable CPU),NO
+492,getitem_13,<built-in function getitem>,ExecuTorch (Portable CPU),NO
+493,aten_view_copy_default_144,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+494,aten_permute_copy_default_97,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+495,aten_addmm_default_26,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",ExecuTorch (Portable CPU),NO
+496,aten_view_copy_default_145,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+497,aten_gelu_default_6,"<EdgeOpOverload: aten.gelu.default>: schema = aten::gelu(Tensor self, *, str approximate=""none"") -> Tensor",XNNPACK (Accelerator),YES
+498,dim_order_ops__clone_dim_order_default_34,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+499,aten_view_copy_default_146,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+500,aten_permute_copy_default_98,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+501,aten_addmm_default_27,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",ExecuTorch (Portable CPU),NO
+502,aten_view_copy_default_147,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+503,dim_order_ops__clone_dim_order_default_35,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+504,aten_add_tensor_14,"<EdgeOpOverload: aten.add.Tensor>: schema = aten::add.Tensor(Tensor self, Tensor other, *, Scalar alpha=1) -> Tensor",XNNPACK (Accelerator),YES
+505,aten_native_layer_norm_default_14,"<EdgeOpOverload: aten.native_layer_norm.default>: schema = aten::native_layer_norm(Tensor input, SymInt[] normalized_shape, Tensor? weight, Tensor? bias, float eps) -> (Tensor, Tensor, Tensor)",ExecuTorch (Portable CPU),NO
+506,getitem_14,<built-in function getitem>,ExecuTorch (Portable CPU),NO
+507,aten_permute_copy_default_99,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+508,aten_view_copy_default_148,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+509,aten_permute_copy_default_100,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+510,aten_addmm_default_28,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",ExecuTorch (Portable CPU),NO
+511,aten_view_copy_default_149,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+512,aten_view_copy_default_150,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+513,aten_unsqueeze_copy_default_7,"<EdgeOpOverload: aten.unsqueeze_copy.default>: schema = aten::unsqueeze_copy(Tensor self, int dim) -> Tensor",ExecuTorch (Portable CPU),NO
+514,aten_permute_copy_default_101,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+515,aten_squeeze_copy_dims_7,"<EdgeOpOverload: aten.squeeze_copy.dims>: schema = aten::squeeze_copy.dims(Tensor self, int[] dim) -> Tensor",ExecuTorch (Portable CPU),NO
+516,dim_order_ops__clone_dim_order_default_36,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+517,aten_select_copy_int_21,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",ExecuTorch (Portable CPU),NO
+518,aten_select_copy_int_22,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",ExecuTorch (Portable CPU),NO
+519,aten_select_copy_int_23,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",ExecuTorch (Portable CPU),NO
+520,aten_view_copy_default_151,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+521,aten_permute_copy_default_102,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+522,aten_view_copy_default_152,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+523,aten_permute_copy_default_103,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+524,aten_view_copy_default_153,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+525,aten_permute_copy_default_104,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+526,aten_view_copy_default_154,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+527,aten_view_copy_default_155,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+528,aten_view_copy_default_156,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+529,aten_mul_scalar_14,"<EdgeOpOverload: aten.mul.Scalar>: schema = aten::mul.Scalar(Tensor self, Scalar other) -> Tensor",ExecuTorch (Portable CPU),NO
+530,aten_permute_copy_default_105,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+531,aten_mul_scalar_15,"<EdgeOpOverload: aten.mul.Scalar>: schema = aten::mul.Scalar(Tensor self, Scalar other) -> Tensor",ExecuTorch (Portable CPU),NO
+532,aten_expand_copy_default_29,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",ExecuTorch (Portable CPU),NO
+533,aten_view_copy_default_157,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+534,aten_expand_copy_default_30,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",ExecuTorch (Portable CPU),NO
+535,aten_view_copy_default_158,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+536,aten_bmm_default_14,"<EdgeOpOverload: aten.bmm.default>: schema = aten::bmm(Tensor self, Tensor mat2) -> Tensor",XNNPACK (Accelerator),YES
+537,aten_view_copy_default_159,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+538,aten__softmax_default_7,"<EdgeOpOverload: aten._softmax.default>: schema = aten::_softmax(Tensor self, int dim, bool half_to_float) -> Tensor",XNNPACK (Accelerator),YES
+539,aten_eq_scalar_7,"<EdgeOpOverload: aten.eq.Scalar>: schema = aten::eq.Scalar(Tensor self, Scalar other) -> Tensor",ExecuTorch (Portable CPU),NO
+540,aten_logical_not_default_14,<EdgeOpOverload: aten.logical_not.default>: schema = aten::logical_not(Tensor self) -> Tensor,ExecuTorch (Portable CPU),NO
+541,aten_any_dim_7,"<EdgeOpOverload: aten.any.dim>: schema = aten::any.dim(Tensor self, int dim, bool keepdim=False) -> Tensor",ExecuTorch (Portable CPU),NO
+542,aten_logical_not_default_15,<EdgeOpOverload: aten.logical_not.default>: schema = aten::logical_not(Tensor self) -> Tensor,ExecuTorch (Portable CPU),NO
+543,aten_full_like_default_7,"<EdgeOpOverload: aten.full_like.default>: schema = aten::full_like(Tensor self, Scalar fill_value, *, ScalarType? dtype=None, Layout? layout=None, Device? device=None, bool? pin_memory=None, MemoryFormat? memory_format=None) -> Tensor",ExecuTorch (Portable CPU),NO
+544,aten_where_self_7,"<EdgeOpOverload: aten.where.self>: schema = aten::where.self(Tensor condition, Tensor self, Tensor other) -> Tensor",ExecuTorch (Portable CPU),NO
+545,aten_expand_copy_default_31,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",ExecuTorch (Portable CPU),NO
+546,aten_view_copy_default_160,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+547,aten_expand_copy_default_32,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",ExecuTorch (Portable CPU),NO
+548,aten_view_copy_default_161,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+549,aten_bmm_default_15,"<EdgeOpOverload: aten.bmm.default>: schema = aten::bmm(Tensor self, Tensor mat2) -> Tensor",XNNPACK (Accelerator),YES
+550,aten_view_copy_default_162,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+551,aten_permute_copy_default_106,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+552,dim_order_ops__clone_dim_order_default_37,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+553,aten_permute_copy_default_107,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+554,aten_permute_copy_default_108,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+555,aten_view_copy_default_163,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+556,aten_permute_copy_default_109,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+557,aten_addmm_default_29,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",ExecuTorch (Portable CPU),NO
+558,aten_view_copy_default_164,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+559,aten_permute_copy_default_110,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+560,dim_order_ops__clone_dim_order_default_38,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+561,aten_add_tensor_15,"<EdgeOpOverload: aten.add.Tensor>: schema = aten::add.Tensor(Tensor self, Tensor other, *, Scalar alpha=1) -> Tensor",XNNPACK (Accelerator),YES
+562,aten_native_layer_norm_default_15,"<EdgeOpOverload: aten.native_layer_norm.default>: schema = aten::native_layer_norm(Tensor input, SymInt[] normalized_shape, Tensor? weight, Tensor? bias, float eps) -> (Tensor, Tensor, Tensor)",ExecuTorch (Portable CPU),NO
+563,getitem_15,<built-in function getitem>,ExecuTorch (Portable CPU),NO
+564,aten_view_copy_default_165,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+565,aten_permute_copy_default_111,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+566,aten_addmm_default_30,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",ExecuTorch (Portable CPU),NO
+567,aten_view_copy_default_166,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+568,aten_gelu_default_7,"<EdgeOpOverload: aten.gelu.default>: schema = aten::gelu(Tensor self, *, str approximate=""none"") -> Tensor",XNNPACK (Accelerator),YES
+569,dim_order_ops__clone_dim_order_default_39,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+570,aten_view_copy_default_167,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+571,aten_permute_copy_default_112,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+572,aten_addmm_default_31,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",ExecuTorch (Portable CPU),NO
+573,aten_view_copy_default_168,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+574,dim_order_ops__clone_dim_order_default_40,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+575,aten_add_tensor_16,"<EdgeOpOverload: aten.add.Tensor>: schema = aten::add.Tensor(Tensor self, Tensor other, *, Scalar alpha=1) -> Tensor",XNNPACK (Accelerator),YES
+576,aten_native_layer_norm_default_16,"<EdgeOpOverload: aten.native_layer_norm.default>: schema = aten::native_layer_norm(Tensor input, SymInt[] normalized_shape, Tensor? weight, Tensor? bias, float eps) -> (Tensor, Tensor, Tensor)",ExecuTorch (Portable CPU),NO
+577,getitem_16,<built-in function getitem>,ExecuTorch (Portable CPU),NO
+578,aten_permute_copy_default_113,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+579,aten_view_copy_default_169,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+580,aten_permute_copy_default_114,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+581,aten_addmm_default_32,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",ExecuTorch (Portable CPU),NO
+582,aten_view_copy_default_170,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+583,aten_view_copy_default_171,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+584,aten_unsqueeze_copy_default_8,"<EdgeOpOverload: aten.unsqueeze_copy.default>: schema = aten::unsqueeze_copy(Tensor self, int dim) -> Tensor",ExecuTorch (Portable CPU),NO
+585,aten_permute_copy_default_115,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+586,aten_squeeze_copy_dims_8,"<EdgeOpOverload: aten.squeeze_copy.dims>: schema = aten::squeeze_copy.dims(Tensor self, int[] dim) -> Tensor",ExecuTorch (Portable CPU),NO
+587,dim_order_ops__clone_dim_order_default_41,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+588,aten_select_copy_int_24,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",ExecuTorch (Portable CPU),NO
+589,aten_select_copy_int_25,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",ExecuTorch (Portable CPU),NO
+590,aten_select_copy_int_26,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",ExecuTorch (Portable CPU),NO
+591,aten_view_copy_default_172,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+592,aten_permute_copy_default_116,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+593,aten_view_copy_default_173,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+594,aten_permute_copy_default_117,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+595,aten_view_copy_default_174,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+596,aten_permute_copy_default_118,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+597,aten_view_copy_default_175,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+598,aten_view_copy_default_176,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+599,aten_view_copy_default_177,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+600,aten_mul_scalar_16,"<EdgeOpOverload: aten.mul.Scalar>: schema = aten::mul.Scalar(Tensor self, Scalar other) -> Tensor",ExecuTorch (Portable CPU),NO
+601,aten_permute_copy_default_119,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+602,aten_mul_scalar_17,"<EdgeOpOverload: aten.mul.Scalar>: schema = aten::mul.Scalar(Tensor self, Scalar other) -> Tensor",ExecuTorch (Portable CPU),NO
+603,aten_expand_copy_default_33,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",ExecuTorch (Portable CPU),NO
+604,aten_view_copy_default_178,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+605,aten_expand_copy_default_34,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",ExecuTorch (Portable CPU),NO
+606,aten_view_copy_default_179,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+607,aten_bmm_default_16,"<EdgeOpOverload: aten.bmm.default>: schema = aten::bmm(Tensor self, Tensor mat2) -> Tensor",XNNPACK (Accelerator),YES
+608,aten_view_copy_default_180,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+609,aten__softmax_default_8,"<EdgeOpOverload: aten._softmax.default>: schema = aten::_softmax(Tensor self, int dim, bool half_to_float) -> Tensor",XNNPACK (Accelerator),YES
+610,aten_eq_scalar_8,"<EdgeOpOverload: aten.eq.Scalar>: schema = aten::eq.Scalar(Tensor self, Scalar other) -> Tensor",ExecuTorch (Portable CPU),NO
+611,aten_logical_not_default_16,<EdgeOpOverload: aten.logical_not.default>: schema = aten::logical_not(Tensor self) -> Tensor,ExecuTorch (Portable CPU),NO
+612,aten_any_dim_8,"<EdgeOpOverload: aten.any.dim>: schema = aten::any.dim(Tensor self, int dim, bool keepdim=False) -> Tensor",ExecuTorch (Portable CPU),NO
+613,aten_logical_not_default_17,<EdgeOpOverload: aten.logical_not.default>: schema = aten::logical_not(Tensor self) -> Tensor,ExecuTorch (Portable CPU),NO
+614,aten_full_like_default_8,"<EdgeOpOverload: aten.full_like.default>: schema = aten::full_like(Tensor self, Scalar fill_value, *, ScalarType? dtype=None, Layout? layout=None, Device? device=None, bool? pin_memory=None, MemoryFormat? memory_format=None) -> Tensor",ExecuTorch (Portable CPU),NO
+615,aten_where_self_8,"<EdgeOpOverload: aten.where.self>: schema = aten::where.self(Tensor condition, Tensor self, Tensor other) -> Tensor",ExecuTorch (Portable CPU),NO
+616,aten_expand_copy_default_35,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",ExecuTorch (Portable CPU),NO
+617,aten_view_copy_default_181,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+618,aten_expand_copy_default_36,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",ExecuTorch (Portable CPU),NO
+619,aten_view_copy_default_182,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+620,aten_bmm_default_17,"<EdgeOpOverload: aten.bmm.default>: schema = aten::bmm(Tensor self, Tensor mat2) -> Tensor",XNNPACK (Accelerator),YES
+621,aten_view_copy_default_183,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+622,aten_permute_copy_default_120,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+623,dim_order_ops__clone_dim_order_default_42,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+624,aten_permute_copy_default_121,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+625,aten_permute_copy_default_122,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+626,aten_view_copy_default_184,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+627,aten_permute_copy_default_123,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+628,aten_addmm_default_33,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",ExecuTorch (Portable CPU),NO
+629,aten_view_copy_default_185,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+630,aten_permute_copy_default_124,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+631,dim_order_ops__clone_dim_order_default_43,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+632,aten_add_tensor_17,"<EdgeOpOverload: aten.add.Tensor>: schema = aten::add.Tensor(Tensor self, Tensor other, *, Scalar alpha=1) -> Tensor",XNNPACK (Accelerator),YES
+633,aten_native_layer_norm_default_17,"<EdgeOpOverload: aten.native_layer_norm.default>: schema = aten::native_layer_norm(Tensor input, SymInt[] normalized_shape, Tensor? weight, Tensor? bias, float eps) -> (Tensor, Tensor, Tensor)",ExecuTorch (Portable CPU),NO
+634,getitem_17,<built-in function getitem>,ExecuTorch (Portable CPU),NO
+635,aten_view_copy_default_186,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+636,aten_permute_copy_default_125,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+637,aten_addmm_default_34,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",ExecuTorch (Portable CPU),NO
+638,aten_view_copy_default_187,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+639,aten_gelu_default_8,"<EdgeOpOverload: aten.gelu.default>: schema = aten::gelu(Tensor self, *, str approximate=""none"") -> Tensor",XNNPACK (Accelerator),YES
+640,dim_order_ops__clone_dim_order_default_44,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+641,aten_view_copy_default_188,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+642,aten_permute_copy_default_126,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+643,aten_addmm_default_35,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",ExecuTorch (Portable CPU),NO
+644,aten_view_copy_default_189,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+645,dim_order_ops__clone_dim_order_default_45,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+646,aten_add_tensor_18,"<EdgeOpOverload: aten.add.Tensor>: schema = aten::add.Tensor(Tensor self, Tensor other, *, Scalar alpha=1) -> Tensor",XNNPACK (Accelerator),YES
+647,aten_native_layer_norm_default_18,"<EdgeOpOverload: aten.native_layer_norm.default>: schema = aten::native_layer_norm(Tensor input, SymInt[] normalized_shape, Tensor? weight, Tensor? bias, float eps) -> (Tensor, Tensor, Tensor)",ExecuTorch (Portable CPU),NO
+648,getitem_18,<built-in function getitem>,ExecuTorch (Portable CPU),NO
+649,aten_permute_copy_default_127,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+650,aten_view_copy_default_190,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+651,aten_permute_copy_default_128,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+652,aten_addmm_default_36,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",ExecuTorch (Portable CPU),NO
+653,aten_view_copy_default_191,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+654,aten_view_copy_default_192,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+655,aten_unsqueeze_copy_default_9,"<EdgeOpOverload: aten.unsqueeze_copy.default>: schema = aten::unsqueeze_copy(Tensor self, int dim) -> Tensor",ExecuTorch (Portable CPU),NO
+656,aten_permute_copy_default_129,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+657,aten_squeeze_copy_dims_9,"<EdgeOpOverload: aten.squeeze_copy.dims>: schema = aten::squeeze_copy.dims(Tensor self, int[] dim) -> Tensor",ExecuTorch (Portable CPU),NO
+658,dim_order_ops__clone_dim_order_default_46,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+659,aten_select_copy_int_27,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",ExecuTorch (Portable CPU),NO
+660,aten_select_copy_int_28,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",ExecuTorch (Portable CPU),NO
+661,aten_select_copy_int_29,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",ExecuTorch (Portable CPU),NO
+662,aten_view_copy_default_193,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+663,aten_permute_copy_default_130,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+664,aten_view_copy_default_194,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+665,aten_permute_copy_default_131,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+666,aten_view_copy_default_195,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+667,aten_permute_copy_default_132,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+668,aten_view_copy_default_196,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+669,aten_view_copy_default_197,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+670,aten_view_copy_default_198,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+671,aten_mul_scalar_18,"<EdgeOpOverload: aten.mul.Scalar>: schema = aten::mul.Scalar(Tensor self, Scalar other) -> Tensor",ExecuTorch (Portable CPU),NO
+672,aten_permute_copy_default_133,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+673,aten_mul_scalar_19,"<EdgeOpOverload: aten.mul.Scalar>: schema = aten::mul.Scalar(Tensor self, Scalar other) -> Tensor",ExecuTorch (Portable CPU),NO
+674,aten_expand_copy_default_37,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",ExecuTorch (Portable CPU),NO
+675,aten_view_copy_default_199,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+676,aten_expand_copy_default_38,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",ExecuTorch (Portable CPU),NO
+677,aten_view_copy_default_200,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+678,aten_bmm_default_18,"<EdgeOpOverload: aten.bmm.default>: schema = aten::bmm(Tensor self, Tensor mat2) -> Tensor",XNNPACK (Accelerator),YES
+679,aten_view_copy_default_201,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+680,aten__softmax_default_9,"<EdgeOpOverload: aten._softmax.default>: schema = aten::_softmax(Tensor self, int dim, bool half_to_float) -> Tensor",XNNPACK (Accelerator),YES
+681,aten_eq_scalar_9,"<EdgeOpOverload: aten.eq.Scalar>: schema = aten::eq.Scalar(Tensor self, Scalar other) -> Tensor",ExecuTorch (Portable CPU),NO
+682,aten_logical_not_default_18,<EdgeOpOverload: aten.logical_not.default>: schema = aten::logical_not(Tensor self) -> Tensor,ExecuTorch (Portable CPU),NO
+683,aten_any_dim_9,"<EdgeOpOverload: aten.any.dim>: schema = aten::any.dim(Tensor self, int dim, bool keepdim=False) -> Tensor",ExecuTorch (Portable CPU),NO
+684,aten_logical_not_default_19,<EdgeOpOverload: aten.logical_not.default>: schema = aten::logical_not(Tensor self) -> Tensor,ExecuTorch (Portable CPU),NO
+685,aten_full_like_default_9,"<EdgeOpOverload: aten.full_like.default>: schema = aten::full_like(Tensor self, Scalar fill_value, *, ScalarType? dtype=None, Layout? layout=None, Device? device=None, bool? pin_memory=None, MemoryFormat? memory_format=None) -> Tensor",ExecuTorch (Portable CPU),NO
+686,aten_where_self_9,"<EdgeOpOverload: aten.where.self>: schema = aten::where.self(Tensor condition, Tensor self, Tensor other) -> Tensor",ExecuTorch (Portable CPU),NO
+687,aten_expand_copy_default_39,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",ExecuTorch (Portable CPU),NO
+688,aten_view_copy_default_202,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+689,aten_expand_copy_default_40,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",ExecuTorch (Portable CPU),NO
+690,aten_view_copy_default_203,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+691,aten_bmm_default_19,"<EdgeOpOverload: aten.bmm.default>: schema = aten::bmm(Tensor self, Tensor mat2) -> Tensor",XNNPACK (Accelerator),YES
+692,aten_view_copy_default_204,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+693,aten_permute_copy_default_134,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+694,dim_order_ops__clone_dim_order_default_47,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+695,aten_permute_copy_default_135,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+696,aten_permute_copy_default_136,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+697,aten_view_copy_default_205,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+698,aten_permute_copy_default_137,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+699,aten_addmm_default_37,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",ExecuTorch (Portable CPU),NO
+700,aten_view_copy_default_206,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+701,aten_permute_copy_default_138,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+702,dim_order_ops__clone_dim_order_default_48,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+703,aten_add_tensor_19,"<EdgeOpOverload: aten.add.Tensor>: schema = aten::add.Tensor(Tensor self, Tensor other, *, Scalar alpha=1) -> Tensor",XNNPACK (Accelerator),YES
+704,aten_native_layer_norm_default_19,"<EdgeOpOverload: aten.native_layer_norm.default>: schema = aten::native_layer_norm(Tensor input, SymInt[] normalized_shape, Tensor? weight, Tensor? bias, float eps) -> (Tensor, Tensor, Tensor)",ExecuTorch (Portable CPU),NO
+705,getitem_19,<built-in function getitem>,ExecuTorch (Portable CPU),NO
+706,aten_view_copy_default_207,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+707,aten_permute_copy_default_139,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+708,aten_addmm_default_38,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",ExecuTorch (Portable CPU),NO
+709,aten_view_copy_default_208,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+710,aten_gelu_default_9,"<EdgeOpOverload: aten.gelu.default>: schema = aten::gelu(Tensor self, *, str approximate=""none"") -> Tensor",XNNPACK (Accelerator),YES
+711,dim_order_ops__clone_dim_order_default_49,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+712,aten_view_copy_default_209,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+713,aten_permute_copy_default_140,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+714,aten_addmm_default_39,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",ExecuTorch (Portable CPU),NO
+715,aten_view_copy_default_210,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+716,dim_order_ops__clone_dim_order_default_50,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+717,aten_add_tensor_20,"<EdgeOpOverload: aten.add.Tensor>: schema = aten::add.Tensor(Tensor self, Tensor other, *, Scalar alpha=1) -> Tensor",XNNPACK (Accelerator),YES
+718,aten_native_layer_norm_default_20,"<EdgeOpOverload: aten.native_layer_norm.default>: schema = aten::native_layer_norm(Tensor input, SymInt[] normalized_shape, Tensor? weight, Tensor? bias, float eps) -> (Tensor, Tensor, Tensor)",ExecuTorch (Portable CPU),NO
+719,getitem_20,<built-in function getitem>,ExecuTorch (Portable CPU),NO
+720,aten_permute_copy_default_141,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+721,aten_view_copy_default_211,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+722,aten_permute_copy_default_142,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+723,aten_addmm_default_40,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",ExecuTorch (Portable CPU),NO
+724,aten_view_copy_default_212,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+725,aten_view_copy_default_213,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+726,aten_unsqueeze_copy_default_10,"<EdgeOpOverload: aten.unsqueeze_copy.default>: schema = aten::unsqueeze_copy(Tensor self, int dim) -> Tensor",ExecuTorch (Portable CPU),NO
+727,aten_permute_copy_default_143,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+728,aten_squeeze_copy_dims_10,"<EdgeOpOverload: aten.squeeze_copy.dims>: schema = aten::squeeze_copy.dims(Tensor self, int[] dim) -> Tensor",ExecuTorch (Portable CPU),NO
+729,dim_order_ops__clone_dim_order_default_51,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+730,aten_select_copy_int_30,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",ExecuTorch (Portable CPU),NO
+731,aten_select_copy_int_31,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",ExecuTorch (Portable CPU),NO
+732,aten_select_copy_int_32,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",ExecuTorch (Portable CPU),NO
+733,aten_view_copy_default_214,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+734,aten_permute_copy_default_144,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+735,aten_view_copy_default_215,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+736,aten_permute_copy_default_145,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+737,aten_view_copy_default_216,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+738,aten_permute_copy_default_146,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+739,aten_view_copy_default_217,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+740,aten_view_copy_default_218,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+741,aten_view_copy_default_219,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+742,aten_mul_scalar_20,"<EdgeOpOverload: aten.mul.Scalar>: schema = aten::mul.Scalar(Tensor self, Scalar other) -> Tensor",ExecuTorch (Portable CPU),NO
+743,aten_permute_copy_default_147,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+744,aten_mul_scalar_21,"<EdgeOpOverload: aten.mul.Scalar>: schema = aten::mul.Scalar(Tensor self, Scalar other) -> Tensor",ExecuTorch (Portable CPU),NO
+745,aten_expand_copy_default_41,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",ExecuTorch (Portable CPU),NO
+746,aten_view_copy_default_220,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+747,aten_expand_copy_default_42,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",ExecuTorch (Portable CPU),NO
+748,aten_view_copy_default_221,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+749,aten_bmm_default_20,"<EdgeOpOverload: aten.bmm.default>: schema = aten::bmm(Tensor self, Tensor mat2) -> Tensor",XNNPACK (Accelerator),YES
+750,aten_view_copy_default_222,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+751,aten__softmax_default_10,"<EdgeOpOverload: aten._softmax.default>: schema = aten::_softmax(Tensor self, int dim, bool half_to_float) -> Tensor",XNNPACK (Accelerator),YES
+752,aten_eq_scalar_10,"<EdgeOpOverload: aten.eq.Scalar>: schema = aten::eq.Scalar(Tensor self, Scalar other) -> Tensor",ExecuTorch (Portable CPU),NO
+753,aten_logical_not_default_20,<EdgeOpOverload: aten.logical_not.default>: schema = aten::logical_not(Tensor self) -> Tensor,ExecuTorch (Portable CPU),NO
+754,aten_any_dim_10,"<EdgeOpOverload: aten.any.dim>: schema = aten::any.dim(Tensor self, int dim, bool keepdim=False) -> Tensor",ExecuTorch (Portable CPU),NO
+755,aten_logical_not_default_21,<EdgeOpOverload: aten.logical_not.default>: schema = aten::logical_not(Tensor self) -> Tensor,ExecuTorch (Portable CPU),NO
+756,aten_full_like_default_10,"<EdgeOpOverload: aten.full_like.default>: schema = aten::full_like(Tensor self, Scalar fill_value, *, ScalarType? dtype=None, Layout? layout=None, Device? device=None, bool? pin_memory=None, MemoryFormat? memory_format=None) -> Tensor",ExecuTorch (Portable CPU),NO
+757,aten_where_self_10,"<EdgeOpOverload: aten.where.self>: schema = aten::where.self(Tensor condition, Tensor self, Tensor other) -> Tensor",ExecuTorch (Portable CPU),NO
+758,aten_expand_copy_default_43,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",ExecuTorch (Portable CPU),NO
+759,aten_view_copy_default_223,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+760,aten_expand_copy_default_44,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",ExecuTorch (Portable CPU),NO
+761,aten_view_copy_default_224,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+762,aten_bmm_default_21,"<EdgeOpOverload: aten.bmm.default>: schema = aten::bmm(Tensor self, Tensor mat2) -> Tensor",XNNPACK (Accelerator),YES
+763,aten_view_copy_default_225,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+764,aten_permute_copy_default_148,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+765,dim_order_ops__clone_dim_order_default_52,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+766,aten_permute_copy_default_149,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+767,aten_permute_copy_default_150,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+768,aten_view_copy_default_226,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+769,aten_permute_copy_default_151,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+770,aten_addmm_default_41,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",ExecuTorch (Portable CPU),NO
+771,aten_view_copy_default_227,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+772,aten_permute_copy_default_152,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+773,dim_order_ops__clone_dim_order_default_53,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+774,aten_add_tensor_21,"<EdgeOpOverload: aten.add.Tensor>: schema = aten::add.Tensor(Tensor self, Tensor other, *, Scalar alpha=1) -> Tensor",XNNPACK (Accelerator),YES
+775,aten_native_layer_norm_default_21,"<EdgeOpOverload: aten.native_layer_norm.default>: schema = aten::native_layer_norm(Tensor input, SymInt[] normalized_shape, Tensor? weight, Tensor? bias, float eps) -> (Tensor, Tensor, Tensor)",ExecuTorch (Portable CPU),NO
+776,getitem_21,<built-in function getitem>,ExecuTorch (Portable CPU),NO
+777,aten_view_copy_default_228,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+778,aten_permute_copy_default_153,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+779,aten_addmm_default_42,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",ExecuTorch (Portable CPU),NO
+780,aten_view_copy_default_229,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+781,aten_gelu_default_10,"<EdgeOpOverload: aten.gelu.default>: schema = aten::gelu(Tensor self, *, str approximate=""none"") -> Tensor",XNNPACK (Accelerator),YES
+782,dim_order_ops__clone_dim_order_default_54,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+783,aten_view_copy_default_230,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+784,aten_permute_copy_default_154,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+785,aten_addmm_default_43,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",ExecuTorch (Portable CPU),NO
+786,aten_view_copy_default_231,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+787,dim_order_ops__clone_dim_order_default_55,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+788,aten_add_tensor_22,"<EdgeOpOverload: aten.add.Tensor>: schema = aten::add.Tensor(Tensor self, Tensor other, *, Scalar alpha=1) -> Tensor",XNNPACK (Accelerator),YES
+789,aten_native_layer_norm_default_22,"<EdgeOpOverload: aten.native_layer_norm.default>: schema = aten::native_layer_norm(Tensor input, SymInt[] normalized_shape, Tensor? weight, Tensor? bias, float eps) -> (Tensor, Tensor, Tensor)",ExecuTorch (Portable CPU),NO
+790,getitem_22,<built-in function getitem>,ExecuTorch (Portable CPU),NO
+791,aten_permute_copy_default_155,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+792,aten_view_copy_default_232,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+793,aten_permute_copy_default_156,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+794,aten_addmm_default_44,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",ExecuTorch (Portable CPU),NO
+795,aten_view_copy_default_233,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+796,aten_view_copy_default_234,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+797,aten_unsqueeze_copy_default_11,"<EdgeOpOverload: aten.unsqueeze_copy.default>: schema = aten::unsqueeze_copy(Tensor self, int dim) -> Tensor",ExecuTorch (Portable CPU),NO
+798,aten_permute_copy_default_157,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+799,aten_squeeze_copy_dims_11,"<EdgeOpOverload: aten.squeeze_copy.dims>: schema = aten::squeeze_copy.dims(Tensor self, int[] dim) -> Tensor",ExecuTorch (Portable CPU),NO
+800,dim_order_ops__clone_dim_order_default_56,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+801,aten_select_copy_int_33,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",ExecuTorch (Portable CPU),NO
+802,aten_select_copy_int_34,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",ExecuTorch (Portable CPU),NO
+803,aten_select_copy_int_35,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",ExecuTorch (Portable CPU),NO
+804,aten_view_copy_default_235,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+805,aten_permute_copy_default_158,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+806,aten_view_copy_default_236,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+807,aten_permute_copy_default_159,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+808,aten_view_copy_default_237,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+809,aten_permute_copy_default_160,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+810,aten_view_copy_default_238,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+811,aten_view_copy_default_239,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+812,aten_view_copy_default_240,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+813,aten_mul_scalar_22,"<EdgeOpOverload: aten.mul.Scalar>: schema = aten::mul.Scalar(Tensor self, Scalar other) -> Tensor",ExecuTorch (Portable CPU),NO
+814,aten_permute_copy_default_161,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+815,aten_mul_scalar_23,"<EdgeOpOverload: aten.mul.Scalar>: schema = aten::mul.Scalar(Tensor self, Scalar other) -> Tensor",ExecuTorch (Portable CPU),NO
+816,aten_expand_copy_default_45,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",ExecuTorch (Portable CPU),NO
+817,aten_view_copy_default_241,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+818,aten_expand_copy_default_46,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",ExecuTorch (Portable CPU),NO
+819,aten_view_copy_default_242,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+820,aten_bmm_default_22,"<EdgeOpOverload: aten.bmm.default>: schema = aten::bmm(Tensor self, Tensor mat2) -> Tensor",XNNPACK (Accelerator),YES
+821,aten_view_copy_default_243,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+822,aten__softmax_default_11,"<EdgeOpOverload: aten._softmax.default>: schema = aten::_softmax(Tensor self, int dim, bool half_to_float) -> Tensor",XNNPACK (Accelerator),YES
+823,aten_eq_scalar_11,"<EdgeOpOverload: aten.eq.Scalar>: schema = aten::eq.Scalar(Tensor self, Scalar other) -> Tensor",ExecuTorch (Portable CPU),NO
+824,aten_logical_not_default_22,<EdgeOpOverload: aten.logical_not.default>: schema = aten::logical_not(Tensor self) -> Tensor,ExecuTorch (Portable CPU),NO
+825,aten_any_dim_11,"<EdgeOpOverload: aten.any.dim>: schema = aten::any.dim(Tensor self, int dim, bool keepdim=False) -> Tensor",ExecuTorch (Portable CPU),NO
+826,aten_logical_not_default_23,<EdgeOpOverload: aten.logical_not.default>: schema = aten::logical_not(Tensor self) -> Tensor,ExecuTorch (Portable CPU),NO
+827,aten_full_like_default_11,"<EdgeOpOverload: aten.full_like.default>: schema = aten::full_like(Tensor self, Scalar fill_value, *, ScalarType? dtype=None, Layout? layout=None, Device? device=None, bool? pin_memory=None, MemoryFormat? memory_format=None) -> Tensor",ExecuTorch (Portable CPU),NO
+828,aten_where_self_11,"<EdgeOpOverload: aten.where.self>: schema = aten::where.self(Tensor condition, Tensor self, Tensor other) -> Tensor",ExecuTorch (Portable CPU),NO
+829,aten_expand_copy_default_47,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",ExecuTorch (Portable CPU),NO
+830,aten_view_copy_default_244,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+831,aten_expand_copy_default_48,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",ExecuTorch (Portable CPU),NO
+832,aten_view_copy_default_245,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+833,aten_bmm_default_23,"<EdgeOpOverload: aten.bmm.default>: schema = aten::bmm(Tensor self, Tensor mat2) -> Tensor",XNNPACK (Accelerator),YES
+834,aten_view_copy_default_246,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+835,aten_permute_copy_default_162,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+836,dim_order_ops__clone_dim_order_default_57,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+837,aten_permute_copy_default_163,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+838,aten_permute_copy_default_164,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+839,aten_view_copy_default_247,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+840,aten_permute_copy_default_165,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+841,aten_addmm_default_45,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",ExecuTorch (Portable CPU),NO
+842,aten_view_copy_default_248,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+843,aten_permute_copy_default_166,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+844,dim_order_ops__clone_dim_order_default_58,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+845,aten_add_tensor_23,"<EdgeOpOverload: aten.add.Tensor>: schema = aten::add.Tensor(Tensor self, Tensor other, *, Scalar alpha=1) -> Tensor",XNNPACK (Accelerator),YES
+846,aten_native_layer_norm_default_23,"<EdgeOpOverload: aten.native_layer_norm.default>: schema = aten::native_layer_norm(Tensor input, SymInt[] normalized_shape, Tensor? weight, Tensor? bias, float eps) -> (Tensor, Tensor, Tensor)",ExecuTorch (Portable CPU),NO
+847,getitem_23,<built-in function getitem>,ExecuTorch (Portable CPU),NO
+848,aten_view_copy_default_249,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+849,aten_permute_copy_default_167,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+850,aten_addmm_default_46,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",ExecuTorch (Portable CPU),NO
+851,aten_view_copy_default_250,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+852,aten_gelu_default_11,"<EdgeOpOverload: aten.gelu.default>: schema = aten::gelu(Tensor self, *, str approximate=""none"") -> Tensor",XNNPACK (Accelerator),YES
+853,dim_order_ops__clone_dim_order_default_59,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+854,aten_view_copy_default_251,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+855,aten_permute_copy_default_168,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+856,aten_addmm_default_47,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",ExecuTorch (Portable CPU),NO
+857,aten_view_copy_default_252,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",ExecuTorch (Portable CPU),NO
+858,dim_order_ops__clone_dim_order_default_60,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+859,aten_add_tensor_24,"<EdgeOpOverload: aten.add.Tensor>: schema = aten::add.Tensor(Tensor self, Tensor other, *, Scalar alpha=1) -> Tensor",XNNPACK (Accelerator),YES
+860,aten_native_layer_norm_default_24,"<EdgeOpOverload: aten.native_layer_norm.default>: schema = aten::native_layer_norm(Tensor input, SymInt[] normalized_shape, Tensor? weight, Tensor? bias, float eps) -> (Tensor, Tensor, Tensor)",ExecuTorch (Portable CPU),NO
+861,getitem_24,<built-in function getitem>,ExecuTorch (Portable CPU),NO
+862,aten_select_copy_int_36,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",ExecuTorch (Portable CPU),NO
+863,aten_permute_copy_default_169,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",XNNPACK (Accelerator),YES
+864,aten_addmm_default_48,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",ExecuTorch (Portable CPU),NO

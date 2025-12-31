@@ -1,0 +1,865 @@
+Order,Node Name,ATen Operator,Backend Assignment,Is Delegated?
+1,aten_convolution_default,"<EdgeOpOverload: aten.convolution.default>: schema = aten::convolution(Tensor input, Tensor weight, Tensor? bias, SymInt[] stride, SymInt[] padding, SymInt[] dilation, bool transposed, SymInt[] output_padding, SymInt groups) -> Tensor",Samsung ENN (NPU - E9955),YES
+2,aten_view_copy_default,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+3,aten_permute_copy_default,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+4,aten_expand_copy_default,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",Samsung ENN (NPU - E9955),YES
+5,aten_cat_default,"<EdgeOpOverload: aten.cat.default>: schema = aten::cat(Tensor[] tensors, int dim=0) -> Tensor",Samsung ENN (NPU - E9955),YES
+6,aten_add_tensor,"<EdgeOpOverload: aten.add.Tensor>: schema = aten::add.Tensor(Tensor self, Tensor other, *, Scalar alpha=1) -> Tensor",Samsung ENN (NPU - E9955),YES
+7,dim_order_ops__clone_dim_order_default,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+8,aten_native_layer_norm_default,"<EdgeOpOverload: aten.native_layer_norm.default>: schema = aten::native_layer_norm(Tensor input, SymInt[] normalized_shape, Tensor? weight, Tensor? bias, float eps) -> (Tensor, Tensor, Tensor)",ExecuTorch (Portable CPU),NO
+9,getitem,<built-in function getitem>,ExecuTorch (Portable CPU),NO
+10,aten_permute_copy_default_1,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+11,aten_view_copy_default_1,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+12,aten_permute_copy_default_2,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+13,aten_addmm_default,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",Samsung ENN (NPU - E9955),YES
+14,aten_view_copy_default_2,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+15,aten_view_copy_default_3,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+16,aten_unsqueeze_copy_default,"<EdgeOpOverload: aten.unsqueeze_copy.default>: schema = aten::unsqueeze_copy(Tensor self, int dim) -> Tensor",Samsung ENN (NPU - E9955),YES
+17,aten_permute_copy_default_3,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+18,aten_squeeze_copy_dims,"<EdgeOpOverload: aten.squeeze_copy.dims>: schema = aten::squeeze_copy.dims(Tensor self, int[] dim) -> Tensor",Samsung ENN (NPU - E9955),YES
+19,dim_order_ops__clone_dim_order_default_1,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+20,aten_select_copy_int,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",Samsung ENN (NPU - E9955),YES
+21,aten_select_copy_int_1,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",Samsung ENN (NPU - E9955),YES
+22,aten_select_copy_int_2,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",Samsung ENN (NPU - E9955),YES
+23,aten_view_copy_default_4,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+24,aten_permute_copy_default_4,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+25,aten_view_copy_default_5,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+26,aten_permute_copy_default_5,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+27,aten_view_copy_default_6,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+28,aten_permute_copy_default_6,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+29,aten_view_copy_default_7,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+30,aten_view_copy_default_8,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+31,aten_view_copy_default_9,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+32,aten_mul_scalar,"<EdgeOpOverload: aten.mul.Scalar>: schema = aten::mul.Scalar(Tensor self, Scalar other) -> Tensor",Samsung ENN (NPU - E9955),YES
+33,aten_permute_copy_default_7,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+34,aten_mul_scalar_1,"<EdgeOpOverload: aten.mul.Scalar>: schema = aten::mul.Scalar(Tensor self, Scalar other) -> Tensor",Samsung ENN (NPU - E9955),YES
+35,aten_expand_copy_default_1,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",Samsung ENN (NPU - E9955),YES
+36,aten_view_copy_default_10,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+37,aten_expand_copy_default_2,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",Samsung ENN (NPU - E9955),YES
+38,aten_view_copy_default_11,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+39,aten_bmm_default,"<EdgeOpOverload: aten.bmm.default>: schema = aten::bmm(Tensor self, Tensor mat2) -> Tensor",Samsung ENN (NPU - E9955),YES
+40,aten_view_copy_default_12,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+41,aten__softmax_default,"<EdgeOpOverload: aten._softmax.default>: schema = aten::_softmax(Tensor self, int dim, bool half_to_float) -> Tensor",Samsung ENN (NPU - E9955),YES
+42,aten_eq_scalar,"<EdgeOpOverload: aten.eq.Scalar>: schema = aten::eq.Scalar(Tensor self, Scalar other) -> Tensor",ExecuTorch (Portable CPU),NO
+43,aten_logical_not_default,<EdgeOpOverload: aten.logical_not.default>: schema = aten::logical_not(Tensor self) -> Tensor,ExecuTorch (Portable CPU),NO
+44,aten_any_dim,"<EdgeOpOverload: aten.any.dim>: schema = aten::any.dim(Tensor self, int dim, bool keepdim=False) -> Tensor",ExecuTorch (Portable CPU),NO
+45,aten_logical_not_default_1,<EdgeOpOverload: aten.logical_not.default>: schema = aten::logical_not(Tensor self) -> Tensor,ExecuTorch (Portable CPU),NO
+46,aten_full_like_default,"<EdgeOpOverload: aten.full_like.default>: schema = aten::full_like(Tensor self, Scalar fill_value, *, ScalarType? dtype=None, Layout? layout=None, Device? device=None, bool? pin_memory=None, MemoryFormat? memory_format=None) -> Tensor",ExecuTorch (Portable CPU),NO
+47,aten_where_self,"<EdgeOpOverload: aten.where.self>: schema = aten::where.self(Tensor condition, Tensor self, Tensor other) -> Tensor",ExecuTorch (Portable CPU),NO
+48,aten_expand_copy_default_3,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",Samsung ENN (NPU - E9955),YES
+49,aten_view_copy_default_13,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+50,aten_expand_copy_default_4,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",Samsung ENN (NPU - E9955),YES
+51,aten_view_copy_default_14,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+52,aten_bmm_default_1,"<EdgeOpOverload: aten.bmm.default>: schema = aten::bmm(Tensor self, Tensor mat2) -> Tensor",Samsung ENN (NPU - E9955),YES
+53,aten_view_copy_default_15,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+54,aten_permute_copy_default_8,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+55,dim_order_ops__clone_dim_order_default_2,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+56,aten_permute_copy_default_9,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+57,aten_permute_copy_default_10,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+58,aten_view_copy_default_16,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+59,aten_permute_copy_default_11,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+60,aten_addmm_default_1,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",Samsung ENN (NPU - E9955),YES
+61,aten_view_copy_default_17,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+62,aten_permute_copy_default_12,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+63,dim_order_ops__clone_dim_order_default_3,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+64,aten_add_tensor_1,"<EdgeOpOverload: aten.add.Tensor>: schema = aten::add.Tensor(Tensor self, Tensor other, *, Scalar alpha=1) -> Tensor",Samsung ENN (NPU - E9955),YES
+65,aten_native_layer_norm_default_1,"<EdgeOpOverload: aten.native_layer_norm.default>: schema = aten::native_layer_norm(Tensor input, SymInt[] normalized_shape, Tensor? weight, Tensor? bias, float eps) -> (Tensor, Tensor, Tensor)",ExecuTorch (Portable CPU),NO
+66,getitem_1,<built-in function getitem>,ExecuTorch (Portable CPU),NO
+67,aten_view_copy_default_18,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+68,aten_permute_copy_default_13,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+69,aten_addmm_default_2,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",Samsung ENN (NPU - E9955),YES
+70,aten_view_copy_default_19,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+71,aten_gelu_default,"<EdgeOpOverload: aten.gelu.default>: schema = aten::gelu(Tensor self, *, str approximate=""none"") -> Tensor",Samsung ENN (NPU - E9955),YES
+72,dim_order_ops__clone_dim_order_default_4,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+73,aten_view_copy_default_20,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+74,aten_permute_copy_default_14,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+75,aten_addmm_default_3,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",Samsung ENN (NPU - E9955),YES
+76,aten_view_copy_default_21,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+77,dim_order_ops__clone_dim_order_default_5,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+78,aten_add_tensor_2,"<EdgeOpOverload: aten.add.Tensor>: schema = aten::add.Tensor(Tensor self, Tensor other, *, Scalar alpha=1) -> Tensor",Samsung ENN (NPU - E9955),YES
+79,aten_native_layer_norm_default_2,"<EdgeOpOverload: aten.native_layer_norm.default>: schema = aten::native_layer_norm(Tensor input, SymInt[] normalized_shape, Tensor? weight, Tensor? bias, float eps) -> (Tensor, Tensor, Tensor)",ExecuTorch (Portable CPU),NO
+80,getitem_2,<built-in function getitem>,ExecuTorch (Portable CPU),NO
+81,aten_permute_copy_default_15,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+82,aten_view_copy_default_22,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+83,aten_permute_copy_default_16,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+84,aten_addmm_default_4,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",Samsung ENN (NPU - E9955),YES
+85,aten_view_copy_default_23,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+86,aten_view_copy_default_24,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+87,aten_unsqueeze_copy_default_1,"<EdgeOpOverload: aten.unsqueeze_copy.default>: schema = aten::unsqueeze_copy(Tensor self, int dim) -> Tensor",Samsung ENN (NPU - E9955),YES
+88,aten_permute_copy_default_17,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+89,aten_squeeze_copy_dims_1,"<EdgeOpOverload: aten.squeeze_copy.dims>: schema = aten::squeeze_copy.dims(Tensor self, int[] dim) -> Tensor",Samsung ENN (NPU - E9955),YES
+90,dim_order_ops__clone_dim_order_default_6,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+91,aten_select_copy_int_3,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",Samsung ENN (NPU - E9955),YES
+92,aten_select_copy_int_4,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",Samsung ENN (NPU - E9955),YES
+93,aten_select_copy_int_5,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",Samsung ENN (NPU - E9955),YES
+94,aten_view_copy_default_25,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+95,aten_permute_copy_default_18,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+96,aten_view_copy_default_26,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+97,aten_permute_copy_default_19,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+98,aten_view_copy_default_27,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+99,aten_permute_copy_default_20,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+100,aten_view_copy_default_28,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+101,aten_view_copy_default_29,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+102,aten_view_copy_default_30,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+103,aten_mul_scalar_2,"<EdgeOpOverload: aten.mul.Scalar>: schema = aten::mul.Scalar(Tensor self, Scalar other) -> Tensor",Samsung ENN (NPU - E9955),YES
+104,aten_permute_copy_default_21,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+105,aten_mul_scalar_3,"<EdgeOpOverload: aten.mul.Scalar>: schema = aten::mul.Scalar(Tensor self, Scalar other) -> Tensor",Samsung ENN (NPU - E9955),YES
+106,aten_expand_copy_default_5,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",Samsung ENN (NPU - E9955),YES
+107,aten_view_copy_default_31,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+108,aten_expand_copy_default_6,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",Samsung ENN (NPU - E9955),YES
+109,aten_view_copy_default_32,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+110,aten_bmm_default_2,"<EdgeOpOverload: aten.bmm.default>: schema = aten::bmm(Tensor self, Tensor mat2) -> Tensor",Samsung ENN (NPU - E9955),YES
+111,aten_view_copy_default_33,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+112,aten__softmax_default_1,"<EdgeOpOverload: aten._softmax.default>: schema = aten::_softmax(Tensor self, int dim, bool half_to_float) -> Tensor",Samsung ENN (NPU - E9955),YES
+113,aten_eq_scalar_1,"<EdgeOpOverload: aten.eq.Scalar>: schema = aten::eq.Scalar(Tensor self, Scalar other) -> Tensor",ExecuTorch (Portable CPU),NO
+114,aten_logical_not_default_2,<EdgeOpOverload: aten.logical_not.default>: schema = aten::logical_not(Tensor self) -> Tensor,ExecuTorch (Portable CPU),NO
+115,aten_any_dim_1,"<EdgeOpOverload: aten.any.dim>: schema = aten::any.dim(Tensor self, int dim, bool keepdim=False) -> Tensor",ExecuTorch (Portable CPU),NO
+116,aten_logical_not_default_3,<EdgeOpOverload: aten.logical_not.default>: schema = aten::logical_not(Tensor self) -> Tensor,ExecuTorch (Portable CPU),NO
+117,aten_full_like_default_1,"<EdgeOpOverload: aten.full_like.default>: schema = aten::full_like(Tensor self, Scalar fill_value, *, ScalarType? dtype=None, Layout? layout=None, Device? device=None, bool? pin_memory=None, MemoryFormat? memory_format=None) -> Tensor",ExecuTorch (Portable CPU),NO
+118,aten_where_self_1,"<EdgeOpOverload: aten.where.self>: schema = aten::where.self(Tensor condition, Tensor self, Tensor other) -> Tensor",ExecuTorch (Portable CPU),NO
+119,aten_expand_copy_default_7,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",Samsung ENN (NPU - E9955),YES
+120,aten_view_copy_default_34,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+121,aten_expand_copy_default_8,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",Samsung ENN (NPU - E9955),YES
+122,aten_view_copy_default_35,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+123,aten_bmm_default_3,"<EdgeOpOverload: aten.bmm.default>: schema = aten::bmm(Tensor self, Tensor mat2) -> Tensor",Samsung ENN (NPU - E9955),YES
+124,aten_view_copy_default_36,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+125,aten_permute_copy_default_22,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+126,dim_order_ops__clone_dim_order_default_7,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+127,aten_permute_copy_default_23,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+128,aten_permute_copy_default_24,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+129,aten_view_copy_default_37,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+130,aten_permute_copy_default_25,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+131,aten_addmm_default_5,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",Samsung ENN (NPU - E9955),YES
+132,aten_view_copy_default_38,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+133,aten_permute_copy_default_26,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+134,dim_order_ops__clone_dim_order_default_8,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+135,aten_add_tensor_3,"<EdgeOpOverload: aten.add.Tensor>: schema = aten::add.Tensor(Tensor self, Tensor other, *, Scalar alpha=1) -> Tensor",Samsung ENN (NPU - E9955),YES
+136,aten_native_layer_norm_default_3,"<EdgeOpOverload: aten.native_layer_norm.default>: schema = aten::native_layer_norm(Tensor input, SymInt[] normalized_shape, Tensor? weight, Tensor? bias, float eps) -> (Tensor, Tensor, Tensor)",ExecuTorch (Portable CPU),NO
+137,getitem_3,<built-in function getitem>,ExecuTorch (Portable CPU),NO
+138,aten_view_copy_default_39,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+139,aten_permute_copy_default_27,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+140,aten_addmm_default_6,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",Samsung ENN (NPU - E9955),YES
+141,aten_view_copy_default_40,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+142,aten_gelu_default_1,"<EdgeOpOverload: aten.gelu.default>: schema = aten::gelu(Tensor self, *, str approximate=""none"") -> Tensor",Samsung ENN (NPU - E9955),YES
+143,dim_order_ops__clone_dim_order_default_9,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+144,aten_view_copy_default_41,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+145,aten_permute_copy_default_28,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+146,aten_addmm_default_7,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",Samsung ENN (NPU - E9955),YES
+147,aten_view_copy_default_42,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+148,dim_order_ops__clone_dim_order_default_10,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+149,aten_add_tensor_4,"<EdgeOpOverload: aten.add.Tensor>: schema = aten::add.Tensor(Tensor self, Tensor other, *, Scalar alpha=1) -> Tensor",Samsung ENN (NPU - E9955),YES
+150,aten_native_layer_norm_default_4,"<EdgeOpOverload: aten.native_layer_norm.default>: schema = aten::native_layer_norm(Tensor input, SymInt[] normalized_shape, Tensor? weight, Tensor? bias, float eps) -> (Tensor, Tensor, Tensor)",ExecuTorch (Portable CPU),NO
+151,getitem_4,<built-in function getitem>,ExecuTorch (Portable CPU),NO
+152,aten_permute_copy_default_29,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+153,aten_view_copy_default_43,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+154,aten_permute_copy_default_30,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+155,aten_addmm_default_8,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",Samsung ENN (NPU - E9955),YES
+156,aten_view_copy_default_44,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+157,aten_view_copy_default_45,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+158,aten_unsqueeze_copy_default_2,"<EdgeOpOverload: aten.unsqueeze_copy.default>: schema = aten::unsqueeze_copy(Tensor self, int dim) -> Tensor",Samsung ENN (NPU - E9955),YES
+159,aten_permute_copy_default_31,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+160,aten_squeeze_copy_dims_2,"<EdgeOpOverload: aten.squeeze_copy.dims>: schema = aten::squeeze_copy.dims(Tensor self, int[] dim) -> Tensor",Samsung ENN (NPU - E9955),YES
+161,dim_order_ops__clone_dim_order_default_11,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+162,aten_select_copy_int_6,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",Samsung ENN (NPU - E9955),YES
+163,aten_select_copy_int_7,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",Samsung ENN (NPU - E9955),YES
+164,aten_select_copy_int_8,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",Samsung ENN (NPU - E9955),YES
+165,aten_view_copy_default_46,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+166,aten_permute_copy_default_32,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+167,aten_view_copy_default_47,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+168,aten_permute_copy_default_33,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+169,aten_view_copy_default_48,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+170,aten_permute_copy_default_34,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+171,aten_view_copy_default_49,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+172,aten_view_copy_default_50,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+173,aten_view_copy_default_51,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+174,aten_mul_scalar_4,"<EdgeOpOverload: aten.mul.Scalar>: schema = aten::mul.Scalar(Tensor self, Scalar other) -> Tensor",Samsung ENN (NPU - E9955),YES
+175,aten_permute_copy_default_35,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+176,aten_mul_scalar_5,"<EdgeOpOverload: aten.mul.Scalar>: schema = aten::mul.Scalar(Tensor self, Scalar other) -> Tensor",Samsung ENN (NPU - E9955),YES
+177,aten_expand_copy_default_9,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",Samsung ENN (NPU - E9955),YES
+178,aten_view_copy_default_52,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+179,aten_expand_copy_default_10,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",Samsung ENN (NPU - E9955),YES
+180,aten_view_copy_default_53,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+181,aten_bmm_default_4,"<EdgeOpOverload: aten.bmm.default>: schema = aten::bmm(Tensor self, Tensor mat2) -> Tensor",Samsung ENN (NPU - E9955),YES
+182,aten_view_copy_default_54,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+183,aten__softmax_default_2,"<EdgeOpOverload: aten._softmax.default>: schema = aten::_softmax(Tensor self, int dim, bool half_to_float) -> Tensor",Samsung ENN (NPU - E9955),YES
+184,aten_eq_scalar_2,"<EdgeOpOverload: aten.eq.Scalar>: schema = aten::eq.Scalar(Tensor self, Scalar other) -> Tensor",ExecuTorch (Portable CPU),NO
+185,aten_logical_not_default_4,<EdgeOpOverload: aten.logical_not.default>: schema = aten::logical_not(Tensor self) -> Tensor,ExecuTorch (Portable CPU),NO
+186,aten_any_dim_2,"<EdgeOpOverload: aten.any.dim>: schema = aten::any.dim(Tensor self, int dim, bool keepdim=False) -> Tensor",ExecuTorch (Portable CPU),NO
+187,aten_logical_not_default_5,<EdgeOpOverload: aten.logical_not.default>: schema = aten::logical_not(Tensor self) -> Tensor,ExecuTorch (Portable CPU),NO
+188,aten_full_like_default_2,"<EdgeOpOverload: aten.full_like.default>: schema = aten::full_like(Tensor self, Scalar fill_value, *, ScalarType? dtype=None, Layout? layout=None, Device? device=None, bool? pin_memory=None, MemoryFormat? memory_format=None) -> Tensor",ExecuTorch (Portable CPU),NO
+189,aten_where_self_2,"<EdgeOpOverload: aten.where.self>: schema = aten::where.self(Tensor condition, Tensor self, Tensor other) -> Tensor",ExecuTorch (Portable CPU),NO
+190,aten_expand_copy_default_11,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",Samsung ENN (NPU - E9955),YES
+191,aten_view_copy_default_55,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+192,aten_expand_copy_default_12,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",Samsung ENN (NPU - E9955),YES
+193,aten_view_copy_default_56,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+194,aten_bmm_default_5,"<EdgeOpOverload: aten.bmm.default>: schema = aten::bmm(Tensor self, Tensor mat2) -> Tensor",Samsung ENN (NPU - E9955),YES
+195,aten_view_copy_default_57,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+196,aten_permute_copy_default_36,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+197,dim_order_ops__clone_dim_order_default_12,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+198,aten_permute_copy_default_37,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+199,aten_permute_copy_default_38,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+200,aten_view_copy_default_58,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+201,aten_permute_copy_default_39,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+202,aten_addmm_default_9,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",Samsung ENN (NPU - E9955),YES
+203,aten_view_copy_default_59,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+204,aten_permute_copy_default_40,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+205,dim_order_ops__clone_dim_order_default_13,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+206,aten_add_tensor_5,"<EdgeOpOverload: aten.add.Tensor>: schema = aten::add.Tensor(Tensor self, Tensor other, *, Scalar alpha=1) -> Tensor",Samsung ENN (NPU - E9955),YES
+207,aten_native_layer_norm_default_5,"<EdgeOpOverload: aten.native_layer_norm.default>: schema = aten::native_layer_norm(Tensor input, SymInt[] normalized_shape, Tensor? weight, Tensor? bias, float eps) -> (Tensor, Tensor, Tensor)",ExecuTorch (Portable CPU),NO
+208,getitem_5,<built-in function getitem>,ExecuTorch (Portable CPU),NO
+209,aten_view_copy_default_60,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+210,aten_permute_copy_default_41,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+211,aten_addmm_default_10,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",Samsung ENN (NPU - E9955),YES
+212,aten_view_copy_default_61,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+213,aten_gelu_default_2,"<EdgeOpOverload: aten.gelu.default>: schema = aten::gelu(Tensor self, *, str approximate=""none"") -> Tensor",Samsung ENN (NPU - E9955),YES
+214,dim_order_ops__clone_dim_order_default_14,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+215,aten_view_copy_default_62,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+216,aten_permute_copy_default_42,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+217,aten_addmm_default_11,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",Samsung ENN (NPU - E9955),YES
+218,aten_view_copy_default_63,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+219,dim_order_ops__clone_dim_order_default_15,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+220,aten_add_tensor_6,"<EdgeOpOverload: aten.add.Tensor>: schema = aten::add.Tensor(Tensor self, Tensor other, *, Scalar alpha=1) -> Tensor",Samsung ENN (NPU - E9955),YES
+221,aten_native_layer_norm_default_6,"<EdgeOpOverload: aten.native_layer_norm.default>: schema = aten::native_layer_norm(Tensor input, SymInt[] normalized_shape, Tensor? weight, Tensor? bias, float eps) -> (Tensor, Tensor, Tensor)",ExecuTorch (Portable CPU),NO
+222,getitem_6,<built-in function getitem>,ExecuTorch (Portable CPU),NO
+223,aten_permute_copy_default_43,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+224,aten_view_copy_default_64,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+225,aten_permute_copy_default_44,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+226,aten_addmm_default_12,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",Samsung ENN (NPU - E9955),YES
+227,aten_view_copy_default_65,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+228,aten_view_copy_default_66,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+229,aten_unsqueeze_copy_default_3,"<EdgeOpOverload: aten.unsqueeze_copy.default>: schema = aten::unsqueeze_copy(Tensor self, int dim) -> Tensor",Samsung ENN (NPU - E9955),YES
+230,aten_permute_copy_default_45,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+231,aten_squeeze_copy_dims_3,"<EdgeOpOverload: aten.squeeze_copy.dims>: schema = aten::squeeze_copy.dims(Tensor self, int[] dim) -> Tensor",Samsung ENN (NPU - E9955),YES
+232,dim_order_ops__clone_dim_order_default_16,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+233,aten_select_copy_int_9,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",Samsung ENN (NPU - E9955),YES
+234,aten_select_copy_int_10,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",Samsung ENN (NPU - E9955),YES
+235,aten_select_copy_int_11,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",Samsung ENN (NPU - E9955),YES
+236,aten_view_copy_default_67,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+237,aten_permute_copy_default_46,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+238,aten_view_copy_default_68,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+239,aten_permute_copy_default_47,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+240,aten_view_copy_default_69,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+241,aten_permute_copy_default_48,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+242,aten_view_copy_default_70,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+243,aten_view_copy_default_71,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+244,aten_view_copy_default_72,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+245,aten_mul_scalar_6,"<EdgeOpOverload: aten.mul.Scalar>: schema = aten::mul.Scalar(Tensor self, Scalar other) -> Tensor",Samsung ENN (NPU - E9955),YES
+246,aten_permute_copy_default_49,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+247,aten_mul_scalar_7,"<EdgeOpOverload: aten.mul.Scalar>: schema = aten::mul.Scalar(Tensor self, Scalar other) -> Tensor",Samsung ENN (NPU - E9955),YES
+248,aten_expand_copy_default_13,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",Samsung ENN (NPU - E9955),YES
+249,aten_view_copy_default_73,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+250,aten_expand_copy_default_14,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",Samsung ENN (NPU - E9955),YES
+251,aten_view_copy_default_74,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+252,aten_bmm_default_6,"<EdgeOpOverload: aten.bmm.default>: schema = aten::bmm(Tensor self, Tensor mat2) -> Tensor",Samsung ENN (NPU - E9955),YES
+253,aten_view_copy_default_75,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+254,aten__softmax_default_3,"<EdgeOpOverload: aten._softmax.default>: schema = aten::_softmax(Tensor self, int dim, bool half_to_float) -> Tensor",Samsung ENN (NPU - E9955),YES
+255,aten_eq_scalar_3,"<EdgeOpOverload: aten.eq.Scalar>: schema = aten::eq.Scalar(Tensor self, Scalar other) -> Tensor",ExecuTorch (Portable CPU),NO
+256,aten_logical_not_default_6,<EdgeOpOverload: aten.logical_not.default>: schema = aten::logical_not(Tensor self) -> Tensor,ExecuTorch (Portable CPU),NO
+257,aten_any_dim_3,"<EdgeOpOverload: aten.any.dim>: schema = aten::any.dim(Tensor self, int dim, bool keepdim=False) -> Tensor",ExecuTorch (Portable CPU),NO
+258,aten_logical_not_default_7,<EdgeOpOverload: aten.logical_not.default>: schema = aten::logical_not(Tensor self) -> Tensor,ExecuTorch (Portable CPU),NO
+259,aten_full_like_default_3,"<EdgeOpOverload: aten.full_like.default>: schema = aten::full_like(Tensor self, Scalar fill_value, *, ScalarType? dtype=None, Layout? layout=None, Device? device=None, bool? pin_memory=None, MemoryFormat? memory_format=None) -> Tensor",ExecuTorch (Portable CPU),NO
+260,aten_where_self_3,"<EdgeOpOverload: aten.where.self>: schema = aten::where.self(Tensor condition, Tensor self, Tensor other) -> Tensor",ExecuTorch (Portable CPU),NO
+261,aten_expand_copy_default_15,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",Samsung ENN (NPU - E9955),YES
+262,aten_view_copy_default_76,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+263,aten_expand_copy_default_16,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",Samsung ENN (NPU - E9955),YES
+264,aten_view_copy_default_77,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+265,aten_bmm_default_7,"<EdgeOpOverload: aten.bmm.default>: schema = aten::bmm(Tensor self, Tensor mat2) -> Tensor",Samsung ENN (NPU - E9955),YES
+266,aten_view_copy_default_78,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+267,aten_permute_copy_default_50,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+268,dim_order_ops__clone_dim_order_default_17,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+269,aten_permute_copy_default_51,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+270,aten_permute_copy_default_52,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+271,aten_view_copy_default_79,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+272,aten_permute_copy_default_53,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+273,aten_addmm_default_13,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",Samsung ENN (NPU - E9955),YES
+274,aten_view_copy_default_80,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+275,aten_permute_copy_default_54,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+276,dim_order_ops__clone_dim_order_default_18,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+277,aten_add_tensor_7,"<EdgeOpOverload: aten.add.Tensor>: schema = aten::add.Tensor(Tensor self, Tensor other, *, Scalar alpha=1) -> Tensor",Samsung ENN (NPU - E9955),YES
+278,aten_native_layer_norm_default_7,"<EdgeOpOverload: aten.native_layer_norm.default>: schema = aten::native_layer_norm(Tensor input, SymInt[] normalized_shape, Tensor? weight, Tensor? bias, float eps) -> (Tensor, Tensor, Tensor)",ExecuTorch (Portable CPU),NO
+279,getitem_7,<built-in function getitem>,ExecuTorch (Portable CPU),NO
+280,aten_view_copy_default_81,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+281,aten_permute_copy_default_55,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+282,aten_addmm_default_14,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",Samsung ENN (NPU - E9955),YES
+283,aten_view_copy_default_82,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+284,aten_gelu_default_3,"<EdgeOpOverload: aten.gelu.default>: schema = aten::gelu(Tensor self, *, str approximate=""none"") -> Tensor",Samsung ENN (NPU - E9955),YES
+285,dim_order_ops__clone_dim_order_default_19,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+286,aten_view_copy_default_83,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+287,aten_permute_copy_default_56,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+288,aten_addmm_default_15,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",Samsung ENN (NPU - E9955),YES
+289,aten_view_copy_default_84,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+290,dim_order_ops__clone_dim_order_default_20,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+291,aten_add_tensor_8,"<EdgeOpOverload: aten.add.Tensor>: schema = aten::add.Tensor(Tensor self, Tensor other, *, Scalar alpha=1) -> Tensor",Samsung ENN (NPU - E9955),YES
+292,aten_native_layer_norm_default_8,"<EdgeOpOverload: aten.native_layer_norm.default>: schema = aten::native_layer_norm(Tensor input, SymInt[] normalized_shape, Tensor? weight, Tensor? bias, float eps) -> (Tensor, Tensor, Tensor)",ExecuTorch (Portable CPU),NO
+293,getitem_8,<built-in function getitem>,ExecuTorch (Portable CPU),NO
+294,aten_permute_copy_default_57,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+295,aten_view_copy_default_85,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+296,aten_permute_copy_default_58,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+297,aten_addmm_default_16,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",Samsung ENN (NPU - E9955),YES
+298,aten_view_copy_default_86,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+299,aten_view_copy_default_87,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+300,aten_unsqueeze_copy_default_4,"<EdgeOpOverload: aten.unsqueeze_copy.default>: schema = aten::unsqueeze_copy(Tensor self, int dim) -> Tensor",Samsung ENN (NPU - E9955),YES
+301,aten_permute_copy_default_59,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+302,aten_squeeze_copy_dims_4,"<EdgeOpOverload: aten.squeeze_copy.dims>: schema = aten::squeeze_copy.dims(Tensor self, int[] dim) -> Tensor",Samsung ENN (NPU - E9955),YES
+303,dim_order_ops__clone_dim_order_default_21,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+304,aten_select_copy_int_12,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",Samsung ENN (NPU - E9955),YES
+305,aten_select_copy_int_13,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",Samsung ENN (NPU - E9955),YES
+306,aten_select_copy_int_14,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",Samsung ENN (NPU - E9955),YES
+307,aten_view_copy_default_88,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+308,aten_permute_copy_default_60,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+309,aten_view_copy_default_89,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+310,aten_permute_copy_default_61,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+311,aten_view_copy_default_90,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+312,aten_permute_copy_default_62,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+313,aten_view_copy_default_91,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+314,aten_view_copy_default_92,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+315,aten_view_copy_default_93,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+316,aten_mul_scalar_8,"<EdgeOpOverload: aten.mul.Scalar>: schema = aten::mul.Scalar(Tensor self, Scalar other) -> Tensor",Samsung ENN (NPU - E9955),YES
+317,aten_permute_copy_default_63,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+318,aten_mul_scalar_9,"<EdgeOpOverload: aten.mul.Scalar>: schema = aten::mul.Scalar(Tensor self, Scalar other) -> Tensor",Samsung ENN (NPU - E9955),YES
+319,aten_expand_copy_default_17,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",Samsung ENN (NPU - E9955),YES
+320,aten_view_copy_default_94,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+321,aten_expand_copy_default_18,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",Samsung ENN (NPU - E9955),YES
+322,aten_view_copy_default_95,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+323,aten_bmm_default_8,"<EdgeOpOverload: aten.bmm.default>: schema = aten::bmm(Tensor self, Tensor mat2) -> Tensor",Samsung ENN (NPU - E9955),YES
+324,aten_view_copy_default_96,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+325,aten__softmax_default_4,"<EdgeOpOverload: aten._softmax.default>: schema = aten::_softmax(Tensor self, int dim, bool half_to_float) -> Tensor",Samsung ENN (NPU - E9955),YES
+326,aten_eq_scalar_4,"<EdgeOpOverload: aten.eq.Scalar>: schema = aten::eq.Scalar(Tensor self, Scalar other) -> Tensor",ExecuTorch (Portable CPU),NO
+327,aten_logical_not_default_8,<EdgeOpOverload: aten.logical_not.default>: schema = aten::logical_not(Tensor self) -> Tensor,ExecuTorch (Portable CPU),NO
+328,aten_any_dim_4,"<EdgeOpOverload: aten.any.dim>: schema = aten::any.dim(Tensor self, int dim, bool keepdim=False) -> Tensor",ExecuTorch (Portable CPU),NO
+329,aten_logical_not_default_9,<EdgeOpOverload: aten.logical_not.default>: schema = aten::logical_not(Tensor self) -> Tensor,ExecuTorch (Portable CPU),NO
+330,aten_full_like_default_4,"<EdgeOpOverload: aten.full_like.default>: schema = aten::full_like(Tensor self, Scalar fill_value, *, ScalarType? dtype=None, Layout? layout=None, Device? device=None, bool? pin_memory=None, MemoryFormat? memory_format=None) -> Tensor",ExecuTorch (Portable CPU),NO
+331,aten_where_self_4,"<EdgeOpOverload: aten.where.self>: schema = aten::where.self(Tensor condition, Tensor self, Tensor other) -> Tensor",ExecuTorch (Portable CPU),NO
+332,aten_expand_copy_default_19,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",Samsung ENN (NPU - E9955),YES
+333,aten_view_copy_default_97,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+334,aten_expand_copy_default_20,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",Samsung ENN (NPU - E9955),YES
+335,aten_view_copy_default_98,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+336,aten_bmm_default_9,"<EdgeOpOverload: aten.bmm.default>: schema = aten::bmm(Tensor self, Tensor mat2) -> Tensor",Samsung ENN (NPU - E9955),YES
+337,aten_view_copy_default_99,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+338,aten_permute_copy_default_64,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+339,dim_order_ops__clone_dim_order_default_22,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+340,aten_permute_copy_default_65,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+341,aten_permute_copy_default_66,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+342,aten_view_copy_default_100,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+343,aten_permute_copy_default_67,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+344,aten_addmm_default_17,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",Samsung ENN (NPU - E9955),YES
+345,aten_view_copy_default_101,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+346,aten_permute_copy_default_68,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+347,dim_order_ops__clone_dim_order_default_23,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+348,aten_add_tensor_9,"<EdgeOpOverload: aten.add.Tensor>: schema = aten::add.Tensor(Tensor self, Tensor other, *, Scalar alpha=1) -> Tensor",Samsung ENN (NPU - E9955),YES
+349,aten_native_layer_norm_default_9,"<EdgeOpOverload: aten.native_layer_norm.default>: schema = aten::native_layer_norm(Tensor input, SymInt[] normalized_shape, Tensor? weight, Tensor? bias, float eps) -> (Tensor, Tensor, Tensor)",ExecuTorch (Portable CPU),NO
+350,getitem_9,<built-in function getitem>,ExecuTorch (Portable CPU),NO
+351,aten_view_copy_default_102,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+352,aten_permute_copy_default_69,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+353,aten_addmm_default_18,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",Samsung ENN (NPU - E9955),YES
+354,aten_view_copy_default_103,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+355,aten_gelu_default_4,"<EdgeOpOverload: aten.gelu.default>: schema = aten::gelu(Tensor self, *, str approximate=""none"") -> Tensor",Samsung ENN (NPU - E9955),YES
+356,dim_order_ops__clone_dim_order_default_24,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+357,aten_view_copy_default_104,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+358,aten_permute_copy_default_70,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+359,aten_addmm_default_19,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",Samsung ENN (NPU - E9955),YES
+360,aten_view_copy_default_105,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+361,dim_order_ops__clone_dim_order_default_25,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+362,aten_add_tensor_10,"<EdgeOpOverload: aten.add.Tensor>: schema = aten::add.Tensor(Tensor self, Tensor other, *, Scalar alpha=1) -> Tensor",Samsung ENN (NPU - E9955),YES
+363,aten_native_layer_norm_default_10,"<EdgeOpOverload: aten.native_layer_norm.default>: schema = aten::native_layer_norm(Tensor input, SymInt[] normalized_shape, Tensor? weight, Tensor? bias, float eps) -> (Tensor, Tensor, Tensor)",ExecuTorch (Portable CPU),NO
+364,getitem_10,<built-in function getitem>,ExecuTorch (Portable CPU),NO
+365,aten_permute_copy_default_71,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+366,aten_view_copy_default_106,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+367,aten_permute_copy_default_72,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+368,aten_addmm_default_20,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",Samsung ENN (NPU - E9955),YES
+369,aten_view_copy_default_107,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+370,aten_view_copy_default_108,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+371,aten_unsqueeze_copy_default_5,"<EdgeOpOverload: aten.unsqueeze_copy.default>: schema = aten::unsqueeze_copy(Tensor self, int dim) -> Tensor",Samsung ENN (NPU - E9955),YES
+372,aten_permute_copy_default_73,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+373,aten_squeeze_copy_dims_5,"<EdgeOpOverload: aten.squeeze_copy.dims>: schema = aten::squeeze_copy.dims(Tensor self, int[] dim) -> Tensor",Samsung ENN (NPU - E9955),YES
+374,dim_order_ops__clone_dim_order_default_26,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+375,aten_select_copy_int_15,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",Samsung ENN (NPU - E9955),YES
+376,aten_select_copy_int_16,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",Samsung ENN (NPU - E9955),YES
+377,aten_select_copy_int_17,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",Samsung ENN (NPU - E9955),YES
+378,aten_view_copy_default_109,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+379,aten_permute_copy_default_74,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+380,aten_view_copy_default_110,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+381,aten_permute_copy_default_75,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+382,aten_view_copy_default_111,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+383,aten_permute_copy_default_76,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+384,aten_view_copy_default_112,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+385,aten_view_copy_default_113,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+386,aten_view_copy_default_114,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+387,aten_mul_scalar_10,"<EdgeOpOverload: aten.mul.Scalar>: schema = aten::mul.Scalar(Tensor self, Scalar other) -> Tensor",Samsung ENN (NPU - E9955),YES
+388,aten_permute_copy_default_77,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+389,aten_mul_scalar_11,"<EdgeOpOverload: aten.mul.Scalar>: schema = aten::mul.Scalar(Tensor self, Scalar other) -> Tensor",Samsung ENN (NPU - E9955),YES
+390,aten_expand_copy_default_21,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",Samsung ENN (NPU - E9955),YES
+391,aten_view_copy_default_115,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+392,aten_expand_copy_default_22,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",Samsung ENN (NPU - E9955),YES
+393,aten_view_copy_default_116,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+394,aten_bmm_default_10,"<EdgeOpOverload: aten.bmm.default>: schema = aten::bmm(Tensor self, Tensor mat2) -> Tensor",Samsung ENN (NPU - E9955),YES
+395,aten_view_copy_default_117,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+396,aten__softmax_default_5,"<EdgeOpOverload: aten._softmax.default>: schema = aten::_softmax(Tensor self, int dim, bool half_to_float) -> Tensor",Samsung ENN (NPU - E9955),YES
+397,aten_eq_scalar_5,"<EdgeOpOverload: aten.eq.Scalar>: schema = aten::eq.Scalar(Tensor self, Scalar other) -> Tensor",ExecuTorch (Portable CPU),NO
+398,aten_logical_not_default_10,<EdgeOpOverload: aten.logical_not.default>: schema = aten::logical_not(Tensor self) -> Tensor,ExecuTorch (Portable CPU),NO
+399,aten_any_dim_5,"<EdgeOpOverload: aten.any.dim>: schema = aten::any.dim(Tensor self, int dim, bool keepdim=False) -> Tensor",ExecuTorch (Portable CPU),NO
+400,aten_logical_not_default_11,<EdgeOpOverload: aten.logical_not.default>: schema = aten::logical_not(Tensor self) -> Tensor,ExecuTorch (Portable CPU),NO
+401,aten_full_like_default_5,"<EdgeOpOverload: aten.full_like.default>: schema = aten::full_like(Tensor self, Scalar fill_value, *, ScalarType? dtype=None, Layout? layout=None, Device? device=None, bool? pin_memory=None, MemoryFormat? memory_format=None) -> Tensor",ExecuTorch (Portable CPU),NO
+402,aten_where_self_5,"<EdgeOpOverload: aten.where.self>: schema = aten::where.self(Tensor condition, Tensor self, Tensor other) -> Tensor",ExecuTorch (Portable CPU),NO
+403,aten_expand_copy_default_23,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",Samsung ENN (NPU - E9955),YES
+404,aten_view_copy_default_118,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+405,aten_expand_copy_default_24,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",Samsung ENN (NPU - E9955),YES
+406,aten_view_copy_default_119,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+407,aten_bmm_default_11,"<EdgeOpOverload: aten.bmm.default>: schema = aten::bmm(Tensor self, Tensor mat2) -> Tensor",Samsung ENN (NPU - E9955),YES
+408,aten_view_copy_default_120,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+409,aten_permute_copy_default_78,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+410,dim_order_ops__clone_dim_order_default_27,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+411,aten_permute_copy_default_79,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+412,aten_permute_copy_default_80,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+413,aten_view_copy_default_121,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+414,aten_permute_copy_default_81,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+415,aten_addmm_default_21,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",Samsung ENN (NPU - E9955),YES
+416,aten_view_copy_default_122,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+417,aten_permute_copy_default_82,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+418,dim_order_ops__clone_dim_order_default_28,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+419,aten_add_tensor_11,"<EdgeOpOverload: aten.add.Tensor>: schema = aten::add.Tensor(Tensor self, Tensor other, *, Scalar alpha=1) -> Tensor",Samsung ENN (NPU - E9955),YES
+420,aten_native_layer_norm_default_11,"<EdgeOpOverload: aten.native_layer_norm.default>: schema = aten::native_layer_norm(Tensor input, SymInt[] normalized_shape, Tensor? weight, Tensor? bias, float eps) -> (Tensor, Tensor, Tensor)",ExecuTorch (Portable CPU),NO
+421,getitem_11,<built-in function getitem>,ExecuTorch (Portable CPU),NO
+422,aten_view_copy_default_123,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+423,aten_permute_copy_default_83,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+424,aten_addmm_default_22,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",Samsung ENN (NPU - E9955),YES
+425,aten_view_copy_default_124,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+426,aten_gelu_default_5,"<EdgeOpOverload: aten.gelu.default>: schema = aten::gelu(Tensor self, *, str approximate=""none"") -> Tensor",Samsung ENN (NPU - E9955),YES
+427,dim_order_ops__clone_dim_order_default_29,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+428,aten_view_copy_default_125,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+429,aten_permute_copy_default_84,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+430,aten_addmm_default_23,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",Samsung ENN (NPU - E9955),YES
+431,aten_view_copy_default_126,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+432,dim_order_ops__clone_dim_order_default_30,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+433,aten_add_tensor_12,"<EdgeOpOverload: aten.add.Tensor>: schema = aten::add.Tensor(Tensor self, Tensor other, *, Scalar alpha=1) -> Tensor",Samsung ENN (NPU - E9955),YES
+434,aten_native_layer_norm_default_12,"<EdgeOpOverload: aten.native_layer_norm.default>: schema = aten::native_layer_norm(Tensor input, SymInt[] normalized_shape, Tensor? weight, Tensor? bias, float eps) -> (Tensor, Tensor, Tensor)",ExecuTorch (Portable CPU),NO
+435,getitem_12,<built-in function getitem>,ExecuTorch (Portable CPU),NO
+436,aten_permute_copy_default_85,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+437,aten_view_copy_default_127,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+438,aten_permute_copy_default_86,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+439,aten_addmm_default_24,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",Samsung ENN (NPU - E9955),YES
+440,aten_view_copy_default_128,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+441,aten_view_copy_default_129,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+442,aten_unsqueeze_copy_default_6,"<EdgeOpOverload: aten.unsqueeze_copy.default>: schema = aten::unsqueeze_copy(Tensor self, int dim) -> Tensor",Samsung ENN (NPU - E9955),YES
+443,aten_permute_copy_default_87,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+444,aten_squeeze_copy_dims_6,"<EdgeOpOverload: aten.squeeze_copy.dims>: schema = aten::squeeze_copy.dims(Tensor self, int[] dim) -> Tensor",Samsung ENN (NPU - E9955),YES
+445,dim_order_ops__clone_dim_order_default_31,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+446,aten_select_copy_int_18,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",Samsung ENN (NPU - E9955),YES
+447,aten_select_copy_int_19,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",Samsung ENN (NPU - E9955),YES
+448,aten_select_copy_int_20,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",Samsung ENN (NPU - E9955),YES
+449,aten_view_copy_default_130,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+450,aten_permute_copy_default_88,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+451,aten_view_copy_default_131,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+452,aten_permute_copy_default_89,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+453,aten_view_copy_default_132,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+454,aten_permute_copy_default_90,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+455,aten_view_copy_default_133,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+456,aten_view_copy_default_134,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+457,aten_view_copy_default_135,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+458,aten_mul_scalar_12,"<EdgeOpOverload: aten.mul.Scalar>: schema = aten::mul.Scalar(Tensor self, Scalar other) -> Tensor",Samsung ENN (NPU - E9955),YES
+459,aten_permute_copy_default_91,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+460,aten_mul_scalar_13,"<EdgeOpOverload: aten.mul.Scalar>: schema = aten::mul.Scalar(Tensor self, Scalar other) -> Tensor",Samsung ENN (NPU - E9955),YES
+461,aten_expand_copy_default_25,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",Samsung ENN (NPU - E9955),YES
+462,aten_view_copy_default_136,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+463,aten_expand_copy_default_26,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",Samsung ENN (NPU - E9955),YES
+464,aten_view_copy_default_137,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+465,aten_bmm_default_12,"<EdgeOpOverload: aten.bmm.default>: schema = aten::bmm(Tensor self, Tensor mat2) -> Tensor",Samsung ENN (NPU - E9955),YES
+466,aten_view_copy_default_138,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+467,aten__softmax_default_6,"<EdgeOpOverload: aten._softmax.default>: schema = aten::_softmax(Tensor self, int dim, bool half_to_float) -> Tensor",Samsung ENN (NPU - E9955),YES
+468,aten_eq_scalar_6,"<EdgeOpOverload: aten.eq.Scalar>: schema = aten::eq.Scalar(Tensor self, Scalar other) -> Tensor",ExecuTorch (Portable CPU),NO
+469,aten_logical_not_default_12,<EdgeOpOverload: aten.logical_not.default>: schema = aten::logical_not(Tensor self) -> Tensor,ExecuTorch (Portable CPU),NO
+470,aten_any_dim_6,"<EdgeOpOverload: aten.any.dim>: schema = aten::any.dim(Tensor self, int dim, bool keepdim=False) -> Tensor",ExecuTorch (Portable CPU),NO
+471,aten_logical_not_default_13,<EdgeOpOverload: aten.logical_not.default>: schema = aten::logical_not(Tensor self) -> Tensor,ExecuTorch (Portable CPU),NO
+472,aten_full_like_default_6,"<EdgeOpOverload: aten.full_like.default>: schema = aten::full_like(Tensor self, Scalar fill_value, *, ScalarType? dtype=None, Layout? layout=None, Device? device=None, bool? pin_memory=None, MemoryFormat? memory_format=None) -> Tensor",ExecuTorch (Portable CPU),NO
+473,aten_where_self_6,"<EdgeOpOverload: aten.where.self>: schema = aten::where.self(Tensor condition, Tensor self, Tensor other) -> Tensor",ExecuTorch (Portable CPU),NO
+474,aten_expand_copy_default_27,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",Samsung ENN (NPU - E9955),YES
+475,aten_view_copy_default_139,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+476,aten_expand_copy_default_28,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",Samsung ENN (NPU - E9955),YES
+477,aten_view_copy_default_140,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+478,aten_bmm_default_13,"<EdgeOpOverload: aten.bmm.default>: schema = aten::bmm(Tensor self, Tensor mat2) -> Tensor",Samsung ENN (NPU - E9955),YES
+479,aten_view_copy_default_141,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+480,aten_permute_copy_default_92,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+481,dim_order_ops__clone_dim_order_default_32,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+482,aten_permute_copy_default_93,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+483,aten_permute_copy_default_94,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+484,aten_view_copy_default_142,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+485,aten_permute_copy_default_95,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+486,aten_addmm_default_25,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",Samsung ENN (NPU - E9955),YES
+487,aten_view_copy_default_143,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+488,aten_permute_copy_default_96,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+489,dim_order_ops__clone_dim_order_default_33,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+490,aten_add_tensor_13,"<EdgeOpOverload: aten.add.Tensor>: schema = aten::add.Tensor(Tensor self, Tensor other, *, Scalar alpha=1) -> Tensor",Samsung ENN (NPU - E9955),YES
+491,aten_native_layer_norm_default_13,"<EdgeOpOverload: aten.native_layer_norm.default>: schema = aten::native_layer_norm(Tensor input, SymInt[] normalized_shape, Tensor? weight, Tensor? bias, float eps) -> (Tensor, Tensor, Tensor)",ExecuTorch (Portable CPU),NO
+492,getitem_13,<built-in function getitem>,ExecuTorch (Portable CPU),NO
+493,aten_view_copy_default_144,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+494,aten_permute_copy_default_97,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+495,aten_addmm_default_26,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",Samsung ENN (NPU - E9955),YES
+496,aten_view_copy_default_145,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+497,aten_gelu_default_6,"<EdgeOpOverload: aten.gelu.default>: schema = aten::gelu(Tensor self, *, str approximate=""none"") -> Tensor",Samsung ENN (NPU - E9955),YES
+498,dim_order_ops__clone_dim_order_default_34,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+499,aten_view_copy_default_146,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+500,aten_permute_copy_default_98,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+501,aten_addmm_default_27,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",Samsung ENN (NPU - E9955),YES
+502,aten_view_copy_default_147,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+503,dim_order_ops__clone_dim_order_default_35,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+504,aten_add_tensor_14,"<EdgeOpOverload: aten.add.Tensor>: schema = aten::add.Tensor(Tensor self, Tensor other, *, Scalar alpha=1) -> Tensor",Samsung ENN (NPU - E9955),YES
+505,aten_native_layer_norm_default_14,"<EdgeOpOverload: aten.native_layer_norm.default>: schema = aten::native_layer_norm(Tensor input, SymInt[] normalized_shape, Tensor? weight, Tensor? bias, float eps) -> (Tensor, Tensor, Tensor)",ExecuTorch (Portable CPU),NO
+506,getitem_14,<built-in function getitem>,ExecuTorch (Portable CPU),NO
+507,aten_permute_copy_default_99,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+508,aten_view_copy_default_148,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+509,aten_permute_copy_default_100,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+510,aten_addmm_default_28,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",Samsung ENN (NPU - E9955),YES
+511,aten_view_copy_default_149,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+512,aten_view_copy_default_150,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+513,aten_unsqueeze_copy_default_7,"<EdgeOpOverload: aten.unsqueeze_copy.default>: schema = aten::unsqueeze_copy(Tensor self, int dim) -> Tensor",Samsung ENN (NPU - E9955),YES
+514,aten_permute_copy_default_101,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+515,aten_squeeze_copy_dims_7,"<EdgeOpOverload: aten.squeeze_copy.dims>: schema = aten::squeeze_copy.dims(Tensor self, int[] dim) -> Tensor",Samsung ENN (NPU - E9955),YES
+516,dim_order_ops__clone_dim_order_default_36,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+517,aten_select_copy_int_21,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",Samsung ENN (NPU - E9955),YES
+518,aten_select_copy_int_22,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",Samsung ENN (NPU - E9955),YES
+519,aten_select_copy_int_23,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",Samsung ENN (NPU - E9955),YES
+520,aten_view_copy_default_151,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+521,aten_permute_copy_default_102,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+522,aten_view_copy_default_152,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+523,aten_permute_copy_default_103,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+524,aten_view_copy_default_153,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+525,aten_permute_copy_default_104,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+526,aten_view_copy_default_154,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+527,aten_view_copy_default_155,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+528,aten_view_copy_default_156,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+529,aten_mul_scalar_14,"<EdgeOpOverload: aten.mul.Scalar>: schema = aten::mul.Scalar(Tensor self, Scalar other) -> Tensor",Samsung ENN (NPU - E9955),YES
+530,aten_permute_copy_default_105,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+531,aten_mul_scalar_15,"<EdgeOpOverload: aten.mul.Scalar>: schema = aten::mul.Scalar(Tensor self, Scalar other) -> Tensor",Samsung ENN (NPU - E9955),YES
+532,aten_expand_copy_default_29,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",Samsung ENN (NPU - E9955),YES
+533,aten_view_copy_default_157,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+534,aten_expand_copy_default_30,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",Samsung ENN (NPU - E9955),YES
+535,aten_view_copy_default_158,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+536,aten_bmm_default_14,"<EdgeOpOverload: aten.bmm.default>: schema = aten::bmm(Tensor self, Tensor mat2) -> Tensor",Samsung ENN (NPU - E9955),YES
+537,aten_view_copy_default_159,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+538,aten__softmax_default_7,"<EdgeOpOverload: aten._softmax.default>: schema = aten::_softmax(Tensor self, int dim, bool half_to_float) -> Tensor",Samsung ENN (NPU - E9955),YES
+539,aten_eq_scalar_7,"<EdgeOpOverload: aten.eq.Scalar>: schema = aten::eq.Scalar(Tensor self, Scalar other) -> Tensor",ExecuTorch (Portable CPU),NO
+540,aten_logical_not_default_14,<EdgeOpOverload: aten.logical_not.default>: schema = aten::logical_not(Tensor self) -> Tensor,ExecuTorch (Portable CPU),NO
+541,aten_any_dim_7,"<EdgeOpOverload: aten.any.dim>: schema = aten::any.dim(Tensor self, int dim, bool keepdim=False) -> Tensor",ExecuTorch (Portable CPU),NO
+542,aten_logical_not_default_15,<EdgeOpOverload: aten.logical_not.default>: schema = aten::logical_not(Tensor self) -> Tensor,ExecuTorch (Portable CPU),NO
+543,aten_full_like_default_7,"<EdgeOpOverload: aten.full_like.default>: schema = aten::full_like(Tensor self, Scalar fill_value, *, ScalarType? dtype=None, Layout? layout=None, Device? device=None, bool? pin_memory=None, MemoryFormat? memory_format=None) -> Tensor",ExecuTorch (Portable CPU),NO
+544,aten_where_self_7,"<EdgeOpOverload: aten.where.self>: schema = aten::where.self(Tensor condition, Tensor self, Tensor other) -> Tensor",ExecuTorch (Portable CPU),NO
+545,aten_expand_copy_default_31,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",Samsung ENN (NPU - E9955),YES
+546,aten_view_copy_default_160,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+547,aten_expand_copy_default_32,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",Samsung ENN (NPU - E9955),YES
+548,aten_view_copy_default_161,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+549,aten_bmm_default_15,"<EdgeOpOverload: aten.bmm.default>: schema = aten::bmm(Tensor self, Tensor mat2) -> Tensor",Samsung ENN (NPU - E9955),YES
+550,aten_view_copy_default_162,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+551,aten_permute_copy_default_106,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+552,dim_order_ops__clone_dim_order_default_37,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+553,aten_permute_copy_default_107,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+554,aten_permute_copy_default_108,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+555,aten_view_copy_default_163,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+556,aten_permute_copy_default_109,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+557,aten_addmm_default_29,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",Samsung ENN (NPU - E9955),YES
+558,aten_view_copy_default_164,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+559,aten_permute_copy_default_110,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+560,dim_order_ops__clone_dim_order_default_38,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+561,aten_add_tensor_15,"<EdgeOpOverload: aten.add.Tensor>: schema = aten::add.Tensor(Tensor self, Tensor other, *, Scalar alpha=1) -> Tensor",Samsung ENN (NPU - E9955),YES
+562,aten_native_layer_norm_default_15,"<EdgeOpOverload: aten.native_layer_norm.default>: schema = aten::native_layer_norm(Tensor input, SymInt[] normalized_shape, Tensor? weight, Tensor? bias, float eps) -> (Tensor, Tensor, Tensor)",ExecuTorch (Portable CPU),NO
+563,getitem_15,<built-in function getitem>,ExecuTorch (Portable CPU),NO
+564,aten_view_copy_default_165,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+565,aten_permute_copy_default_111,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+566,aten_addmm_default_30,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",Samsung ENN (NPU - E9955),YES
+567,aten_view_copy_default_166,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+568,aten_gelu_default_7,"<EdgeOpOverload: aten.gelu.default>: schema = aten::gelu(Tensor self, *, str approximate=""none"") -> Tensor",Samsung ENN (NPU - E9955),YES
+569,dim_order_ops__clone_dim_order_default_39,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+570,aten_view_copy_default_167,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+571,aten_permute_copy_default_112,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+572,aten_addmm_default_31,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",Samsung ENN (NPU - E9955),YES
+573,aten_view_copy_default_168,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+574,dim_order_ops__clone_dim_order_default_40,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+575,aten_add_tensor_16,"<EdgeOpOverload: aten.add.Tensor>: schema = aten::add.Tensor(Tensor self, Tensor other, *, Scalar alpha=1) -> Tensor",Samsung ENN (NPU - E9955),YES
+576,aten_native_layer_norm_default_16,"<EdgeOpOverload: aten.native_layer_norm.default>: schema = aten::native_layer_norm(Tensor input, SymInt[] normalized_shape, Tensor? weight, Tensor? bias, float eps) -> (Tensor, Tensor, Tensor)",ExecuTorch (Portable CPU),NO
+577,getitem_16,<built-in function getitem>,ExecuTorch (Portable CPU),NO
+578,aten_permute_copy_default_113,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+579,aten_view_copy_default_169,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+580,aten_permute_copy_default_114,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+581,aten_addmm_default_32,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",Samsung ENN (NPU - E9955),YES
+582,aten_view_copy_default_170,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+583,aten_view_copy_default_171,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+584,aten_unsqueeze_copy_default_8,"<EdgeOpOverload: aten.unsqueeze_copy.default>: schema = aten::unsqueeze_copy(Tensor self, int dim) -> Tensor",Samsung ENN (NPU - E9955),YES
+585,aten_permute_copy_default_115,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+586,aten_squeeze_copy_dims_8,"<EdgeOpOverload: aten.squeeze_copy.dims>: schema = aten::squeeze_copy.dims(Tensor self, int[] dim) -> Tensor",Samsung ENN (NPU - E9955),YES
+587,dim_order_ops__clone_dim_order_default_41,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+588,aten_select_copy_int_24,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",Samsung ENN (NPU - E9955),YES
+589,aten_select_copy_int_25,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",Samsung ENN (NPU - E9955),YES
+590,aten_select_copy_int_26,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",Samsung ENN (NPU - E9955),YES
+591,aten_view_copy_default_172,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+592,aten_permute_copy_default_116,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+593,aten_view_copy_default_173,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+594,aten_permute_copy_default_117,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+595,aten_view_copy_default_174,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+596,aten_permute_copy_default_118,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+597,aten_view_copy_default_175,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+598,aten_view_copy_default_176,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+599,aten_view_copy_default_177,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+600,aten_mul_scalar_16,"<EdgeOpOverload: aten.mul.Scalar>: schema = aten::mul.Scalar(Tensor self, Scalar other) -> Tensor",Samsung ENN (NPU - E9955),YES
+601,aten_permute_copy_default_119,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+602,aten_mul_scalar_17,"<EdgeOpOverload: aten.mul.Scalar>: schema = aten::mul.Scalar(Tensor self, Scalar other) -> Tensor",Samsung ENN (NPU - E9955),YES
+603,aten_expand_copy_default_33,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",Samsung ENN (NPU - E9955),YES
+604,aten_view_copy_default_178,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+605,aten_expand_copy_default_34,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",Samsung ENN (NPU - E9955),YES
+606,aten_view_copy_default_179,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+607,aten_bmm_default_16,"<EdgeOpOverload: aten.bmm.default>: schema = aten::bmm(Tensor self, Tensor mat2) -> Tensor",Samsung ENN (NPU - E9955),YES
+608,aten_view_copy_default_180,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+609,aten__softmax_default_8,"<EdgeOpOverload: aten._softmax.default>: schema = aten::_softmax(Tensor self, int dim, bool half_to_float) -> Tensor",Samsung ENN (NPU - E9955),YES
+610,aten_eq_scalar_8,"<EdgeOpOverload: aten.eq.Scalar>: schema = aten::eq.Scalar(Tensor self, Scalar other) -> Tensor",ExecuTorch (Portable CPU),NO
+611,aten_logical_not_default_16,<EdgeOpOverload: aten.logical_not.default>: schema = aten::logical_not(Tensor self) -> Tensor,ExecuTorch (Portable CPU),NO
+612,aten_any_dim_8,"<EdgeOpOverload: aten.any.dim>: schema = aten::any.dim(Tensor self, int dim, bool keepdim=False) -> Tensor",ExecuTorch (Portable CPU),NO
+613,aten_logical_not_default_17,<EdgeOpOverload: aten.logical_not.default>: schema = aten::logical_not(Tensor self) -> Tensor,ExecuTorch (Portable CPU),NO
+614,aten_full_like_default_8,"<EdgeOpOverload: aten.full_like.default>: schema = aten::full_like(Tensor self, Scalar fill_value, *, ScalarType? dtype=None, Layout? layout=None, Device? device=None, bool? pin_memory=None, MemoryFormat? memory_format=None) -> Tensor",ExecuTorch (Portable CPU),NO
+615,aten_where_self_8,"<EdgeOpOverload: aten.where.self>: schema = aten::where.self(Tensor condition, Tensor self, Tensor other) -> Tensor",ExecuTorch (Portable CPU),NO
+616,aten_expand_copy_default_35,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",Samsung ENN (NPU - E9955),YES
+617,aten_view_copy_default_181,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+618,aten_expand_copy_default_36,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",Samsung ENN (NPU - E9955),YES
+619,aten_view_copy_default_182,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+620,aten_bmm_default_17,"<EdgeOpOverload: aten.bmm.default>: schema = aten::bmm(Tensor self, Tensor mat2) -> Tensor",Samsung ENN (NPU - E9955),YES
+621,aten_view_copy_default_183,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+622,aten_permute_copy_default_120,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+623,dim_order_ops__clone_dim_order_default_42,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+624,aten_permute_copy_default_121,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+625,aten_permute_copy_default_122,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+626,aten_view_copy_default_184,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+627,aten_permute_copy_default_123,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+628,aten_addmm_default_33,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",Samsung ENN (NPU - E9955),YES
+629,aten_view_copy_default_185,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+630,aten_permute_copy_default_124,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+631,dim_order_ops__clone_dim_order_default_43,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+632,aten_add_tensor_17,"<EdgeOpOverload: aten.add.Tensor>: schema = aten::add.Tensor(Tensor self, Tensor other, *, Scalar alpha=1) -> Tensor",Samsung ENN (NPU - E9955),YES
+633,aten_native_layer_norm_default_17,"<EdgeOpOverload: aten.native_layer_norm.default>: schema = aten::native_layer_norm(Tensor input, SymInt[] normalized_shape, Tensor? weight, Tensor? bias, float eps) -> (Tensor, Tensor, Tensor)",ExecuTorch (Portable CPU),NO
+634,getitem_17,<built-in function getitem>,ExecuTorch (Portable CPU),NO
+635,aten_view_copy_default_186,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+636,aten_permute_copy_default_125,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+637,aten_addmm_default_34,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",Samsung ENN (NPU - E9955),YES
+638,aten_view_copy_default_187,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+639,aten_gelu_default_8,"<EdgeOpOverload: aten.gelu.default>: schema = aten::gelu(Tensor self, *, str approximate=""none"") -> Tensor",Samsung ENN (NPU - E9955),YES
+640,dim_order_ops__clone_dim_order_default_44,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+641,aten_view_copy_default_188,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+642,aten_permute_copy_default_126,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+643,aten_addmm_default_35,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",Samsung ENN (NPU - E9955),YES
+644,aten_view_copy_default_189,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+645,dim_order_ops__clone_dim_order_default_45,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+646,aten_add_tensor_18,"<EdgeOpOverload: aten.add.Tensor>: schema = aten::add.Tensor(Tensor self, Tensor other, *, Scalar alpha=1) -> Tensor",Samsung ENN (NPU - E9955),YES
+647,aten_native_layer_norm_default_18,"<EdgeOpOverload: aten.native_layer_norm.default>: schema = aten::native_layer_norm(Tensor input, SymInt[] normalized_shape, Tensor? weight, Tensor? bias, float eps) -> (Tensor, Tensor, Tensor)",ExecuTorch (Portable CPU),NO
+648,getitem_18,<built-in function getitem>,ExecuTorch (Portable CPU),NO
+649,aten_permute_copy_default_127,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+650,aten_view_copy_default_190,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+651,aten_permute_copy_default_128,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+652,aten_addmm_default_36,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",Samsung ENN (NPU - E9955),YES
+653,aten_view_copy_default_191,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+654,aten_view_copy_default_192,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+655,aten_unsqueeze_copy_default_9,"<EdgeOpOverload: aten.unsqueeze_copy.default>: schema = aten::unsqueeze_copy(Tensor self, int dim) -> Tensor",Samsung ENN (NPU - E9955),YES
+656,aten_permute_copy_default_129,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+657,aten_squeeze_copy_dims_9,"<EdgeOpOverload: aten.squeeze_copy.dims>: schema = aten::squeeze_copy.dims(Tensor self, int[] dim) -> Tensor",Samsung ENN (NPU - E9955),YES
+658,dim_order_ops__clone_dim_order_default_46,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+659,aten_select_copy_int_27,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",Samsung ENN (NPU - E9955),YES
+660,aten_select_copy_int_28,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",Samsung ENN (NPU - E9955),YES
+661,aten_select_copy_int_29,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",Samsung ENN (NPU - E9955),YES
+662,aten_view_copy_default_193,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+663,aten_permute_copy_default_130,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+664,aten_view_copy_default_194,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+665,aten_permute_copy_default_131,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+666,aten_view_copy_default_195,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+667,aten_permute_copy_default_132,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+668,aten_view_copy_default_196,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+669,aten_view_copy_default_197,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+670,aten_view_copy_default_198,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+671,aten_mul_scalar_18,"<EdgeOpOverload: aten.mul.Scalar>: schema = aten::mul.Scalar(Tensor self, Scalar other) -> Tensor",Samsung ENN (NPU - E9955),YES
+672,aten_permute_copy_default_133,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+673,aten_mul_scalar_19,"<EdgeOpOverload: aten.mul.Scalar>: schema = aten::mul.Scalar(Tensor self, Scalar other) -> Tensor",Samsung ENN (NPU - E9955),YES
+674,aten_expand_copy_default_37,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",Samsung ENN (NPU - E9955),YES
+675,aten_view_copy_default_199,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+676,aten_expand_copy_default_38,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",Samsung ENN (NPU - E9955),YES
+677,aten_view_copy_default_200,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+678,aten_bmm_default_18,"<EdgeOpOverload: aten.bmm.default>: schema = aten::bmm(Tensor self, Tensor mat2) -> Tensor",Samsung ENN (NPU - E9955),YES
+679,aten_view_copy_default_201,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+680,aten__softmax_default_9,"<EdgeOpOverload: aten._softmax.default>: schema = aten::_softmax(Tensor self, int dim, bool half_to_float) -> Tensor",Samsung ENN (NPU - E9955),YES
+681,aten_eq_scalar_9,"<EdgeOpOverload: aten.eq.Scalar>: schema = aten::eq.Scalar(Tensor self, Scalar other) -> Tensor",ExecuTorch (Portable CPU),NO
+682,aten_logical_not_default_18,<EdgeOpOverload: aten.logical_not.default>: schema = aten::logical_not(Tensor self) -> Tensor,ExecuTorch (Portable CPU),NO
+683,aten_any_dim_9,"<EdgeOpOverload: aten.any.dim>: schema = aten::any.dim(Tensor self, int dim, bool keepdim=False) -> Tensor",ExecuTorch (Portable CPU),NO
+684,aten_logical_not_default_19,<EdgeOpOverload: aten.logical_not.default>: schema = aten::logical_not(Tensor self) -> Tensor,ExecuTorch (Portable CPU),NO
+685,aten_full_like_default_9,"<EdgeOpOverload: aten.full_like.default>: schema = aten::full_like(Tensor self, Scalar fill_value, *, ScalarType? dtype=None, Layout? layout=None, Device? device=None, bool? pin_memory=None, MemoryFormat? memory_format=None) -> Tensor",ExecuTorch (Portable CPU),NO
+686,aten_where_self_9,"<EdgeOpOverload: aten.where.self>: schema = aten::where.self(Tensor condition, Tensor self, Tensor other) -> Tensor",ExecuTorch (Portable CPU),NO
+687,aten_expand_copy_default_39,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",Samsung ENN (NPU - E9955),YES
+688,aten_view_copy_default_202,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+689,aten_expand_copy_default_40,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",Samsung ENN (NPU - E9955),YES
+690,aten_view_copy_default_203,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+691,aten_bmm_default_19,"<EdgeOpOverload: aten.bmm.default>: schema = aten::bmm(Tensor self, Tensor mat2) -> Tensor",Samsung ENN (NPU - E9955),YES
+692,aten_view_copy_default_204,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+693,aten_permute_copy_default_134,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+694,dim_order_ops__clone_dim_order_default_47,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+695,aten_permute_copy_default_135,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+696,aten_permute_copy_default_136,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+697,aten_view_copy_default_205,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+698,aten_permute_copy_default_137,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+699,aten_addmm_default_37,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",Samsung ENN (NPU - E9955),YES
+700,aten_view_copy_default_206,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+701,aten_permute_copy_default_138,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+702,dim_order_ops__clone_dim_order_default_48,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+703,aten_add_tensor_19,"<EdgeOpOverload: aten.add.Tensor>: schema = aten::add.Tensor(Tensor self, Tensor other, *, Scalar alpha=1) -> Tensor",Samsung ENN (NPU - E9955),YES
+704,aten_native_layer_norm_default_19,"<EdgeOpOverload: aten.native_layer_norm.default>: schema = aten::native_layer_norm(Tensor input, SymInt[] normalized_shape, Tensor? weight, Tensor? bias, float eps) -> (Tensor, Tensor, Tensor)",ExecuTorch (Portable CPU),NO
+705,getitem_19,<built-in function getitem>,ExecuTorch (Portable CPU),NO
+706,aten_view_copy_default_207,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+707,aten_permute_copy_default_139,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+708,aten_addmm_default_38,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",Samsung ENN (NPU - E9955),YES
+709,aten_view_copy_default_208,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+710,aten_gelu_default_9,"<EdgeOpOverload: aten.gelu.default>: schema = aten::gelu(Tensor self, *, str approximate=""none"") -> Tensor",Samsung ENN (NPU - E9955),YES
+711,dim_order_ops__clone_dim_order_default_49,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+712,aten_view_copy_default_209,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+713,aten_permute_copy_default_140,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+714,aten_addmm_default_39,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",Samsung ENN (NPU - E9955),YES
+715,aten_view_copy_default_210,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+716,dim_order_ops__clone_dim_order_default_50,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+717,aten_add_tensor_20,"<EdgeOpOverload: aten.add.Tensor>: schema = aten::add.Tensor(Tensor self, Tensor other, *, Scalar alpha=1) -> Tensor",Samsung ENN (NPU - E9955),YES
+718,aten_native_layer_norm_default_20,"<EdgeOpOverload: aten.native_layer_norm.default>: schema = aten::native_layer_norm(Tensor input, SymInt[] normalized_shape, Tensor? weight, Tensor? bias, float eps) -> (Tensor, Tensor, Tensor)",ExecuTorch (Portable CPU),NO
+719,getitem_20,<built-in function getitem>,ExecuTorch (Portable CPU),NO
+720,aten_permute_copy_default_141,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+721,aten_view_copy_default_211,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+722,aten_permute_copy_default_142,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+723,aten_addmm_default_40,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",Samsung ENN (NPU - E9955),YES
+724,aten_view_copy_default_212,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+725,aten_view_copy_default_213,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+726,aten_unsqueeze_copy_default_10,"<EdgeOpOverload: aten.unsqueeze_copy.default>: schema = aten::unsqueeze_copy(Tensor self, int dim) -> Tensor",Samsung ENN (NPU - E9955),YES
+727,aten_permute_copy_default_143,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+728,aten_squeeze_copy_dims_10,"<EdgeOpOverload: aten.squeeze_copy.dims>: schema = aten::squeeze_copy.dims(Tensor self, int[] dim) -> Tensor",Samsung ENN (NPU - E9955),YES
+729,dim_order_ops__clone_dim_order_default_51,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+730,aten_select_copy_int_30,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",Samsung ENN (NPU - E9955),YES
+731,aten_select_copy_int_31,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",Samsung ENN (NPU - E9955),YES
+732,aten_select_copy_int_32,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",Samsung ENN (NPU - E9955),YES
+733,aten_view_copy_default_214,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+734,aten_permute_copy_default_144,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+735,aten_view_copy_default_215,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+736,aten_permute_copy_default_145,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+737,aten_view_copy_default_216,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+738,aten_permute_copy_default_146,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+739,aten_view_copy_default_217,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+740,aten_view_copy_default_218,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+741,aten_view_copy_default_219,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+742,aten_mul_scalar_20,"<EdgeOpOverload: aten.mul.Scalar>: schema = aten::mul.Scalar(Tensor self, Scalar other) -> Tensor",Samsung ENN (NPU - E9955),YES
+743,aten_permute_copy_default_147,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+744,aten_mul_scalar_21,"<EdgeOpOverload: aten.mul.Scalar>: schema = aten::mul.Scalar(Tensor self, Scalar other) -> Tensor",Samsung ENN (NPU - E9955),YES
+745,aten_expand_copy_default_41,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",Samsung ENN (NPU - E9955),YES
+746,aten_view_copy_default_220,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+747,aten_expand_copy_default_42,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",Samsung ENN (NPU - E9955),YES
+748,aten_view_copy_default_221,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+749,aten_bmm_default_20,"<EdgeOpOverload: aten.bmm.default>: schema = aten::bmm(Tensor self, Tensor mat2) -> Tensor",Samsung ENN (NPU - E9955),YES
+750,aten_view_copy_default_222,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+751,aten__softmax_default_10,"<EdgeOpOverload: aten._softmax.default>: schema = aten::_softmax(Tensor self, int dim, bool half_to_float) -> Tensor",Samsung ENN (NPU - E9955),YES
+752,aten_eq_scalar_10,"<EdgeOpOverload: aten.eq.Scalar>: schema = aten::eq.Scalar(Tensor self, Scalar other) -> Tensor",ExecuTorch (Portable CPU),NO
+753,aten_logical_not_default_20,<EdgeOpOverload: aten.logical_not.default>: schema = aten::logical_not(Tensor self) -> Tensor,ExecuTorch (Portable CPU),NO
+754,aten_any_dim_10,"<EdgeOpOverload: aten.any.dim>: schema = aten::any.dim(Tensor self, int dim, bool keepdim=False) -> Tensor",ExecuTorch (Portable CPU),NO
+755,aten_logical_not_default_21,<EdgeOpOverload: aten.logical_not.default>: schema = aten::logical_not(Tensor self) -> Tensor,ExecuTorch (Portable CPU),NO
+756,aten_full_like_default_10,"<EdgeOpOverload: aten.full_like.default>: schema = aten::full_like(Tensor self, Scalar fill_value, *, ScalarType? dtype=None, Layout? layout=None, Device? device=None, bool? pin_memory=None, MemoryFormat? memory_format=None) -> Tensor",ExecuTorch (Portable CPU),NO
+757,aten_where_self_10,"<EdgeOpOverload: aten.where.self>: schema = aten::where.self(Tensor condition, Tensor self, Tensor other) -> Tensor",ExecuTorch (Portable CPU),NO
+758,aten_expand_copy_default_43,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",Samsung ENN (NPU - E9955),YES
+759,aten_view_copy_default_223,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+760,aten_expand_copy_default_44,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",Samsung ENN (NPU - E9955),YES
+761,aten_view_copy_default_224,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+762,aten_bmm_default_21,"<EdgeOpOverload: aten.bmm.default>: schema = aten::bmm(Tensor self, Tensor mat2) -> Tensor",Samsung ENN (NPU - E9955),YES
+763,aten_view_copy_default_225,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+764,aten_permute_copy_default_148,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+765,dim_order_ops__clone_dim_order_default_52,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+766,aten_permute_copy_default_149,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+767,aten_permute_copy_default_150,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+768,aten_view_copy_default_226,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+769,aten_permute_copy_default_151,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+770,aten_addmm_default_41,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",Samsung ENN (NPU - E9955),YES
+771,aten_view_copy_default_227,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+772,aten_permute_copy_default_152,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+773,dim_order_ops__clone_dim_order_default_53,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+774,aten_add_tensor_21,"<EdgeOpOverload: aten.add.Tensor>: schema = aten::add.Tensor(Tensor self, Tensor other, *, Scalar alpha=1) -> Tensor",Samsung ENN (NPU - E9955),YES
+775,aten_native_layer_norm_default_21,"<EdgeOpOverload: aten.native_layer_norm.default>: schema = aten::native_layer_norm(Tensor input, SymInt[] normalized_shape, Tensor? weight, Tensor? bias, float eps) -> (Tensor, Tensor, Tensor)",ExecuTorch (Portable CPU),NO
+776,getitem_21,<built-in function getitem>,ExecuTorch (Portable CPU),NO
+777,aten_view_copy_default_228,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+778,aten_permute_copy_default_153,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+779,aten_addmm_default_42,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",Samsung ENN (NPU - E9955),YES
+780,aten_view_copy_default_229,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+781,aten_gelu_default_10,"<EdgeOpOverload: aten.gelu.default>: schema = aten::gelu(Tensor self, *, str approximate=""none"") -> Tensor",Samsung ENN (NPU - E9955),YES
+782,dim_order_ops__clone_dim_order_default_54,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+783,aten_view_copy_default_230,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+784,aten_permute_copy_default_154,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+785,aten_addmm_default_43,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",Samsung ENN (NPU - E9955),YES
+786,aten_view_copy_default_231,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+787,dim_order_ops__clone_dim_order_default_55,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+788,aten_add_tensor_22,"<EdgeOpOverload: aten.add.Tensor>: schema = aten::add.Tensor(Tensor self, Tensor other, *, Scalar alpha=1) -> Tensor",Samsung ENN (NPU - E9955),YES
+789,aten_native_layer_norm_default_22,"<EdgeOpOverload: aten.native_layer_norm.default>: schema = aten::native_layer_norm(Tensor input, SymInt[] normalized_shape, Tensor? weight, Tensor? bias, float eps) -> (Tensor, Tensor, Tensor)",ExecuTorch (Portable CPU),NO
+790,getitem_22,<built-in function getitem>,ExecuTorch (Portable CPU),NO
+791,aten_permute_copy_default_155,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+792,aten_view_copy_default_232,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+793,aten_permute_copy_default_156,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+794,aten_addmm_default_44,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",Samsung ENN (NPU - E9955),YES
+795,aten_view_copy_default_233,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+796,aten_view_copy_default_234,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+797,aten_unsqueeze_copy_default_11,"<EdgeOpOverload: aten.unsqueeze_copy.default>: schema = aten::unsqueeze_copy(Tensor self, int dim) -> Tensor",Samsung ENN (NPU - E9955),YES
+798,aten_permute_copy_default_157,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+799,aten_squeeze_copy_dims_11,"<EdgeOpOverload: aten.squeeze_copy.dims>: schema = aten::squeeze_copy.dims(Tensor self, int[] dim) -> Tensor",Samsung ENN (NPU - E9955),YES
+800,dim_order_ops__clone_dim_order_default_56,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+801,aten_select_copy_int_33,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",Samsung ENN (NPU - E9955),YES
+802,aten_select_copy_int_34,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",Samsung ENN (NPU - E9955),YES
+803,aten_select_copy_int_35,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",Samsung ENN (NPU - E9955),YES
+804,aten_view_copy_default_235,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+805,aten_permute_copy_default_158,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+806,aten_view_copy_default_236,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+807,aten_permute_copy_default_159,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+808,aten_view_copy_default_237,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+809,aten_permute_copy_default_160,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+810,aten_view_copy_default_238,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+811,aten_view_copy_default_239,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+812,aten_view_copy_default_240,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+813,aten_mul_scalar_22,"<EdgeOpOverload: aten.mul.Scalar>: schema = aten::mul.Scalar(Tensor self, Scalar other) -> Tensor",Samsung ENN (NPU - E9955),YES
+814,aten_permute_copy_default_161,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+815,aten_mul_scalar_23,"<EdgeOpOverload: aten.mul.Scalar>: schema = aten::mul.Scalar(Tensor self, Scalar other) -> Tensor",Samsung ENN (NPU - E9955),YES
+816,aten_expand_copy_default_45,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",Samsung ENN (NPU - E9955),YES
+817,aten_view_copy_default_241,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+818,aten_expand_copy_default_46,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",Samsung ENN (NPU - E9955),YES
+819,aten_view_copy_default_242,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+820,aten_bmm_default_22,"<EdgeOpOverload: aten.bmm.default>: schema = aten::bmm(Tensor self, Tensor mat2) -> Tensor",Samsung ENN (NPU - E9955),YES
+821,aten_view_copy_default_243,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+822,aten__softmax_default_11,"<EdgeOpOverload: aten._softmax.default>: schema = aten::_softmax(Tensor self, int dim, bool half_to_float) -> Tensor",Samsung ENN (NPU - E9955),YES
+823,aten_eq_scalar_11,"<EdgeOpOverload: aten.eq.Scalar>: schema = aten::eq.Scalar(Tensor self, Scalar other) -> Tensor",ExecuTorch (Portable CPU),NO
+824,aten_logical_not_default_22,<EdgeOpOverload: aten.logical_not.default>: schema = aten::logical_not(Tensor self) -> Tensor,ExecuTorch (Portable CPU),NO
+825,aten_any_dim_11,"<EdgeOpOverload: aten.any.dim>: schema = aten::any.dim(Tensor self, int dim, bool keepdim=False) -> Tensor",ExecuTorch (Portable CPU),NO
+826,aten_logical_not_default_23,<EdgeOpOverload: aten.logical_not.default>: schema = aten::logical_not(Tensor self) -> Tensor,ExecuTorch (Portable CPU),NO
+827,aten_full_like_default_11,"<EdgeOpOverload: aten.full_like.default>: schema = aten::full_like(Tensor self, Scalar fill_value, *, ScalarType? dtype=None, Layout? layout=None, Device? device=None, bool? pin_memory=None, MemoryFormat? memory_format=None) -> Tensor",ExecuTorch (Portable CPU),NO
+828,aten_where_self_11,"<EdgeOpOverload: aten.where.self>: schema = aten::where.self(Tensor condition, Tensor self, Tensor other) -> Tensor",ExecuTorch (Portable CPU),NO
+829,aten_expand_copy_default_47,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",Samsung ENN (NPU - E9955),YES
+830,aten_view_copy_default_244,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+831,aten_expand_copy_default_48,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",Samsung ENN (NPU - E9955),YES
+832,aten_view_copy_default_245,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+833,aten_bmm_default_23,"<EdgeOpOverload: aten.bmm.default>: schema = aten::bmm(Tensor self, Tensor mat2) -> Tensor",Samsung ENN (NPU - E9955),YES
+834,aten_view_copy_default_246,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+835,aten_permute_copy_default_162,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+836,dim_order_ops__clone_dim_order_default_57,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+837,aten_permute_copy_default_163,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+838,aten_permute_copy_default_164,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+839,aten_view_copy_default_247,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+840,aten_permute_copy_default_165,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+841,aten_addmm_default_45,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",Samsung ENN (NPU - E9955),YES
+842,aten_view_copy_default_248,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+843,aten_permute_copy_default_166,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+844,dim_order_ops__clone_dim_order_default_58,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+845,aten_add_tensor_23,"<EdgeOpOverload: aten.add.Tensor>: schema = aten::add.Tensor(Tensor self, Tensor other, *, Scalar alpha=1) -> Tensor",Samsung ENN (NPU - E9955),YES
+846,aten_native_layer_norm_default_23,"<EdgeOpOverload: aten.native_layer_norm.default>: schema = aten::native_layer_norm(Tensor input, SymInt[] normalized_shape, Tensor? weight, Tensor? bias, float eps) -> (Tensor, Tensor, Tensor)",ExecuTorch (Portable CPU),NO
+847,getitem_23,<built-in function getitem>,ExecuTorch (Portable CPU),NO
+848,aten_view_copy_default_249,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+849,aten_permute_copy_default_167,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+850,aten_addmm_default_46,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",Samsung ENN (NPU - E9955),YES
+851,aten_view_copy_default_250,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+852,aten_gelu_default_11,"<EdgeOpOverload: aten.gelu.default>: schema = aten::gelu(Tensor self, *, str approximate=""none"") -> Tensor",Samsung ENN (NPU - E9955),YES
+853,dim_order_ops__clone_dim_order_default_59,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+854,aten_view_copy_default_251,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+855,aten_permute_copy_default_168,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+856,aten_addmm_default_47,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",Samsung ENN (NPU - E9955),YES
+857,aten_view_copy_default_252,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Samsung ENN (NPU - E9955),YES
+858,dim_order_ops__clone_dim_order_default_60,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",ExecuTorch (Portable CPU),NO
+859,aten_add_tensor_24,"<EdgeOpOverload: aten.add.Tensor>: schema = aten::add.Tensor(Tensor self, Tensor other, *, Scalar alpha=1) -> Tensor",Samsung ENN (NPU - E9955),YES
+860,aten_native_layer_norm_default_24,"<EdgeOpOverload: aten.native_layer_norm.default>: schema = aten::native_layer_norm(Tensor input, SymInt[] normalized_shape, Tensor? weight, Tensor? bias, float eps) -> (Tensor, Tensor, Tensor)",ExecuTorch (Portable CPU),NO
+861,getitem_24,<built-in function getitem>,ExecuTorch (Portable CPU),NO
+862,aten_select_copy_int_36,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",Samsung ENN (NPU - E9955),YES
+863,aten_permute_copy_default_169,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Samsung ENN (NPU - E9955),YES
+864,aten_addmm_default_48,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",Samsung ENN (NPU - E9955),YES

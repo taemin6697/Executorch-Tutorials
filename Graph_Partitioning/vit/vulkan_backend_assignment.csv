@@ -1,0 +1,865 @@
+Order,Node Name,ATen Operator,Backend Assignment,Is Delegated?
+1,aten_convolution_default,"<EdgeOpOverload: aten.convolution.default>: schema = aten::convolution(Tensor input, Tensor weight, Tensor? bias, SymInt[] stride, SymInt[] padding, SymInt[] dilation, bool transposed, SymInt[] output_padding, SymInt groups) -> Tensor",Vulkan (GPU),YES
+2,aten_view_copy_default,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+3,aten_permute_copy_default,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+4,aten_expand_copy_default,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",Vulkan (GPU),YES
+5,aten_cat_default,"<EdgeOpOverload: aten.cat.default>: schema = aten::cat(Tensor[] tensors, int dim=0) -> Tensor",Vulkan (GPU),YES
+6,aten_add_tensor,"<EdgeOpOverload: aten.add.Tensor>: schema = aten::add.Tensor(Tensor self, Tensor other, *, Scalar alpha=1) -> Tensor",Vulkan (GPU),YES
+7,dim_order_ops__clone_dim_order_default,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",Vulkan (GPU),YES
+8,aten_native_layer_norm_default,"<EdgeOpOverload: aten.native_layer_norm.default>: schema = aten::native_layer_norm(Tensor input, SymInt[] normalized_shape, Tensor? weight, Tensor? bias, float eps) -> (Tensor, Tensor, Tensor)",Vulkan (GPU),YES
+9,getitem,<built-in function getitem>,Vulkan (GPU),YES
+10,aten_permute_copy_default_1,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+11,aten_view_copy_default_1,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+12,aten_permute_copy_default_2,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+13,aten_addmm_default,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",Vulkan (GPU),YES
+14,aten_view_copy_default_2,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+15,aten_view_copy_default_3,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+16,aten_unsqueeze_copy_default,"<EdgeOpOverload: aten.unsqueeze_copy.default>: schema = aten::unsqueeze_copy(Tensor self, int dim) -> Tensor",Vulkan (GPU),YES
+17,aten_permute_copy_default_3,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+18,aten_squeeze_copy_dims,"<EdgeOpOverload: aten.squeeze_copy.dims>: schema = aten::squeeze_copy.dims(Tensor self, int[] dim) -> Tensor",Vulkan (GPU),YES
+19,dim_order_ops__clone_dim_order_default_1,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",Vulkan (GPU),YES
+20,aten_select_copy_int,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",Vulkan (GPU),YES
+21,aten_select_copy_int_1,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",Vulkan (GPU),YES
+22,aten_select_copy_int_2,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",Vulkan (GPU),YES
+23,aten_view_copy_default_4,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+24,aten_permute_copy_default_4,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+25,aten_view_copy_default_5,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+26,aten_permute_copy_default_5,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+27,aten_view_copy_default_6,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+28,aten_permute_copy_default_6,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+29,aten_view_copy_default_7,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+30,aten_view_copy_default_8,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+31,aten_view_copy_default_9,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+32,aten_mul_scalar,"<EdgeOpOverload: aten.mul.Scalar>: schema = aten::mul.Scalar(Tensor self, Scalar other) -> Tensor",ExecuTorch (Portable CPU),NO
+33,aten_permute_copy_default_7,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+34,aten_mul_scalar_1,"<EdgeOpOverload: aten.mul.Scalar>: schema = aten::mul.Scalar(Tensor self, Scalar other) -> Tensor",ExecuTorch (Portable CPU),NO
+35,aten_expand_copy_default_1,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",Vulkan (GPU),YES
+36,aten_view_copy_default_10,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+37,aten_expand_copy_default_2,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",Vulkan (GPU),YES
+38,aten_view_copy_default_11,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+39,aten_bmm_default,"<EdgeOpOverload: aten.bmm.default>: schema = aten::bmm(Tensor self, Tensor mat2) -> Tensor",Vulkan (GPU),YES
+40,aten_view_copy_default_12,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+41,aten__softmax_default,"<EdgeOpOverload: aten._softmax.default>: schema = aten::_softmax(Tensor self, int dim, bool half_to_float) -> Tensor",Vulkan (GPU),YES
+42,aten_eq_scalar,"<EdgeOpOverload: aten.eq.Scalar>: schema = aten::eq.Scalar(Tensor self, Scalar other) -> Tensor",ExecuTorch (Portable CPU),NO
+43,aten_logical_not_default,<EdgeOpOverload: aten.logical_not.default>: schema = aten::logical_not(Tensor self) -> Tensor,ExecuTorch (Portable CPU),NO
+44,aten_any_dim,"<EdgeOpOverload: aten.any.dim>: schema = aten::any.dim(Tensor self, int dim, bool keepdim=False) -> Tensor",ExecuTorch (Portable CPU),NO
+45,aten_logical_not_default_1,<EdgeOpOverload: aten.logical_not.default>: schema = aten::logical_not(Tensor self) -> Tensor,ExecuTorch (Portable CPU),NO
+46,aten_full_like_default,"<EdgeOpOverload: aten.full_like.default>: schema = aten::full_like(Tensor self, Scalar fill_value, *, ScalarType? dtype=None, Layout? layout=None, Device? device=None, bool? pin_memory=None, MemoryFormat? memory_format=None) -> Tensor",Vulkan (GPU),YES
+47,aten_where_self,"<EdgeOpOverload: aten.where.self>: schema = aten::where.self(Tensor condition, Tensor self, Tensor other) -> Tensor",ExecuTorch (Portable CPU),NO
+48,aten_expand_copy_default_3,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",Vulkan (GPU),YES
+49,aten_view_copy_default_13,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+50,aten_expand_copy_default_4,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",Vulkan (GPU),YES
+51,aten_view_copy_default_14,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+52,aten_bmm_default_1,"<EdgeOpOverload: aten.bmm.default>: schema = aten::bmm(Tensor self, Tensor mat2) -> Tensor",Vulkan (GPU),YES
+53,aten_view_copy_default_15,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+54,aten_permute_copy_default_8,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+55,dim_order_ops__clone_dim_order_default_2,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",Vulkan (GPU),YES
+56,aten_permute_copy_default_9,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+57,aten_permute_copy_default_10,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+58,aten_view_copy_default_16,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+59,aten_permute_copy_default_11,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+60,aten_addmm_default_1,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",Vulkan (GPU),YES
+61,aten_view_copy_default_17,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+62,aten_permute_copy_default_12,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+63,dim_order_ops__clone_dim_order_default_3,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",Vulkan (GPU),YES
+64,aten_add_tensor_1,"<EdgeOpOverload: aten.add.Tensor>: schema = aten::add.Tensor(Tensor self, Tensor other, *, Scalar alpha=1) -> Tensor",Vulkan (GPU),YES
+65,aten_native_layer_norm_default_1,"<EdgeOpOverload: aten.native_layer_norm.default>: schema = aten::native_layer_norm(Tensor input, SymInt[] normalized_shape, Tensor? weight, Tensor? bias, float eps) -> (Tensor, Tensor, Tensor)",Vulkan (GPU),YES
+66,getitem_1,<built-in function getitem>,Vulkan (GPU),YES
+67,aten_view_copy_default_18,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+68,aten_permute_copy_default_13,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+69,aten_addmm_default_2,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",Vulkan (GPU),YES
+70,aten_view_copy_default_19,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+71,aten_gelu_default,"<EdgeOpOverload: aten.gelu.default>: schema = aten::gelu(Tensor self, *, str approximate=""none"") -> Tensor",Vulkan (GPU),YES
+72,dim_order_ops__clone_dim_order_default_4,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",Vulkan (GPU),YES
+73,aten_view_copy_default_20,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+74,aten_permute_copy_default_14,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+75,aten_addmm_default_3,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",Vulkan (GPU),YES
+76,aten_view_copy_default_21,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+77,dim_order_ops__clone_dim_order_default_5,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",Vulkan (GPU),YES
+78,aten_add_tensor_2,"<EdgeOpOverload: aten.add.Tensor>: schema = aten::add.Tensor(Tensor self, Tensor other, *, Scalar alpha=1) -> Tensor",Vulkan (GPU),YES
+79,aten_native_layer_norm_default_2,"<EdgeOpOverload: aten.native_layer_norm.default>: schema = aten::native_layer_norm(Tensor input, SymInt[] normalized_shape, Tensor? weight, Tensor? bias, float eps) -> (Tensor, Tensor, Tensor)",Vulkan (GPU),YES
+80,getitem_2,<built-in function getitem>,Vulkan (GPU),YES
+81,aten_permute_copy_default_15,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+82,aten_view_copy_default_22,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+83,aten_permute_copy_default_16,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+84,aten_addmm_default_4,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",Vulkan (GPU),YES
+85,aten_view_copy_default_23,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+86,aten_view_copy_default_24,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+87,aten_unsqueeze_copy_default_1,"<EdgeOpOverload: aten.unsqueeze_copy.default>: schema = aten::unsqueeze_copy(Tensor self, int dim) -> Tensor",Vulkan (GPU),YES
+88,aten_permute_copy_default_17,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+89,aten_squeeze_copy_dims_1,"<EdgeOpOverload: aten.squeeze_copy.dims>: schema = aten::squeeze_copy.dims(Tensor self, int[] dim) -> Tensor",Vulkan (GPU),YES
+90,dim_order_ops__clone_dim_order_default_6,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",Vulkan (GPU),YES
+91,aten_select_copy_int_3,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",Vulkan (GPU),YES
+92,aten_select_copy_int_4,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",Vulkan (GPU),YES
+93,aten_select_copy_int_5,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",Vulkan (GPU),YES
+94,aten_view_copy_default_25,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+95,aten_permute_copy_default_18,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+96,aten_view_copy_default_26,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+97,aten_permute_copy_default_19,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+98,aten_view_copy_default_27,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+99,aten_permute_copy_default_20,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+100,aten_view_copy_default_28,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+101,aten_view_copy_default_29,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+102,aten_view_copy_default_30,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+103,aten_mul_scalar_2,"<EdgeOpOverload: aten.mul.Scalar>: schema = aten::mul.Scalar(Tensor self, Scalar other) -> Tensor",ExecuTorch (Portable CPU),NO
+104,aten_permute_copy_default_21,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+105,aten_mul_scalar_3,"<EdgeOpOverload: aten.mul.Scalar>: schema = aten::mul.Scalar(Tensor self, Scalar other) -> Tensor",ExecuTorch (Portable CPU),NO
+106,aten_expand_copy_default_5,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",Vulkan (GPU),YES
+107,aten_view_copy_default_31,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+108,aten_expand_copy_default_6,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",Vulkan (GPU),YES
+109,aten_view_copy_default_32,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+110,aten_bmm_default_2,"<EdgeOpOverload: aten.bmm.default>: schema = aten::bmm(Tensor self, Tensor mat2) -> Tensor",Vulkan (GPU),YES
+111,aten_view_copy_default_33,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+112,aten__softmax_default_1,"<EdgeOpOverload: aten._softmax.default>: schema = aten::_softmax(Tensor self, int dim, bool half_to_float) -> Tensor",Vulkan (GPU),YES
+113,aten_eq_scalar_1,"<EdgeOpOverload: aten.eq.Scalar>: schema = aten::eq.Scalar(Tensor self, Scalar other) -> Tensor",ExecuTorch (Portable CPU),NO
+114,aten_logical_not_default_2,<EdgeOpOverload: aten.logical_not.default>: schema = aten::logical_not(Tensor self) -> Tensor,ExecuTorch (Portable CPU),NO
+115,aten_any_dim_1,"<EdgeOpOverload: aten.any.dim>: schema = aten::any.dim(Tensor self, int dim, bool keepdim=False) -> Tensor",ExecuTorch (Portable CPU),NO
+116,aten_logical_not_default_3,<EdgeOpOverload: aten.logical_not.default>: schema = aten::logical_not(Tensor self) -> Tensor,ExecuTorch (Portable CPU),NO
+117,aten_full_like_default_1,"<EdgeOpOverload: aten.full_like.default>: schema = aten::full_like(Tensor self, Scalar fill_value, *, ScalarType? dtype=None, Layout? layout=None, Device? device=None, bool? pin_memory=None, MemoryFormat? memory_format=None) -> Tensor",Vulkan (GPU),YES
+118,aten_where_self_1,"<EdgeOpOverload: aten.where.self>: schema = aten::where.self(Tensor condition, Tensor self, Tensor other) -> Tensor",ExecuTorch (Portable CPU),NO
+119,aten_expand_copy_default_7,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",Vulkan (GPU),YES
+120,aten_view_copy_default_34,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+121,aten_expand_copy_default_8,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",Vulkan (GPU),YES
+122,aten_view_copy_default_35,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+123,aten_bmm_default_3,"<EdgeOpOverload: aten.bmm.default>: schema = aten::bmm(Tensor self, Tensor mat2) -> Tensor",Vulkan (GPU),YES
+124,aten_view_copy_default_36,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+125,aten_permute_copy_default_22,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+126,dim_order_ops__clone_dim_order_default_7,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",Vulkan (GPU),YES
+127,aten_permute_copy_default_23,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+128,aten_permute_copy_default_24,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+129,aten_view_copy_default_37,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+130,aten_permute_copy_default_25,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+131,aten_addmm_default_5,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",Vulkan (GPU),YES
+132,aten_view_copy_default_38,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+133,aten_permute_copy_default_26,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+134,dim_order_ops__clone_dim_order_default_8,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",Vulkan (GPU),YES
+135,aten_add_tensor_3,"<EdgeOpOverload: aten.add.Tensor>: schema = aten::add.Tensor(Tensor self, Tensor other, *, Scalar alpha=1) -> Tensor",Vulkan (GPU),YES
+136,aten_native_layer_norm_default_3,"<EdgeOpOverload: aten.native_layer_norm.default>: schema = aten::native_layer_norm(Tensor input, SymInt[] normalized_shape, Tensor? weight, Tensor? bias, float eps) -> (Tensor, Tensor, Tensor)",Vulkan (GPU),YES
+137,getitem_3,<built-in function getitem>,Vulkan (GPU),YES
+138,aten_view_copy_default_39,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+139,aten_permute_copy_default_27,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+140,aten_addmm_default_6,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",Vulkan (GPU),YES
+141,aten_view_copy_default_40,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+142,aten_gelu_default_1,"<EdgeOpOverload: aten.gelu.default>: schema = aten::gelu(Tensor self, *, str approximate=""none"") -> Tensor",Vulkan (GPU),YES
+143,dim_order_ops__clone_dim_order_default_9,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",Vulkan (GPU),YES
+144,aten_view_copy_default_41,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+145,aten_permute_copy_default_28,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+146,aten_addmm_default_7,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",Vulkan (GPU),YES
+147,aten_view_copy_default_42,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+148,dim_order_ops__clone_dim_order_default_10,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",Vulkan (GPU),YES
+149,aten_add_tensor_4,"<EdgeOpOverload: aten.add.Tensor>: schema = aten::add.Tensor(Tensor self, Tensor other, *, Scalar alpha=1) -> Tensor",Vulkan (GPU),YES
+150,aten_native_layer_norm_default_4,"<EdgeOpOverload: aten.native_layer_norm.default>: schema = aten::native_layer_norm(Tensor input, SymInt[] normalized_shape, Tensor? weight, Tensor? bias, float eps) -> (Tensor, Tensor, Tensor)",Vulkan (GPU),YES
+151,getitem_4,<built-in function getitem>,Vulkan (GPU),YES
+152,aten_permute_copy_default_29,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+153,aten_view_copy_default_43,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+154,aten_permute_copy_default_30,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+155,aten_addmm_default_8,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",Vulkan (GPU),YES
+156,aten_view_copy_default_44,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+157,aten_view_copy_default_45,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+158,aten_unsqueeze_copy_default_2,"<EdgeOpOverload: aten.unsqueeze_copy.default>: schema = aten::unsqueeze_copy(Tensor self, int dim) -> Tensor",Vulkan (GPU),YES
+159,aten_permute_copy_default_31,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+160,aten_squeeze_copy_dims_2,"<EdgeOpOverload: aten.squeeze_copy.dims>: schema = aten::squeeze_copy.dims(Tensor self, int[] dim) -> Tensor",Vulkan (GPU),YES
+161,dim_order_ops__clone_dim_order_default_11,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",Vulkan (GPU),YES
+162,aten_select_copy_int_6,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",Vulkan (GPU),YES
+163,aten_select_copy_int_7,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",Vulkan (GPU),YES
+164,aten_select_copy_int_8,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",Vulkan (GPU),YES
+165,aten_view_copy_default_46,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+166,aten_permute_copy_default_32,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+167,aten_view_copy_default_47,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+168,aten_permute_copy_default_33,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+169,aten_view_copy_default_48,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+170,aten_permute_copy_default_34,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+171,aten_view_copy_default_49,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+172,aten_view_copy_default_50,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+173,aten_view_copy_default_51,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+174,aten_mul_scalar_4,"<EdgeOpOverload: aten.mul.Scalar>: schema = aten::mul.Scalar(Tensor self, Scalar other) -> Tensor",ExecuTorch (Portable CPU),NO
+175,aten_permute_copy_default_35,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+176,aten_mul_scalar_5,"<EdgeOpOverload: aten.mul.Scalar>: schema = aten::mul.Scalar(Tensor self, Scalar other) -> Tensor",ExecuTorch (Portable CPU),NO
+177,aten_expand_copy_default_9,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",Vulkan (GPU),YES
+178,aten_view_copy_default_52,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+179,aten_expand_copy_default_10,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",Vulkan (GPU),YES
+180,aten_view_copy_default_53,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+181,aten_bmm_default_4,"<EdgeOpOverload: aten.bmm.default>: schema = aten::bmm(Tensor self, Tensor mat2) -> Tensor",Vulkan (GPU),YES
+182,aten_view_copy_default_54,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+183,aten__softmax_default_2,"<EdgeOpOverload: aten._softmax.default>: schema = aten::_softmax(Tensor self, int dim, bool half_to_float) -> Tensor",Vulkan (GPU),YES
+184,aten_eq_scalar_2,"<EdgeOpOverload: aten.eq.Scalar>: schema = aten::eq.Scalar(Tensor self, Scalar other) -> Tensor",ExecuTorch (Portable CPU),NO
+185,aten_logical_not_default_4,<EdgeOpOverload: aten.logical_not.default>: schema = aten::logical_not(Tensor self) -> Tensor,ExecuTorch (Portable CPU),NO
+186,aten_any_dim_2,"<EdgeOpOverload: aten.any.dim>: schema = aten::any.dim(Tensor self, int dim, bool keepdim=False) -> Tensor",ExecuTorch (Portable CPU),NO
+187,aten_logical_not_default_5,<EdgeOpOverload: aten.logical_not.default>: schema = aten::logical_not(Tensor self) -> Tensor,ExecuTorch (Portable CPU),NO
+188,aten_full_like_default_2,"<EdgeOpOverload: aten.full_like.default>: schema = aten::full_like(Tensor self, Scalar fill_value, *, ScalarType? dtype=None, Layout? layout=None, Device? device=None, bool? pin_memory=None, MemoryFormat? memory_format=None) -> Tensor",Vulkan (GPU),YES
+189,aten_where_self_2,"<EdgeOpOverload: aten.where.self>: schema = aten::where.self(Tensor condition, Tensor self, Tensor other) -> Tensor",ExecuTorch (Portable CPU),NO
+190,aten_expand_copy_default_11,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",Vulkan (GPU),YES
+191,aten_view_copy_default_55,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+192,aten_expand_copy_default_12,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",Vulkan (GPU),YES
+193,aten_view_copy_default_56,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+194,aten_bmm_default_5,"<EdgeOpOverload: aten.bmm.default>: schema = aten::bmm(Tensor self, Tensor mat2) -> Tensor",Vulkan (GPU),YES
+195,aten_view_copy_default_57,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+196,aten_permute_copy_default_36,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+197,dim_order_ops__clone_dim_order_default_12,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",Vulkan (GPU),YES
+198,aten_permute_copy_default_37,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+199,aten_permute_copy_default_38,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+200,aten_view_copy_default_58,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+201,aten_permute_copy_default_39,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+202,aten_addmm_default_9,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",Vulkan (GPU),YES
+203,aten_view_copy_default_59,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+204,aten_permute_copy_default_40,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+205,dim_order_ops__clone_dim_order_default_13,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",Vulkan (GPU),YES
+206,aten_add_tensor_5,"<EdgeOpOverload: aten.add.Tensor>: schema = aten::add.Tensor(Tensor self, Tensor other, *, Scalar alpha=1) -> Tensor",Vulkan (GPU),YES
+207,aten_native_layer_norm_default_5,"<EdgeOpOverload: aten.native_layer_norm.default>: schema = aten::native_layer_norm(Tensor input, SymInt[] normalized_shape, Tensor? weight, Tensor? bias, float eps) -> (Tensor, Tensor, Tensor)",Vulkan (GPU),YES
+208,getitem_5,<built-in function getitem>,Vulkan (GPU),YES
+209,aten_view_copy_default_60,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+210,aten_permute_copy_default_41,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+211,aten_addmm_default_10,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",Vulkan (GPU),YES
+212,aten_view_copy_default_61,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+213,aten_gelu_default_2,"<EdgeOpOverload: aten.gelu.default>: schema = aten::gelu(Tensor self, *, str approximate=""none"") -> Tensor",Vulkan (GPU),YES
+214,dim_order_ops__clone_dim_order_default_14,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",Vulkan (GPU),YES
+215,aten_view_copy_default_62,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+216,aten_permute_copy_default_42,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+217,aten_addmm_default_11,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",Vulkan (GPU),YES
+218,aten_view_copy_default_63,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+219,dim_order_ops__clone_dim_order_default_15,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",Vulkan (GPU),YES
+220,aten_add_tensor_6,"<EdgeOpOverload: aten.add.Tensor>: schema = aten::add.Tensor(Tensor self, Tensor other, *, Scalar alpha=1) -> Tensor",Vulkan (GPU),YES
+221,aten_native_layer_norm_default_6,"<EdgeOpOverload: aten.native_layer_norm.default>: schema = aten::native_layer_norm(Tensor input, SymInt[] normalized_shape, Tensor? weight, Tensor? bias, float eps) -> (Tensor, Tensor, Tensor)",Vulkan (GPU),YES
+222,getitem_6,<built-in function getitem>,Vulkan (GPU),YES
+223,aten_permute_copy_default_43,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+224,aten_view_copy_default_64,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+225,aten_permute_copy_default_44,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+226,aten_addmm_default_12,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",Vulkan (GPU),YES
+227,aten_view_copy_default_65,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+228,aten_view_copy_default_66,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+229,aten_unsqueeze_copy_default_3,"<EdgeOpOverload: aten.unsqueeze_copy.default>: schema = aten::unsqueeze_copy(Tensor self, int dim) -> Tensor",Vulkan (GPU),YES
+230,aten_permute_copy_default_45,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+231,aten_squeeze_copy_dims_3,"<EdgeOpOverload: aten.squeeze_copy.dims>: schema = aten::squeeze_copy.dims(Tensor self, int[] dim) -> Tensor",Vulkan (GPU),YES
+232,dim_order_ops__clone_dim_order_default_16,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",Vulkan (GPU),YES
+233,aten_select_copy_int_9,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",Vulkan (GPU),YES
+234,aten_select_copy_int_10,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",Vulkan (GPU),YES
+235,aten_select_copy_int_11,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",Vulkan (GPU),YES
+236,aten_view_copy_default_67,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+237,aten_permute_copy_default_46,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+238,aten_view_copy_default_68,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+239,aten_permute_copy_default_47,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+240,aten_view_copy_default_69,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+241,aten_permute_copy_default_48,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+242,aten_view_copy_default_70,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+243,aten_view_copy_default_71,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+244,aten_view_copy_default_72,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+245,aten_mul_scalar_6,"<EdgeOpOverload: aten.mul.Scalar>: schema = aten::mul.Scalar(Tensor self, Scalar other) -> Tensor",ExecuTorch (Portable CPU),NO
+246,aten_permute_copy_default_49,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+247,aten_mul_scalar_7,"<EdgeOpOverload: aten.mul.Scalar>: schema = aten::mul.Scalar(Tensor self, Scalar other) -> Tensor",ExecuTorch (Portable CPU),NO
+248,aten_expand_copy_default_13,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",Vulkan (GPU),YES
+249,aten_view_copy_default_73,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+250,aten_expand_copy_default_14,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",Vulkan (GPU),YES
+251,aten_view_copy_default_74,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+252,aten_bmm_default_6,"<EdgeOpOverload: aten.bmm.default>: schema = aten::bmm(Tensor self, Tensor mat2) -> Tensor",Vulkan (GPU),YES
+253,aten_view_copy_default_75,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+254,aten__softmax_default_3,"<EdgeOpOverload: aten._softmax.default>: schema = aten::_softmax(Tensor self, int dim, bool half_to_float) -> Tensor",Vulkan (GPU),YES
+255,aten_eq_scalar_3,"<EdgeOpOverload: aten.eq.Scalar>: schema = aten::eq.Scalar(Tensor self, Scalar other) -> Tensor",ExecuTorch (Portable CPU),NO
+256,aten_logical_not_default_6,<EdgeOpOverload: aten.logical_not.default>: schema = aten::logical_not(Tensor self) -> Tensor,ExecuTorch (Portable CPU),NO
+257,aten_any_dim_3,"<EdgeOpOverload: aten.any.dim>: schema = aten::any.dim(Tensor self, int dim, bool keepdim=False) -> Tensor",ExecuTorch (Portable CPU),NO
+258,aten_logical_not_default_7,<EdgeOpOverload: aten.logical_not.default>: schema = aten::logical_not(Tensor self) -> Tensor,ExecuTorch (Portable CPU),NO
+259,aten_full_like_default_3,"<EdgeOpOverload: aten.full_like.default>: schema = aten::full_like(Tensor self, Scalar fill_value, *, ScalarType? dtype=None, Layout? layout=None, Device? device=None, bool? pin_memory=None, MemoryFormat? memory_format=None) -> Tensor",Vulkan (GPU),YES
+260,aten_where_self_3,"<EdgeOpOverload: aten.where.self>: schema = aten::where.self(Tensor condition, Tensor self, Tensor other) -> Tensor",ExecuTorch (Portable CPU),NO
+261,aten_expand_copy_default_15,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",Vulkan (GPU),YES
+262,aten_view_copy_default_76,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+263,aten_expand_copy_default_16,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",Vulkan (GPU),YES
+264,aten_view_copy_default_77,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+265,aten_bmm_default_7,"<EdgeOpOverload: aten.bmm.default>: schema = aten::bmm(Tensor self, Tensor mat2) -> Tensor",Vulkan (GPU),YES
+266,aten_view_copy_default_78,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+267,aten_permute_copy_default_50,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+268,dim_order_ops__clone_dim_order_default_17,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",Vulkan (GPU),YES
+269,aten_permute_copy_default_51,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+270,aten_permute_copy_default_52,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+271,aten_view_copy_default_79,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+272,aten_permute_copy_default_53,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+273,aten_addmm_default_13,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",Vulkan (GPU),YES
+274,aten_view_copy_default_80,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+275,aten_permute_copy_default_54,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+276,dim_order_ops__clone_dim_order_default_18,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",Vulkan (GPU),YES
+277,aten_add_tensor_7,"<EdgeOpOverload: aten.add.Tensor>: schema = aten::add.Tensor(Tensor self, Tensor other, *, Scalar alpha=1) -> Tensor",Vulkan (GPU),YES
+278,aten_native_layer_norm_default_7,"<EdgeOpOverload: aten.native_layer_norm.default>: schema = aten::native_layer_norm(Tensor input, SymInt[] normalized_shape, Tensor? weight, Tensor? bias, float eps) -> (Tensor, Tensor, Tensor)",Vulkan (GPU),YES
+279,getitem_7,<built-in function getitem>,Vulkan (GPU),YES
+280,aten_view_copy_default_81,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+281,aten_permute_copy_default_55,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+282,aten_addmm_default_14,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",Vulkan (GPU),YES
+283,aten_view_copy_default_82,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+284,aten_gelu_default_3,"<EdgeOpOverload: aten.gelu.default>: schema = aten::gelu(Tensor self, *, str approximate=""none"") -> Tensor",Vulkan (GPU),YES
+285,dim_order_ops__clone_dim_order_default_19,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",Vulkan (GPU),YES
+286,aten_view_copy_default_83,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+287,aten_permute_copy_default_56,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+288,aten_addmm_default_15,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",Vulkan (GPU),YES
+289,aten_view_copy_default_84,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+290,dim_order_ops__clone_dim_order_default_20,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",Vulkan (GPU),YES
+291,aten_add_tensor_8,"<EdgeOpOverload: aten.add.Tensor>: schema = aten::add.Tensor(Tensor self, Tensor other, *, Scalar alpha=1) -> Tensor",Vulkan (GPU),YES
+292,aten_native_layer_norm_default_8,"<EdgeOpOverload: aten.native_layer_norm.default>: schema = aten::native_layer_norm(Tensor input, SymInt[] normalized_shape, Tensor? weight, Tensor? bias, float eps) -> (Tensor, Tensor, Tensor)",Vulkan (GPU),YES
+293,getitem_8,<built-in function getitem>,Vulkan (GPU),YES
+294,aten_permute_copy_default_57,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+295,aten_view_copy_default_85,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+296,aten_permute_copy_default_58,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+297,aten_addmm_default_16,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",Vulkan (GPU),YES
+298,aten_view_copy_default_86,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+299,aten_view_copy_default_87,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+300,aten_unsqueeze_copy_default_4,"<EdgeOpOverload: aten.unsqueeze_copy.default>: schema = aten::unsqueeze_copy(Tensor self, int dim) -> Tensor",Vulkan (GPU),YES
+301,aten_permute_copy_default_59,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+302,aten_squeeze_copy_dims_4,"<EdgeOpOverload: aten.squeeze_copy.dims>: schema = aten::squeeze_copy.dims(Tensor self, int[] dim) -> Tensor",Vulkan (GPU),YES
+303,dim_order_ops__clone_dim_order_default_21,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",Vulkan (GPU),YES
+304,aten_select_copy_int_12,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",Vulkan (GPU),YES
+305,aten_select_copy_int_13,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",Vulkan (GPU),YES
+306,aten_select_copy_int_14,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",Vulkan (GPU),YES
+307,aten_view_copy_default_88,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+308,aten_permute_copy_default_60,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+309,aten_view_copy_default_89,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+310,aten_permute_copy_default_61,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+311,aten_view_copy_default_90,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+312,aten_permute_copy_default_62,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+313,aten_view_copy_default_91,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+314,aten_view_copy_default_92,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+315,aten_view_copy_default_93,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+316,aten_mul_scalar_8,"<EdgeOpOverload: aten.mul.Scalar>: schema = aten::mul.Scalar(Tensor self, Scalar other) -> Tensor",ExecuTorch (Portable CPU),NO
+317,aten_permute_copy_default_63,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+318,aten_mul_scalar_9,"<EdgeOpOverload: aten.mul.Scalar>: schema = aten::mul.Scalar(Tensor self, Scalar other) -> Tensor",ExecuTorch (Portable CPU),NO
+319,aten_expand_copy_default_17,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",Vulkan (GPU),YES
+320,aten_view_copy_default_94,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+321,aten_expand_copy_default_18,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",Vulkan (GPU),YES
+322,aten_view_copy_default_95,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+323,aten_bmm_default_8,"<EdgeOpOverload: aten.bmm.default>: schema = aten::bmm(Tensor self, Tensor mat2) -> Tensor",Vulkan (GPU),YES
+324,aten_view_copy_default_96,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+325,aten__softmax_default_4,"<EdgeOpOverload: aten._softmax.default>: schema = aten::_softmax(Tensor self, int dim, bool half_to_float) -> Tensor",Vulkan (GPU),YES
+326,aten_eq_scalar_4,"<EdgeOpOverload: aten.eq.Scalar>: schema = aten::eq.Scalar(Tensor self, Scalar other) -> Tensor",ExecuTorch (Portable CPU),NO
+327,aten_logical_not_default_8,<EdgeOpOverload: aten.logical_not.default>: schema = aten::logical_not(Tensor self) -> Tensor,ExecuTorch (Portable CPU),NO
+328,aten_any_dim_4,"<EdgeOpOverload: aten.any.dim>: schema = aten::any.dim(Tensor self, int dim, bool keepdim=False) -> Tensor",ExecuTorch (Portable CPU),NO
+329,aten_logical_not_default_9,<EdgeOpOverload: aten.logical_not.default>: schema = aten::logical_not(Tensor self) -> Tensor,ExecuTorch (Portable CPU),NO
+330,aten_full_like_default_4,"<EdgeOpOverload: aten.full_like.default>: schema = aten::full_like(Tensor self, Scalar fill_value, *, ScalarType? dtype=None, Layout? layout=None, Device? device=None, bool? pin_memory=None, MemoryFormat? memory_format=None) -> Tensor",Vulkan (GPU),YES
+331,aten_where_self_4,"<EdgeOpOverload: aten.where.self>: schema = aten::where.self(Tensor condition, Tensor self, Tensor other) -> Tensor",ExecuTorch (Portable CPU),NO
+332,aten_expand_copy_default_19,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",Vulkan (GPU),YES
+333,aten_view_copy_default_97,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+334,aten_expand_copy_default_20,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",Vulkan (GPU),YES
+335,aten_view_copy_default_98,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+336,aten_bmm_default_9,"<EdgeOpOverload: aten.bmm.default>: schema = aten::bmm(Tensor self, Tensor mat2) -> Tensor",Vulkan (GPU),YES
+337,aten_view_copy_default_99,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+338,aten_permute_copy_default_64,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+339,dim_order_ops__clone_dim_order_default_22,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",Vulkan (GPU),YES
+340,aten_permute_copy_default_65,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+341,aten_permute_copy_default_66,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+342,aten_view_copy_default_100,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+343,aten_permute_copy_default_67,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+344,aten_addmm_default_17,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",Vulkan (GPU),YES
+345,aten_view_copy_default_101,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+346,aten_permute_copy_default_68,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+347,dim_order_ops__clone_dim_order_default_23,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",Vulkan (GPU),YES
+348,aten_add_tensor_9,"<EdgeOpOverload: aten.add.Tensor>: schema = aten::add.Tensor(Tensor self, Tensor other, *, Scalar alpha=1) -> Tensor",Vulkan (GPU),YES
+349,aten_native_layer_norm_default_9,"<EdgeOpOverload: aten.native_layer_norm.default>: schema = aten::native_layer_norm(Tensor input, SymInt[] normalized_shape, Tensor? weight, Tensor? bias, float eps) -> (Tensor, Tensor, Tensor)",Vulkan (GPU),YES
+350,getitem_9,<built-in function getitem>,Vulkan (GPU),YES
+351,aten_view_copy_default_102,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+352,aten_permute_copy_default_69,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+353,aten_addmm_default_18,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",Vulkan (GPU),YES
+354,aten_view_copy_default_103,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+355,aten_gelu_default_4,"<EdgeOpOverload: aten.gelu.default>: schema = aten::gelu(Tensor self, *, str approximate=""none"") -> Tensor",Vulkan (GPU),YES
+356,dim_order_ops__clone_dim_order_default_24,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",Vulkan (GPU),YES
+357,aten_view_copy_default_104,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+358,aten_permute_copy_default_70,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+359,aten_addmm_default_19,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",Vulkan (GPU),YES
+360,aten_view_copy_default_105,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+361,dim_order_ops__clone_dim_order_default_25,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",Vulkan (GPU),YES
+362,aten_add_tensor_10,"<EdgeOpOverload: aten.add.Tensor>: schema = aten::add.Tensor(Tensor self, Tensor other, *, Scalar alpha=1) -> Tensor",Vulkan (GPU),YES
+363,aten_native_layer_norm_default_10,"<EdgeOpOverload: aten.native_layer_norm.default>: schema = aten::native_layer_norm(Tensor input, SymInt[] normalized_shape, Tensor? weight, Tensor? bias, float eps) -> (Tensor, Tensor, Tensor)",Vulkan (GPU),YES
+364,getitem_10,<built-in function getitem>,Vulkan (GPU),YES
+365,aten_permute_copy_default_71,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+366,aten_view_copy_default_106,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+367,aten_permute_copy_default_72,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+368,aten_addmm_default_20,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",Vulkan (GPU),YES
+369,aten_view_copy_default_107,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+370,aten_view_copy_default_108,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+371,aten_unsqueeze_copy_default_5,"<EdgeOpOverload: aten.unsqueeze_copy.default>: schema = aten::unsqueeze_copy(Tensor self, int dim) -> Tensor",Vulkan (GPU),YES
+372,aten_permute_copy_default_73,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+373,aten_squeeze_copy_dims_5,"<EdgeOpOverload: aten.squeeze_copy.dims>: schema = aten::squeeze_copy.dims(Tensor self, int[] dim) -> Tensor",Vulkan (GPU),YES
+374,dim_order_ops__clone_dim_order_default_26,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",Vulkan (GPU),YES
+375,aten_select_copy_int_15,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",Vulkan (GPU),YES
+376,aten_select_copy_int_16,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",Vulkan (GPU),YES
+377,aten_select_copy_int_17,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",Vulkan (GPU),YES
+378,aten_view_copy_default_109,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+379,aten_permute_copy_default_74,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+380,aten_view_copy_default_110,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+381,aten_permute_copy_default_75,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+382,aten_view_copy_default_111,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+383,aten_permute_copy_default_76,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+384,aten_view_copy_default_112,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+385,aten_view_copy_default_113,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+386,aten_view_copy_default_114,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+387,aten_mul_scalar_10,"<EdgeOpOverload: aten.mul.Scalar>: schema = aten::mul.Scalar(Tensor self, Scalar other) -> Tensor",ExecuTorch (Portable CPU),NO
+388,aten_permute_copy_default_77,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+389,aten_mul_scalar_11,"<EdgeOpOverload: aten.mul.Scalar>: schema = aten::mul.Scalar(Tensor self, Scalar other) -> Tensor",ExecuTorch (Portable CPU),NO
+390,aten_expand_copy_default_21,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",Vulkan (GPU),YES
+391,aten_view_copy_default_115,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+392,aten_expand_copy_default_22,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",Vulkan (GPU),YES
+393,aten_view_copy_default_116,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+394,aten_bmm_default_10,"<EdgeOpOverload: aten.bmm.default>: schema = aten::bmm(Tensor self, Tensor mat2) -> Tensor",Vulkan (GPU),YES
+395,aten_view_copy_default_117,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+396,aten__softmax_default_5,"<EdgeOpOverload: aten._softmax.default>: schema = aten::_softmax(Tensor self, int dim, bool half_to_float) -> Tensor",Vulkan (GPU),YES
+397,aten_eq_scalar_5,"<EdgeOpOverload: aten.eq.Scalar>: schema = aten::eq.Scalar(Tensor self, Scalar other) -> Tensor",ExecuTorch (Portable CPU),NO
+398,aten_logical_not_default_10,<EdgeOpOverload: aten.logical_not.default>: schema = aten::logical_not(Tensor self) -> Tensor,ExecuTorch (Portable CPU),NO
+399,aten_any_dim_5,"<EdgeOpOverload: aten.any.dim>: schema = aten::any.dim(Tensor self, int dim, bool keepdim=False) -> Tensor",ExecuTorch (Portable CPU),NO
+400,aten_logical_not_default_11,<EdgeOpOverload: aten.logical_not.default>: schema = aten::logical_not(Tensor self) -> Tensor,ExecuTorch (Portable CPU),NO
+401,aten_full_like_default_5,"<EdgeOpOverload: aten.full_like.default>: schema = aten::full_like(Tensor self, Scalar fill_value, *, ScalarType? dtype=None, Layout? layout=None, Device? device=None, bool? pin_memory=None, MemoryFormat? memory_format=None) -> Tensor",Vulkan (GPU),YES
+402,aten_where_self_5,"<EdgeOpOverload: aten.where.self>: schema = aten::where.self(Tensor condition, Tensor self, Tensor other) -> Tensor",ExecuTorch (Portable CPU),NO
+403,aten_expand_copy_default_23,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",Vulkan (GPU),YES
+404,aten_view_copy_default_118,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+405,aten_expand_copy_default_24,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",Vulkan (GPU),YES
+406,aten_view_copy_default_119,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+407,aten_bmm_default_11,"<EdgeOpOverload: aten.bmm.default>: schema = aten::bmm(Tensor self, Tensor mat2) -> Tensor",Vulkan (GPU),YES
+408,aten_view_copy_default_120,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+409,aten_permute_copy_default_78,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+410,dim_order_ops__clone_dim_order_default_27,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",Vulkan (GPU),YES
+411,aten_permute_copy_default_79,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+412,aten_permute_copy_default_80,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+413,aten_view_copy_default_121,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+414,aten_permute_copy_default_81,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+415,aten_addmm_default_21,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",Vulkan (GPU),YES
+416,aten_view_copy_default_122,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+417,aten_permute_copy_default_82,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+418,dim_order_ops__clone_dim_order_default_28,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",Vulkan (GPU),YES
+419,aten_add_tensor_11,"<EdgeOpOverload: aten.add.Tensor>: schema = aten::add.Tensor(Tensor self, Tensor other, *, Scalar alpha=1) -> Tensor",Vulkan (GPU),YES
+420,aten_native_layer_norm_default_11,"<EdgeOpOverload: aten.native_layer_norm.default>: schema = aten::native_layer_norm(Tensor input, SymInt[] normalized_shape, Tensor? weight, Tensor? bias, float eps) -> (Tensor, Tensor, Tensor)",Vulkan (GPU),YES
+421,getitem_11,<built-in function getitem>,Vulkan (GPU),YES
+422,aten_view_copy_default_123,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+423,aten_permute_copy_default_83,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+424,aten_addmm_default_22,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",Vulkan (GPU),YES
+425,aten_view_copy_default_124,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+426,aten_gelu_default_5,"<EdgeOpOverload: aten.gelu.default>: schema = aten::gelu(Tensor self, *, str approximate=""none"") -> Tensor",Vulkan (GPU),YES
+427,dim_order_ops__clone_dim_order_default_29,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",Vulkan (GPU),YES
+428,aten_view_copy_default_125,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+429,aten_permute_copy_default_84,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+430,aten_addmm_default_23,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",Vulkan (GPU),YES
+431,aten_view_copy_default_126,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+432,dim_order_ops__clone_dim_order_default_30,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",Vulkan (GPU),YES
+433,aten_add_tensor_12,"<EdgeOpOverload: aten.add.Tensor>: schema = aten::add.Tensor(Tensor self, Tensor other, *, Scalar alpha=1) -> Tensor",Vulkan (GPU),YES
+434,aten_native_layer_norm_default_12,"<EdgeOpOverload: aten.native_layer_norm.default>: schema = aten::native_layer_norm(Tensor input, SymInt[] normalized_shape, Tensor? weight, Tensor? bias, float eps) -> (Tensor, Tensor, Tensor)",Vulkan (GPU),YES
+435,getitem_12,<built-in function getitem>,Vulkan (GPU),YES
+436,aten_permute_copy_default_85,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+437,aten_view_copy_default_127,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+438,aten_permute_copy_default_86,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+439,aten_addmm_default_24,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",Vulkan (GPU),YES
+440,aten_view_copy_default_128,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+441,aten_view_copy_default_129,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+442,aten_unsqueeze_copy_default_6,"<EdgeOpOverload: aten.unsqueeze_copy.default>: schema = aten::unsqueeze_copy(Tensor self, int dim) -> Tensor",Vulkan (GPU),YES
+443,aten_permute_copy_default_87,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+444,aten_squeeze_copy_dims_6,"<EdgeOpOverload: aten.squeeze_copy.dims>: schema = aten::squeeze_copy.dims(Tensor self, int[] dim) -> Tensor",Vulkan (GPU),YES
+445,dim_order_ops__clone_dim_order_default_31,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",Vulkan (GPU),YES
+446,aten_select_copy_int_18,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",Vulkan (GPU),YES
+447,aten_select_copy_int_19,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",Vulkan (GPU),YES
+448,aten_select_copy_int_20,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",Vulkan (GPU),YES
+449,aten_view_copy_default_130,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+450,aten_permute_copy_default_88,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+451,aten_view_copy_default_131,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+452,aten_permute_copy_default_89,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+453,aten_view_copy_default_132,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+454,aten_permute_copy_default_90,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+455,aten_view_copy_default_133,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+456,aten_view_copy_default_134,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+457,aten_view_copy_default_135,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+458,aten_mul_scalar_12,"<EdgeOpOverload: aten.mul.Scalar>: schema = aten::mul.Scalar(Tensor self, Scalar other) -> Tensor",ExecuTorch (Portable CPU),NO
+459,aten_permute_copy_default_91,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+460,aten_mul_scalar_13,"<EdgeOpOverload: aten.mul.Scalar>: schema = aten::mul.Scalar(Tensor self, Scalar other) -> Tensor",ExecuTorch (Portable CPU),NO
+461,aten_expand_copy_default_25,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",Vulkan (GPU),YES
+462,aten_view_copy_default_136,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+463,aten_expand_copy_default_26,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",Vulkan (GPU),YES
+464,aten_view_copy_default_137,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+465,aten_bmm_default_12,"<EdgeOpOverload: aten.bmm.default>: schema = aten::bmm(Tensor self, Tensor mat2) -> Tensor",Vulkan (GPU),YES
+466,aten_view_copy_default_138,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+467,aten__softmax_default_6,"<EdgeOpOverload: aten._softmax.default>: schema = aten::_softmax(Tensor self, int dim, bool half_to_float) -> Tensor",Vulkan (GPU),YES
+468,aten_eq_scalar_6,"<EdgeOpOverload: aten.eq.Scalar>: schema = aten::eq.Scalar(Tensor self, Scalar other) -> Tensor",ExecuTorch (Portable CPU),NO
+469,aten_logical_not_default_12,<EdgeOpOverload: aten.logical_not.default>: schema = aten::logical_not(Tensor self) -> Tensor,ExecuTorch (Portable CPU),NO
+470,aten_any_dim_6,"<EdgeOpOverload: aten.any.dim>: schema = aten::any.dim(Tensor self, int dim, bool keepdim=False) -> Tensor",ExecuTorch (Portable CPU),NO
+471,aten_logical_not_default_13,<EdgeOpOverload: aten.logical_not.default>: schema = aten::logical_not(Tensor self) -> Tensor,ExecuTorch (Portable CPU),NO
+472,aten_full_like_default_6,"<EdgeOpOverload: aten.full_like.default>: schema = aten::full_like(Tensor self, Scalar fill_value, *, ScalarType? dtype=None, Layout? layout=None, Device? device=None, bool? pin_memory=None, MemoryFormat? memory_format=None) -> Tensor",Vulkan (GPU),YES
+473,aten_where_self_6,"<EdgeOpOverload: aten.where.self>: schema = aten::where.self(Tensor condition, Tensor self, Tensor other) -> Tensor",ExecuTorch (Portable CPU),NO
+474,aten_expand_copy_default_27,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",Vulkan (GPU),YES
+475,aten_view_copy_default_139,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+476,aten_expand_copy_default_28,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",Vulkan (GPU),YES
+477,aten_view_copy_default_140,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+478,aten_bmm_default_13,"<EdgeOpOverload: aten.bmm.default>: schema = aten::bmm(Tensor self, Tensor mat2) -> Tensor",Vulkan (GPU),YES
+479,aten_view_copy_default_141,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+480,aten_permute_copy_default_92,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+481,dim_order_ops__clone_dim_order_default_32,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",Vulkan (GPU),YES
+482,aten_permute_copy_default_93,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+483,aten_permute_copy_default_94,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+484,aten_view_copy_default_142,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+485,aten_permute_copy_default_95,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+486,aten_addmm_default_25,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",Vulkan (GPU),YES
+487,aten_view_copy_default_143,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+488,aten_permute_copy_default_96,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+489,dim_order_ops__clone_dim_order_default_33,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",Vulkan (GPU),YES
+490,aten_add_tensor_13,"<EdgeOpOverload: aten.add.Tensor>: schema = aten::add.Tensor(Tensor self, Tensor other, *, Scalar alpha=1) -> Tensor",Vulkan (GPU),YES
+491,aten_native_layer_norm_default_13,"<EdgeOpOverload: aten.native_layer_norm.default>: schema = aten::native_layer_norm(Tensor input, SymInt[] normalized_shape, Tensor? weight, Tensor? bias, float eps) -> (Tensor, Tensor, Tensor)",Vulkan (GPU),YES
+492,getitem_13,<built-in function getitem>,Vulkan (GPU),YES
+493,aten_view_copy_default_144,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+494,aten_permute_copy_default_97,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+495,aten_addmm_default_26,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",Vulkan (GPU),YES
+496,aten_view_copy_default_145,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+497,aten_gelu_default_6,"<EdgeOpOverload: aten.gelu.default>: schema = aten::gelu(Tensor self, *, str approximate=""none"") -> Tensor",Vulkan (GPU),YES
+498,dim_order_ops__clone_dim_order_default_34,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",Vulkan (GPU),YES
+499,aten_view_copy_default_146,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+500,aten_permute_copy_default_98,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+501,aten_addmm_default_27,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",Vulkan (GPU),YES
+502,aten_view_copy_default_147,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+503,dim_order_ops__clone_dim_order_default_35,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",Vulkan (GPU),YES
+504,aten_add_tensor_14,"<EdgeOpOverload: aten.add.Tensor>: schema = aten::add.Tensor(Tensor self, Tensor other, *, Scalar alpha=1) -> Tensor",Vulkan (GPU),YES
+505,aten_native_layer_norm_default_14,"<EdgeOpOverload: aten.native_layer_norm.default>: schema = aten::native_layer_norm(Tensor input, SymInt[] normalized_shape, Tensor? weight, Tensor? bias, float eps) -> (Tensor, Tensor, Tensor)",Vulkan (GPU),YES
+506,getitem_14,<built-in function getitem>,Vulkan (GPU),YES
+507,aten_permute_copy_default_99,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+508,aten_view_copy_default_148,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+509,aten_permute_copy_default_100,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+510,aten_addmm_default_28,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",Vulkan (GPU),YES
+511,aten_view_copy_default_149,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+512,aten_view_copy_default_150,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+513,aten_unsqueeze_copy_default_7,"<EdgeOpOverload: aten.unsqueeze_copy.default>: schema = aten::unsqueeze_copy(Tensor self, int dim) -> Tensor",Vulkan (GPU),YES
+514,aten_permute_copy_default_101,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+515,aten_squeeze_copy_dims_7,"<EdgeOpOverload: aten.squeeze_copy.dims>: schema = aten::squeeze_copy.dims(Tensor self, int[] dim) -> Tensor",Vulkan (GPU),YES
+516,dim_order_ops__clone_dim_order_default_36,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",Vulkan (GPU),YES
+517,aten_select_copy_int_21,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",Vulkan (GPU),YES
+518,aten_select_copy_int_22,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",Vulkan (GPU),YES
+519,aten_select_copy_int_23,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",Vulkan (GPU),YES
+520,aten_view_copy_default_151,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+521,aten_permute_copy_default_102,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+522,aten_view_copy_default_152,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+523,aten_permute_copy_default_103,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+524,aten_view_copy_default_153,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+525,aten_permute_copy_default_104,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+526,aten_view_copy_default_154,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+527,aten_view_copy_default_155,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+528,aten_view_copy_default_156,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+529,aten_mul_scalar_14,"<EdgeOpOverload: aten.mul.Scalar>: schema = aten::mul.Scalar(Tensor self, Scalar other) -> Tensor",ExecuTorch (Portable CPU),NO
+530,aten_permute_copy_default_105,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+531,aten_mul_scalar_15,"<EdgeOpOverload: aten.mul.Scalar>: schema = aten::mul.Scalar(Tensor self, Scalar other) -> Tensor",ExecuTorch (Portable CPU),NO
+532,aten_expand_copy_default_29,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",Vulkan (GPU),YES
+533,aten_view_copy_default_157,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+534,aten_expand_copy_default_30,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",Vulkan (GPU),YES
+535,aten_view_copy_default_158,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+536,aten_bmm_default_14,"<EdgeOpOverload: aten.bmm.default>: schema = aten::bmm(Tensor self, Tensor mat2) -> Tensor",Vulkan (GPU),YES
+537,aten_view_copy_default_159,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+538,aten__softmax_default_7,"<EdgeOpOverload: aten._softmax.default>: schema = aten::_softmax(Tensor self, int dim, bool half_to_float) -> Tensor",Vulkan (GPU),YES
+539,aten_eq_scalar_7,"<EdgeOpOverload: aten.eq.Scalar>: schema = aten::eq.Scalar(Tensor self, Scalar other) -> Tensor",ExecuTorch (Portable CPU),NO
+540,aten_logical_not_default_14,<EdgeOpOverload: aten.logical_not.default>: schema = aten::logical_not(Tensor self) -> Tensor,ExecuTorch (Portable CPU),NO
+541,aten_any_dim_7,"<EdgeOpOverload: aten.any.dim>: schema = aten::any.dim(Tensor self, int dim, bool keepdim=False) -> Tensor",ExecuTorch (Portable CPU),NO
+542,aten_logical_not_default_15,<EdgeOpOverload: aten.logical_not.default>: schema = aten::logical_not(Tensor self) -> Tensor,ExecuTorch (Portable CPU),NO
+543,aten_full_like_default_7,"<EdgeOpOverload: aten.full_like.default>: schema = aten::full_like(Tensor self, Scalar fill_value, *, ScalarType? dtype=None, Layout? layout=None, Device? device=None, bool? pin_memory=None, MemoryFormat? memory_format=None) -> Tensor",Vulkan (GPU),YES
+544,aten_where_self_7,"<EdgeOpOverload: aten.where.self>: schema = aten::where.self(Tensor condition, Tensor self, Tensor other) -> Tensor",ExecuTorch (Portable CPU),NO
+545,aten_expand_copy_default_31,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",Vulkan (GPU),YES
+546,aten_view_copy_default_160,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+547,aten_expand_copy_default_32,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",Vulkan (GPU),YES
+548,aten_view_copy_default_161,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+549,aten_bmm_default_15,"<EdgeOpOverload: aten.bmm.default>: schema = aten::bmm(Tensor self, Tensor mat2) -> Tensor",Vulkan (GPU),YES
+550,aten_view_copy_default_162,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+551,aten_permute_copy_default_106,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+552,dim_order_ops__clone_dim_order_default_37,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",Vulkan (GPU),YES
+553,aten_permute_copy_default_107,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+554,aten_permute_copy_default_108,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+555,aten_view_copy_default_163,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+556,aten_permute_copy_default_109,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+557,aten_addmm_default_29,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",Vulkan (GPU),YES
+558,aten_view_copy_default_164,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+559,aten_permute_copy_default_110,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+560,dim_order_ops__clone_dim_order_default_38,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",Vulkan (GPU),YES
+561,aten_add_tensor_15,"<EdgeOpOverload: aten.add.Tensor>: schema = aten::add.Tensor(Tensor self, Tensor other, *, Scalar alpha=1) -> Tensor",Vulkan (GPU),YES
+562,aten_native_layer_norm_default_15,"<EdgeOpOverload: aten.native_layer_norm.default>: schema = aten::native_layer_norm(Tensor input, SymInt[] normalized_shape, Tensor? weight, Tensor? bias, float eps) -> (Tensor, Tensor, Tensor)",Vulkan (GPU),YES
+563,getitem_15,<built-in function getitem>,Vulkan (GPU),YES
+564,aten_view_copy_default_165,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+565,aten_permute_copy_default_111,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+566,aten_addmm_default_30,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",Vulkan (GPU),YES
+567,aten_view_copy_default_166,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+568,aten_gelu_default_7,"<EdgeOpOverload: aten.gelu.default>: schema = aten::gelu(Tensor self, *, str approximate=""none"") -> Tensor",Vulkan (GPU),YES
+569,dim_order_ops__clone_dim_order_default_39,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",Vulkan (GPU),YES
+570,aten_view_copy_default_167,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+571,aten_permute_copy_default_112,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+572,aten_addmm_default_31,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",Vulkan (GPU),YES
+573,aten_view_copy_default_168,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+574,dim_order_ops__clone_dim_order_default_40,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",Vulkan (GPU),YES
+575,aten_add_tensor_16,"<EdgeOpOverload: aten.add.Tensor>: schema = aten::add.Tensor(Tensor self, Tensor other, *, Scalar alpha=1) -> Tensor",Vulkan (GPU),YES
+576,aten_native_layer_norm_default_16,"<EdgeOpOverload: aten.native_layer_norm.default>: schema = aten::native_layer_norm(Tensor input, SymInt[] normalized_shape, Tensor? weight, Tensor? bias, float eps) -> (Tensor, Tensor, Tensor)",Vulkan (GPU),YES
+577,getitem_16,<built-in function getitem>,Vulkan (GPU),YES
+578,aten_permute_copy_default_113,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+579,aten_view_copy_default_169,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+580,aten_permute_copy_default_114,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+581,aten_addmm_default_32,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",Vulkan (GPU),YES
+582,aten_view_copy_default_170,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+583,aten_view_copy_default_171,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+584,aten_unsqueeze_copy_default_8,"<EdgeOpOverload: aten.unsqueeze_copy.default>: schema = aten::unsqueeze_copy(Tensor self, int dim) -> Tensor",Vulkan (GPU),YES
+585,aten_permute_copy_default_115,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+586,aten_squeeze_copy_dims_8,"<EdgeOpOverload: aten.squeeze_copy.dims>: schema = aten::squeeze_copy.dims(Tensor self, int[] dim) -> Tensor",Vulkan (GPU),YES
+587,dim_order_ops__clone_dim_order_default_41,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",Vulkan (GPU),YES
+588,aten_select_copy_int_24,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",Vulkan (GPU),YES
+589,aten_select_copy_int_25,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",Vulkan (GPU),YES
+590,aten_select_copy_int_26,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",Vulkan (GPU),YES
+591,aten_view_copy_default_172,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+592,aten_permute_copy_default_116,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+593,aten_view_copy_default_173,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+594,aten_permute_copy_default_117,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+595,aten_view_copy_default_174,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+596,aten_permute_copy_default_118,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+597,aten_view_copy_default_175,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+598,aten_view_copy_default_176,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+599,aten_view_copy_default_177,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+600,aten_mul_scalar_16,"<EdgeOpOverload: aten.mul.Scalar>: schema = aten::mul.Scalar(Tensor self, Scalar other) -> Tensor",ExecuTorch (Portable CPU),NO
+601,aten_permute_copy_default_119,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+602,aten_mul_scalar_17,"<EdgeOpOverload: aten.mul.Scalar>: schema = aten::mul.Scalar(Tensor self, Scalar other) -> Tensor",ExecuTorch (Portable CPU),NO
+603,aten_expand_copy_default_33,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",Vulkan (GPU),YES
+604,aten_view_copy_default_178,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+605,aten_expand_copy_default_34,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",Vulkan (GPU),YES
+606,aten_view_copy_default_179,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+607,aten_bmm_default_16,"<EdgeOpOverload: aten.bmm.default>: schema = aten::bmm(Tensor self, Tensor mat2) -> Tensor",Vulkan (GPU),YES
+608,aten_view_copy_default_180,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+609,aten__softmax_default_8,"<EdgeOpOverload: aten._softmax.default>: schema = aten::_softmax(Tensor self, int dim, bool half_to_float) -> Tensor",Vulkan (GPU),YES
+610,aten_eq_scalar_8,"<EdgeOpOverload: aten.eq.Scalar>: schema = aten::eq.Scalar(Tensor self, Scalar other) -> Tensor",ExecuTorch (Portable CPU),NO
+611,aten_logical_not_default_16,<EdgeOpOverload: aten.logical_not.default>: schema = aten::logical_not(Tensor self) -> Tensor,ExecuTorch (Portable CPU),NO
+612,aten_any_dim_8,"<EdgeOpOverload: aten.any.dim>: schema = aten::any.dim(Tensor self, int dim, bool keepdim=False) -> Tensor",ExecuTorch (Portable CPU),NO
+613,aten_logical_not_default_17,<EdgeOpOverload: aten.logical_not.default>: schema = aten::logical_not(Tensor self) -> Tensor,ExecuTorch (Portable CPU),NO
+614,aten_full_like_default_8,"<EdgeOpOverload: aten.full_like.default>: schema = aten::full_like(Tensor self, Scalar fill_value, *, ScalarType? dtype=None, Layout? layout=None, Device? device=None, bool? pin_memory=None, MemoryFormat? memory_format=None) -> Tensor",Vulkan (GPU),YES
+615,aten_where_self_8,"<EdgeOpOverload: aten.where.self>: schema = aten::where.self(Tensor condition, Tensor self, Tensor other) -> Tensor",ExecuTorch (Portable CPU),NO
+616,aten_expand_copy_default_35,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",Vulkan (GPU),YES
+617,aten_view_copy_default_181,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+618,aten_expand_copy_default_36,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",Vulkan (GPU),YES
+619,aten_view_copy_default_182,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+620,aten_bmm_default_17,"<EdgeOpOverload: aten.bmm.default>: schema = aten::bmm(Tensor self, Tensor mat2) -> Tensor",Vulkan (GPU),YES
+621,aten_view_copy_default_183,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+622,aten_permute_copy_default_120,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+623,dim_order_ops__clone_dim_order_default_42,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",Vulkan (GPU),YES
+624,aten_permute_copy_default_121,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+625,aten_permute_copy_default_122,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+626,aten_view_copy_default_184,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+627,aten_permute_copy_default_123,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+628,aten_addmm_default_33,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",Vulkan (GPU),YES
+629,aten_view_copy_default_185,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+630,aten_permute_copy_default_124,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+631,dim_order_ops__clone_dim_order_default_43,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",Vulkan (GPU),YES
+632,aten_add_tensor_17,"<EdgeOpOverload: aten.add.Tensor>: schema = aten::add.Tensor(Tensor self, Tensor other, *, Scalar alpha=1) -> Tensor",Vulkan (GPU),YES
+633,aten_native_layer_norm_default_17,"<EdgeOpOverload: aten.native_layer_norm.default>: schema = aten::native_layer_norm(Tensor input, SymInt[] normalized_shape, Tensor? weight, Tensor? bias, float eps) -> (Tensor, Tensor, Tensor)",Vulkan (GPU),YES
+634,getitem_17,<built-in function getitem>,Vulkan (GPU),YES
+635,aten_view_copy_default_186,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+636,aten_permute_copy_default_125,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+637,aten_addmm_default_34,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",Vulkan (GPU),YES
+638,aten_view_copy_default_187,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+639,aten_gelu_default_8,"<EdgeOpOverload: aten.gelu.default>: schema = aten::gelu(Tensor self, *, str approximate=""none"") -> Tensor",Vulkan (GPU),YES
+640,dim_order_ops__clone_dim_order_default_44,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",Vulkan (GPU),YES
+641,aten_view_copy_default_188,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+642,aten_permute_copy_default_126,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+643,aten_addmm_default_35,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",Vulkan (GPU),YES
+644,aten_view_copy_default_189,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+645,dim_order_ops__clone_dim_order_default_45,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",Vulkan (GPU),YES
+646,aten_add_tensor_18,"<EdgeOpOverload: aten.add.Tensor>: schema = aten::add.Tensor(Tensor self, Tensor other, *, Scalar alpha=1) -> Tensor",Vulkan (GPU),YES
+647,aten_native_layer_norm_default_18,"<EdgeOpOverload: aten.native_layer_norm.default>: schema = aten::native_layer_norm(Tensor input, SymInt[] normalized_shape, Tensor? weight, Tensor? bias, float eps) -> (Tensor, Tensor, Tensor)",Vulkan (GPU),YES
+648,getitem_18,<built-in function getitem>,Vulkan (GPU),YES
+649,aten_permute_copy_default_127,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+650,aten_view_copy_default_190,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+651,aten_permute_copy_default_128,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+652,aten_addmm_default_36,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",Vulkan (GPU),YES
+653,aten_view_copy_default_191,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+654,aten_view_copy_default_192,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+655,aten_unsqueeze_copy_default_9,"<EdgeOpOverload: aten.unsqueeze_copy.default>: schema = aten::unsqueeze_copy(Tensor self, int dim) -> Tensor",Vulkan (GPU),YES
+656,aten_permute_copy_default_129,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+657,aten_squeeze_copy_dims_9,"<EdgeOpOverload: aten.squeeze_copy.dims>: schema = aten::squeeze_copy.dims(Tensor self, int[] dim) -> Tensor",Vulkan (GPU),YES
+658,dim_order_ops__clone_dim_order_default_46,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",Vulkan (GPU),YES
+659,aten_select_copy_int_27,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",Vulkan (GPU),YES
+660,aten_select_copy_int_28,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",Vulkan (GPU),YES
+661,aten_select_copy_int_29,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",Vulkan (GPU),YES
+662,aten_view_copy_default_193,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+663,aten_permute_copy_default_130,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+664,aten_view_copy_default_194,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+665,aten_permute_copy_default_131,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+666,aten_view_copy_default_195,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+667,aten_permute_copy_default_132,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+668,aten_view_copy_default_196,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+669,aten_view_copy_default_197,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+670,aten_view_copy_default_198,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+671,aten_mul_scalar_18,"<EdgeOpOverload: aten.mul.Scalar>: schema = aten::mul.Scalar(Tensor self, Scalar other) -> Tensor",ExecuTorch (Portable CPU),NO
+672,aten_permute_copy_default_133,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+673,aten_mul_scalar_19,"<EdgeOpOverload: aten.mul.Scalar>: schema = aten::mul.Scalar(Tensor self, Scalar other) -> Tensor",ExecuTorch (Portable CPU),NO
+674,aten_expand_copy_default_37,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",Vulkan (GPU),YES
+675,aten_view_copy_default_199,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+676,aten_expand_copy_default_38,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",Vulkan (GPU),YES
+677,aten_view_copy_default_200,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+678,aten_bmm_default_18,"<EdgeOpOverload: aten.bmm.default>: schema = aten::bmm(Tensor self, Tensor mat2) -> Tensor",Vulkan (GPU),YES
+679,aten_view_copy_default_201,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+680,aten__softmax_default_9,"<EdgeOpOverload: aten._softmax.default>: schema = aten::_softmax(Tensor self, int dim, bool half_to_float) -> Tensor",Vulkan (GPU),YES
+681,aten_eq_scalar_9,"<EdgeOpOverload: aten.eq.Scalar>: schema = aten::eq.Scalar(Tensor self, Scalar other) -> Tensor",ExecuTorch (Portable CPU),NO
+682,aten_logical_not_default_18,<EdgeOpOverload: aten.logical_not.default>: schema = aten::logical_not(Tensor self) -> Tensor,ExecuTorch (Portable CPU),NO
+683,aten_any_dim_9,"<EdgeOpOverload: aten.any.dim>: schema = aten::any.dim(Tensor self, int dim, bool keepdim=False) -> Tensor",ExecuTorch (Portable CPU),NO
+684,aten_logical_not_default_19,<EdgeOpOverload: aten.logical_not.default>: schema = aten::logical_not(Tensor self) -> Tensor,ExecuTorch (Portable CPU),NO
+685,aten_full_like_default_9,"<EdgeOpOverload: aten.full_like.default>: schema = aten::full_like(Tensor self, Scalar fill_value, *, ScalarType? dtype=None, Layout? layout=None, Device? device=None, bool? pin_memory=None, MemoryFormat? memory_format=None) -> Tensor",Vulkan (GPU),YES
+686,aten_where_self_9,"<EdgeOpOverload: aten.where.self>: schema = aten::where.self(Tensor condition, Tensor self, Tensor other) -> Tensor",ExecuTorch (Portable CPU),NO
+687,aten_expand_copy_default_39,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",Vulkan (GPU),YES
+688,aten_view_copy_default_202,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+689,aten_expand_copy_default_40,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",Vulkan (GPU),YES
+690,aten_view_copy_default_203,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+691,aten_bmm_default_19,"<EdgeOpOverload: aten.bmm.default>: schema = aten::bmm(Tensor self, Tensor mat2) -> Tensor",Vulkan (GPU),YES
+692,aten_view_copy_default_204,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+693,aten_permute_copy_default_134,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+694,dim_order_ops__clone_dim_order_default_47,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",Vulkan (GPU),YES
+695,aten_permute_copy_default_135,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+696,aten_permute_copy_default_136,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+697,aten_view_copy_default_205,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+698,aten_permute_copy_default_137,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+699,aten_addmm_default_37,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",Vulkan (GPU),YES
+700,aten_view_copy_default_206,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+701,aten_permute_copy_default_138,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+702,dim_order_ops__clone_dim_order_default_48,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",Vulkan (GPU),YES
+703,aten_add_tensor_19,"<EdgeOpOverload: aten.add.Tensor>: schema = aten::add.Tensor(Tensor self, Tensor other, *, Scalar alpha=1) -> Tensor",Vulkan (GPU),YES
+704,aten_native_layer_norm_default_19,"<EdgeOpOverload: aten.native_layer_norm.default>: schema = aten::native_layer_norm(Tensor input, SymInt[] normalized_shape, Tensor? weight, Tensor? bias, float eps) -> (Tensor, Tensor, Tensor)",Vulkan (GPU),YES
+705,getitem_19,<built-in function getitem>,Vulkan (GPU),YES
+706,aten_view_copy_default_207,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+707,aten_permute_copy_default_139,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+708,aten_addmm_default_38,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",Vulkan (GPU),YES
+709,aten_view_copy_default_208,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+710,aten_gelu_default_9,"<EdgeOpOverload: aten.gelu.default>: schema = aten::gelu(Tensor self, *, str approximate=""none"") -> Tensor",Vulkan (GPU),YES
+711,dim_order_ops__clone_dim_order_default_49,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",Vulkan (GPU),YES
+712,aten_view_copy_default_209,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+713,aten_permute_copy_default_140,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+714,aten_addmm_default_39,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",Vulkan (GPU),YES
+715,aten_view_copy_default_210,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+716,dim_order_ops__clone_dim_order_default_50,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",Vulkan (GPU),YES
+717,aten_add_tensor_20,"<EdgeOpOverload: aten.add.Tensor>: schema = aten::add.Tensor(Tensor self, Tensor other, *, Scalar alpha=1) -> Tensor",Vulkan (GPU),YES
+718,aten_native_layer_norm_default_20,"<EdgeOpOverload: aten.native_layer_norm.default>: schema = aten::native_layer_norm(Tensor input, SymInt[] normalized_shape, Tensor? weight, Tensor? bias, float eps) -> (Tensor, Tensor, Tensor)",Vulkan (GPU),YES
+719,getitem_20,<built-in function getitem>,Vulkan (GPU),YES
+720,aten_permute_copy_default_141,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+721,aten_view_copy_default_211,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+722,aten_permute_copy_default_142,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+723,aten_addmm_default_40,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",Vulkan (GPU),YES
+724,aten_view_copy_default_212,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+725,aten_view_copy_default_213,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+726,aten_unsqueeze_copy_default_10,"<EdgeOpOverload: aten.unsqueeze_copy.default>: schema = aten::unsqueeze_copy(Tensor self, int dim) -> Tensor",Vulkan (GPU),YES
+727,aten_permute_copy_default_143,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+728,aten_squeeze_copy_dims_10,"<EdgeOpOverload: aten.squeeze_copy.dims>: schema = aten::squeeze_copy.dims(Tensor self, int[] dim) -> Tensor",Vulkan (GPU),YES
+729,dim_order_ops__clone_dim_order_default_51,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",Vulkan (GPU),YES
+730,aten_select_copy_int_30,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",Vulkan (GPU),YES
+731,aten_select_copy_int_31,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",Vulkan (GPU),YES
+732,aten_select_copy_int_32,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",Vulkan (GPU),YES
+733,aten_view_copy_default_214,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+734,aten_permute_copy_default_144,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+735,aten_view_copy_default_215,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+736,aten_permute_copy_default_145,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+737,aten_view_copy_default_216,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+738,aten_permute_copy_default_146,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+739,aten_view_copy_default_217,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+740,aten_view_copy_default_218,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+741,aten_view_copy_default_219,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+742,aten_mul_scalar_20,"<EdgeOpOverload: aten.mul.Scalar>: schema = aten::mul.Scalar(Tensor self, Scalar other) -> Tensor",ExecuTorch (Portable CPU),NO
+743,aten_permute_copy_default_147,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+744,aten_mul_scalar_21,"<EdgeOpOverload: aten.mul.Scalar>: schema = aten::mul.Scalar(Tensor self, Scalar other) -> Tensor",ExecuTorch (Portable CPU),NO
+745,aten_expand_copy_default_41,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",Vulkan (GPU),YES
+746,aten_view_copy_default_220,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+747,aten_expand_copy_default_42,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",Vulkan (GPU),YES
+748,aten_view_copy_default_221,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+749,aten_bmm_default_20,"<EdgeOpOverload: aten.bmm.default>: schema = aten::bmm(Tensor self, Tensor mat2) -> Tensor",Vulkan (GPU),YES
+750,aten_view_copy_default_222,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+751,aten__softmax_default_10,"<EdgeOpOverload: aten._softmax.default>: schema = aten::_softmax(Tensor self, int dim, bool half_to_float) -> Tensor",Vulkan (GPU),YES
+752,aten_eq_scalar_10,"<EdgeOpOverload: aten.eq.Scalar>: schema = aten::eq.Scalar(Tensor self, Scalar other) -> Tensor",ExecuTorch (Portable CPU),NO
+753,aten_logical_not_default_20,<EdgeOpOverload: aten.logical_not.default>: schema = aten::logical_not(Tensor self) -> Tensor,ExecuTorch (Portable CPU),NO
+754,aten_any_dim_10,"<EdgeOpOverload: aten.any.dim>: schema = aten::any.dim(Tensor self, int dim, bool keepdim=False) -> Tensor",ExecuTorch (Portable CPU),NO
+755,aten_logical_not_default_21,<EdgeOpOverload: aten.logical_not.default>: schema = aten::logical_not(Tensor self) -> Tensor,ExecuTorch (Portable CPU),NO
+756,aten_full_like_default_10,"<EdgeOpOverload: aten.full_like.default>: schema = aten::full_like(Tensor self, Scalar fill_value, *, ScalarType? dtype=None, Layout? layout=None, Device? device=None, bool? pin_memory=None, MemoryFormat? memory_format=None) -> Tensor",Vulkan (GPU),YES
+757,aten_where_self_10,"<EdgeOpOverload: aten.where.self>: schema = aten::where.self(Tensor condition, Tensor self, Tensor other) -> Tensor",ExecuTorch (Portable CPU),NO
+758,aten_expand_copy_default_43,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",Vulkan (GPU),YES
+759,aten_view_copy_default_223,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+760,aten_expand_copy_default_44,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",Vulkan (GPU),YES
+761,aten_view_copy_default_224,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+762,aten_bmm_default_21,"<EdgeOpOverload: aten.bmm.default>: schema = aten::bmm(Tensor self, Tensor mat2) -> Tensor",Vulkan (GPU),YES
+763,aten_view_copy_default_225,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+764,aten_permute_copy_default_148,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+765,dim_order_ops__clone_dim_order_default_52,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",Vulkan (GPU),YES
+766,aten_permute_copy_default_149,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+767,aten_permute_copy_default_150,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+768,aten_view_copy_default_226,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+769,aten_permute_copy_default_151,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+770,aten_addmm_default_41,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",Vulkan (GPU),YES
+771,aten_view_copy_default_227,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+772,aten_permute_copy_default_152,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+773,dim_order_ops__clone_dim_order_default_53,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",Vulkan (GPU),YES
+774,aten_add_tensor_21,"<EdgeOpOverload: aten.add.Tensor>: schema = aten::add.Tensor(Tensor self, Tensor other, *, Scalar alpha=1) -> Tensor",Vulkan (GPU),YES
+775,aten_native_layer_norm_default_21,"<EdgeOpOverload: aten.native_layer_norm.default>: schema = aten::native_layer_norm(Tensor input, SymInt[] normalized_shape, Tensor? weight, Tensor? bias, float eps) -> (Tensor, Tensor, Tensor)",Vulkan (GPU),YES
+776,getitem_21,<built-in function getitem>,Vulkan (GPU),YES
+777,aten_view_copy_default_228,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+778,aten_permute_copy_default_153,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+779,aten_addmm_default_42,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",Vulkan (GPU),YES
+780,aten_view_copy_default_229,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+781,aten_gelu_default_10,"<EdgeOpOverload: aten.gelu.default>: schema = aten::gelu(Tensor self, *, str approximate=""none"") -> Tensor",Vulkan (GPU),YES
+782,dim_order_ops__clone_dim_order_default_54,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",Vulkan (GPU),YES
+783,aten_view_copy_default_230,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+784,aten_permute_copy_default_154,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+785,aten_addmm_default_43,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",Vulkan (GPU),YES
+786,aten_view_copy_default_231,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+787,dim_order_ops__clone_dim_order_default_55,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",Vulkan (GPU),YES
+788,aten_add_tensor_22,"<EdgeOpOverload: aten.add.Tensor>: schema = aten::add.Tensor(Tensor self, Tensor other, *, Scalar alpha=1) -> Tensor",Vulkan (GPU),YES
+789,aten_native_layer_norm_default_22,"<EdgeOpOverload: aten.native_layer_norm.default>: schema = aten::native_layer_norm(Tensor input, SymInt[] normalized_shape, Tensor? weight, Tensor? bias, float eps) -> (Tensor, Tensor, Tensor)",Vulkan (GPU),YES
+790,getitem_22,<built-in function getitem>,Vulkan (GPU),YES
+791,aten_permute_copy_default_155,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+792,aten_view_copy_default_232,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+793,aten_permute_copy_default_156,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+794,aten_addmm_default_44,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",Vulkan (GPU),YES
+795,aten_view_copy_default_233,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+796,aten_view_copy_default_234,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+797,aten_unsqueeze_copy_default_11,"<EdgeOpOverload: aten.unsqueeze_copy.default>: schema = aten::unsqueeze_copy(Tensor self, int dim) -> Tensor",Vulkan (GPU),YES
+798,aten_permute_copy_default_157,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+799,aten_squeeze_copy_dims_11,"<EdgeOpOverload: aten.squeeze_copy.dims>: schema = aten::squeeze_copy.dims(Tensor self, int[] dim) -> Tensor",Vulkan (GPU),YES
+800,dim_order_ops__clone_dim_order_default_56,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",Vulkan (GPU),YES
+801,aten_select_copy_int_33,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",Vulkan (GPU),YES
+802,aten_select_copy_int_34,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",Vulkan (GPU),YES
+803,aten_select_copy_int_35,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",Vulkan (GPU),YES
+804,aten_view_copy_default_235,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+805,aten_permute_copy_default_158,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+806,aten_view_copy_default_236,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+807,aten_permute_copy_default_159,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+808,aten_view_copy_default_237,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+809,aten_permute_copy_default_160,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+810,aten_view_copy_default_238,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+811,aten_view_copy_default_239,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+812,aten_view_copy_default_240,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+813,aten_mul_scalar_22,"<EdgeOpOverload: aten.mul.Scalar>: schema = aten::mul.Scalar(Tensor self, Scalar other) -> Tensor",ExecuTorch (Portable CPU),NO
+814,aten_permute_copy_default_161,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+815,aten_mul_scalar_23,"<EdgeOpOverload: aten.mul.Scalar>: schema = aten::mul.Scalar(Tensor self, Scalar other) -> Tensor",ExecuTorch (Portable CPU),NO
+816,aten_expand_copy_default_45,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",Vulkan (GPU),YES
+817,aten_view_copy_default_241,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+818,aten_expand_copy_default_46,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",Vulkan (GPU),YES
+819,aten_view_copy_default_242,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+820,aten_bmm_default_22,"<EdgeOpOverload: aten.bmm.default>: schema = aten::bmm(Tensor self, Tensor mat2) -> Tensor",Vulkan (GPU),YES
+821,aten_view_copy_default_243,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+822,aten__softmax_default_11,"<EdgeOpOverload: aten._softmax.default>: schema = aten::_softmax(Tensor self, int dim, bool half_to_float) -> Tensor",Vulkan (GPU),YES
+823,aten_eq_scalar_11,"<EdgeOpOverload: aten.eq.Scalar>: schema = aten::eq.Scalar(Tensor self, Scalar other) -> Tensor",ExecuTorch (Portable CPU),NO
+824,aten_logical_not_default_22,<EdgeOpOverload: aten.logical_not.default>: schema = aten::logical_not(Tensor self) -> Tensor,ExecuTorch (Portable CPU),NO
+825,aten_any_dim_11,"<EdgeOpOverload: aten.any.dim>: schema = aten::any.dim(Tensor self, int dim, bool keepdim=False) -> Tensor",ExecuTorch (Portable CPU),NO
+826,aten_logical_not_default_23,<EdgeOpOverload: aten.logical_not.default>: schema = aten::logical_not(Tensor self) -> Tensor,ExecuTorch (Portable CPU),NO
+827,aten_full_like_default_11,"<EdgeOpOverload: aten.full_like.default>: schema = aten::full_like(Tensor self, Scalar fill_value, *, ScalarType? dtype=None, Layout? layout=None, Device? device=None, bool? pin_memory=None, MemoryFormat? memory_format=None) -> Tensor",Vulkan (GPU),YES
+828,aten_where_self_11,"<EdgeOpOverload: aten.where.self>: schema = aten::where.self(Tensor condition, Tensor self, Tensor other) -> Tensor",ExecuTorch (Portable CPU),NO
+829,aten_expand_copy_default_47,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",Vulkan (GPU),YES
+830,aten_view_copy_default_244,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+831,aten_expand_copy_default_48,"<EdgeOpOverload: aten.expand_copy.default>: schema = aten::expand_copy(Tensor self, SymInt[] size, *, bool implicit=False) -> Tensor",Vulkan (GPU),YES
+832,aten_view_copy_default_245,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+833,aten_bmm_default_23,"<EdgeOpOverload: aten.bmm.default>: schema = aten::bmm(Tensor self, Tensor mat2) -> Tensor",Vulkan (GPU),YES
+834,aten_view_copy_default_246,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+835,aten_permute_copy_default_162,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+836,dim_order_ops__clone_dim_order_default_57,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",Vulkan (GPU),YES
+837,aten_permute_copy_default_163,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+838,aten_permute_copy_default_164,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+839,aten_view_copy_default_247,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+840,aten_permute_copy_default_165,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+841,aten_addmm_default_45,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",Vulkan (GPU),YES
+842,aten_view_copy_default_248,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+843,aten_permute_copy_default_166,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+844,dim_order_ops__clone_dim_order_default_58,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",Vulkan (GPU),YES
+845,aten_add_tensor_23,"<EdgeOpOverload: aten.add.Tensor>: schema = aten::add.Tensor(Tensor self, Tensor other, *, Scalar alpha=1) -> Tensor",Vulkan (GPU),YES
+846,aten_native_layer_norm_default_23,"<EdgeOpOverload: aten.native_layer_norm.default>: schema = aten::native_layer_norm(Tensor input, SymInt[] normalized_shape, Tensor? weight, Tensor? bias, float eps) -> (Tensor, Tensor, Tensor)",Vulkan (GPU),YES
+847,getitem_23,<built-in function getitem>,Vulkan (GPU),YES
+848,aten_view_copy_default_249,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+849,aten_permute_copy_default_167,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+850,aten_addmm_default_46,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",Vulkan (GPU),YES
+851,aten_view_copy_default_250,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+852,aten_gelu_default_11,"<EdgeOpOverload: aten.gelu.default>: schema = aten::gelu(Tensor self, *, str approximate=""none"") -> Tensor",Vulkan (GPU),YES
+853,dim_order_ops__clone_dim_order_default_59,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",Vulkan (GPU),YES
+854,aten_view_copy_default_251,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+855,aten_permute_copy_default_168,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+856,aten_addmm_default_47,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",Vulkan (GPU),YES
+857,aten_view_copy_default_252,"<EdgeOpOverload: aten.view_copy.default>: schema = aten::view_copy(Tensor self, SymInt[] size) -> Tensor",Vulkan (GPU),YES
+858,dim_order_ops__clone_dim_order_default_60,"<EdgeOpOverload: dim_order_ops._clone_dim_order.default>: schema = dim_order_ops::_clone_dim_order(Tensor self, *, bool non_blocking=False, int[]? dim_order=None) -> Tensor",Vulkan (GPU),YES
+859,aten_add_tensor_24,"<EdgeOpOverload: aten.add.Tensor>: schema = aten::add.Tensor(Tensor self, Tensor other, *, Scalar alpha=1) -> Tensor",Vulkan (GPU),YES
+860,aten_native_layer_norm_default_24,"<EdgeOpOverload: aten.native_layer_norm.default>: schema = aten::native_layer_norm(Tensor input, SymInt[] normalized_shape, Tensor? weight, Tensor? bias, float eps) -> (Tensor, Tensor, Tensor)",Vulkan (GPU),YES
+861,getitem_24,<built-in function getitem>,Vulkan (GPU),YES
+862,aten_select_copy_int_36,"<EdgeOpOverload: aten.select_copy.int>: schema = aten::select_copy.int(Tensor self, int dim, SymInt index) -> Tensor",Vulkan (GPU),YES
+863,aten_permute_copy_default_169,"<EdgeOpOverload: aten.permute_copy.default>: schema = aten::permute_copy(Tensor self, int[] dims) -> Tensor",Vulkan (GPU),YES
+864,aten_addmm_default_48,"<EdgeOpOverload: aten.addmm.default>: schema = aten::addmm(Tensor self, Tensor mat1, Tensor mat2, *, Scalar beta=1, Scalar alpha=1) -> Tensor",Vulkan (GPU),YES
