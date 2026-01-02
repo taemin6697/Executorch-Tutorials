@@ -1,51 +1,40 @@
-# Build outputs (CMake/Ninja)
+# [1] 빌드 산출물 (모든 하위 단계의 빌드 폴더/파일 무시)
 **/build/
 **/build-*/
+**/*-build/
 **/cmake-out*/
 **/CMakeFiles/
+**/*.cmake
 **/CMakeCache.txt
-**/cmake_install.cmake
-**/install_manifest.txt
+**/Makefile
+**/ninja*
+**/*.ninja
 **/compile_commands.json
+**/install_manifest.txt
 
-# Binaries
-**/*.so
-**/*.a
-**/*.o
-**/*.obj
-**/*.exe
-
-# ExecuTorch model/export artifacts
+# [2] ExecuTorch 관련 대용량 바이너리
 **/*.pte
 **/*.pt2
-**/*.etrecord
 **/*.ptd
+**/*.etrecord
 
-# Large checkpoints / weights / tokenizer artifacts (typically huge)
+# [3] 모델 가중치 및 체크포인트 (모든 경로)
 **/*.pth
 **/*.safetensors
 **/*.bin
-**/consolidated.*.pth
-
-# Downloaded model folders (common in this repo)
+**/*.model
 **/Llama-*/
+**/SmolLM2-*/
 
-# Python caches
+# [4] 파이썬 캐시 및 가상환경
 **/__pycache__/
 **/*.pyc
-**/*.pyo
-.pytest_cache/
+.venv/
+env/
 
-# Common locally-built executables that ended up in the tree
-**/my_app
-**/executor_runner
-**/bench_low_level
-
-# OS / IDE
+# [5] IDE 및 OS 관련
 .DS_Store
 .vscode/
 .idea/
 **/.cursor/
-terminals/
-
-
+**/terminals/

@@ -20,7 +20,7 @@ def run_export():
     config_file = os.path.join(EXECUTORCH_ROOT, "examples/models/llama/config/llama_bf16.yaml")
 
     print(f"Loading config from: {config_file}")
-    
+
     # 3. 설정 구성 (기본 구조 + YAML 로드)
     structured_config = OmegaConf.structured(LlmConfig)
     yaml_config = OmegaConf.load(config_file)
@@ -47,7 +47,7 @@ def run_export():
     print("Starting Export... (This may take a few minutes)")
     llm_config_obj = OmegaConf.to_object(merged_config)
     export_llama(llm_config_obj)
-    
+
     print("\n✅ Success! llama3_2.pte file has been created.")
 
 if __name__ == "__main__":

@@ -39,17 +39,17 @@ add_subdirectory("${EXECUTORCH_SOURCE_DIR}" "executorch_build")
 
 # Build the ExecuTorch llama C++ example as llama_chat
 set(LLAMA_EXAMPLE_DIR "${EXECUTORCH_SOURCE_DIR}/examples/models/llama")
-add_executable(llama_chat
-  "${LLAMA_EXAMPLE_DIR}/main.cpp"
-  "${LLAMA_EXAMPLE_DIR}/runner/runner.cpp"
-  "${LLAMA_EXAMPLE_DIR}/tokenizer/llama_tiktoken.cpp"
+add_executable(llama_chat 
+    "${LLAMA_EXAMPLE_DIR}/main.cpp"
+    "${LLAMA_EXAMPLE_DIR}/runner/runner.cpp"
+    "${LLAMA_EXAMPLE_DIR}/tokenizer/llama_tiktoken.cpp"
 )
 
-target_include_directories(llama_chat PRIVATE
-  "${EXECUTORCH_SOURCE_DIR}"
+target_include_directories(llama_chat PRIVATE 
+    "${EXECUTORCH_SOURCE_DIR}"
   "${EXECUTORCH_SOURCE_DIR}/.."
-  "${LLAMA_EXAMPLE_DIR}"
-  "${EXECUTORCH_SOURCE_DIR}/extension/llm/tokenizers/include"
+    "${LLAMA_EXAMPLE_DIR}"
+    "${EXECUTORCH_SOURCE_DIR}/extension/llm/tokenizers/include"
 )
 
 # gflags target selection (varies by config)
@@ -67,7 +67,7 @@ endif()
 
 # Base libs (always)
 set(LLAMA_LINK_LIBS
-  executorch
+    executorch
   ${LLAMA_GFLAGS_TARGET}
 )
 
