@@ -12,13 +12,23 @@
 **/compile_commands.json
 **/install_manifest.txt
 
-# [2] ExecuTorch 관련 대용량 바이너리
+# [2] 확장자 없는 주요 실행 파일들 (대용량)
+**/my_app
+**/executor_runner
+**/llama_chat
+**/bench_low_level
+**/*.exe
+**/*.so
+**/*.a
+**/*.o
+
+# [3] ExecuTorch 관련 대용량 바이너리
 **/*.pte
 **/*.pt2
 **/*.ptd
 **/*.etrecord
 
-# [3] 모델 가중치 및 체크포인트 (모든 경로)
+# [4] 모델 가중치 및 체크포인트 (모든 경로)
 **/*.pth
 **/*.safetensors
 **/*.bin
@@ -26,13 +36,13 @@
 **/Llama-*/
 **/SmolLM2-*/
 
-# [4] 파이썬 캐시 및 가상환경
+# [5] 파이썬 캐시 및 가상환경
 **/__pycache__/
 **/*.pyc
 .venv/
 env/
 
-# [5] IDE 및 OS 관련
+# [6] IDE 및 OS 관련
 .DS_Store
 .vscode/
 .idea/
